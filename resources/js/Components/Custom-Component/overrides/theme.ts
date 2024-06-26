@@ -50,6 +50,20 @@ declare module '@mui/material/Chip' {
   }
 }
 
+declare module '@mui/material/Autocomplete' {
+  interface AutocompletePropsColorOverrides {
+    bemPrimary: true;
+    bemSecondary: true;
+  }
+}
+
+declare module '@mui/material/Avatar' {
+  interface AvatarPropsColorOverrides {
+    bemPrimary: true;
+    bemSecondary: true;
+  }
+}
+
 const { palette } = createTheme();
 const theme = createTheme({
   palette: {
@@ -62,10 +76,19 @@ const theme = createTheme({
     customColors: {
       main: red[500],
       tableHeaderBg: '#F6F6F7',
+      avatarBg: '#4A5072',
     },
-    bemPrimary: palette.augmentColor({ color: purple }),
-    bemSecondary: palette.augmentColor({ color: blue })
+    bemPrimary: palette.augmentColor({ color: {
+      main:'#A020F0',
+    } }),
+    bemSecondary: palette.augmentColor({ color: {
+      main: '#2986cc',
+    } }),
   },
 });
 
 export default theme;
+
+// bemPrimary: {  
+    //   main:'#A020F0',
+    // },
