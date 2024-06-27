@@ -63,6 +63,10 @@ import BackdropCustom from "@/Components/Custom-Component/overrides/backdrop";
 import CustomBadge from "@/Components/Custom-Component/overrides/badge";
 import CustomBreadcrumbs from "@/Components/Custom-Component/overrides/breadcrumbs";
 import CardWithCollapse from "@/Components/Custom-Component/overrides/cards/CardWithCollapse";
+import CheckboxesBasic from "@/Components/Custom-Component/overrides/checkboxs/BasicCheckbox";
+import CheckboxesCustomIcons from "@/Components/Custom-Component/overrides/checkboxs/IconCheckbox";
+import ChipsColors from "@/Components/Custom-Component/overrides/chips/ChipsColors";
+import ChipsOnDelete from "@/Components/Custom-Component/overrides/chips/ChipsOnDelete";
 
 const top100Films = [
     { label: "The Shawshank Redemption", year: 1994 },
@@ -396,8 +400,10 @@ const Test = () => {
             <CardWithCollapse />
             </Box>
             <Divider>Checkbox</Divider>
-            <Divider>Chip</Divider>
-
+            <h1>Checkbox Basic</h1>
+            <CheckboxesBasic />
+            <h1>Checkbox Icon</h1>
+            <CheckboxesCustomIcons/>
             <Divider>Progress</Divider>
             <CustomLinearProgress
                 color="secondary"
@@ -497,7 +503,9 @@ const Test = () => {
             <Switch defaultChecked />
 
             <Divider>Chip</Divider>
-
+            <ChipsColors/>
+            <ChipsOnDelete/>
+{/* 
             <CustomChip
                 label="custom"
                 variant="outlined"
@@ -511,7 +519,7 @@ const Test = () => {
                 variant="outlined"
                 avatar={<Avatar>M</Avatar>}
                 onDelete={() => console.log("click")}
-            ></Chip>
+            ></Chip> */}
 
             <Divider>Data grid</Divider>
             <h1>Data grid default</h1>
