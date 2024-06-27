@@ -18,6 +18,8 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import CustomCard from '../card';
 
 const CardWithCollapse = () => {
+  const imageUrl = `/images/cards/paper-boat.png`;
+  
   // ** State
   const [collapse, setCollapse] = useState<boolean>(false);
 
@@ -27,7 +29,7 @@ const CardWithCollapse = () => {
 
   return (
     <CustomCard>
-      <CardMedia sx={{ height: '14.5625rem' }} image='/images/cards/paper-boat.png' />
+      <CardMedia sx={{ height: '14.5625rem' }} image={imageUrl} />
       <CardContent>
         <Typography variant='h5' sx={{ mb: 2 }}>
           Popular Uses Of The Internet

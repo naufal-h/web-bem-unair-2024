@@ -390,7 +390,11 @@ const Test = () => {
             <Divider>Button Group</Divider>
             <Divider>Button</Divider>
             <Divider>Card</Divider>
+            <Box sx={{ 
+                width: 300,
+             }}>
             <CardWithCollapse />
+            </Box>
             <Divider>Checkbox</Divider>
             <Divider>Chip</Divider>
 
