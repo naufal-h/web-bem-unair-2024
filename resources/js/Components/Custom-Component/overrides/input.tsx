@@ -2,6 +2,7 @@
 import { FilledInput,  FormControlLabel,  Input, InputLabel,  OutlinedInput, styled } from "@mui/material";
 
 import type { FilledInputProps, FormControlLabelProps, InputLabelProps, InputProps, OutlinedInputProps } from "@mui/material";
+import { forwardRef } from "react";
 
 const InputStyled = styled(Input)<InputProps>(({ theme }) => ({
   "&.MuiInput-root": {
@@ -75,25 +76,37 @@ const FormControlLabelStyled = styled(FormControlLabel)<FormControlLabelProps>((
   }
 }));
 
-const CustomInput: React.FC<InputProps> = (props) => {
-  return <InputStyled {...props} />;
-};
+// const CustomInput: React.FC<InputProps> = (props) => {
+//   return <InputStyled {...props} />;
+// };
 
-const CustomInputLabel: React.FC<InputLabelProps> = (props) => {
-  return <InputLabelStyled {...props} />;
-};
+const CustomInput = forwardRef((props, ref) => {
+  return <InputStyled {...props}  />;
+});
 
-const CustomFilledInput: React.FC<FilledInputProps> = (props) => {
-  return <FilledInputStyled {...props} />;
-};
+// const CustomInputLabel: React.FC<InputLabelProps> = (props) => {
+//   return <InputLabelStyled {...props} />;
+// };
 
-const CustomOutlinedInput: React.FC<OutlinedInputProps> = (props) => {
-  return <OutlinedInputStyled {...props} />;
-};
+const CustomInputLabel = forwardRef((props, ref) => {
+  return <InputLabelStyled {...props}  />;
+});
 
-const CustomFormControlLabel: React.FC<FormControlLabelProps> = (props) => {
-  return <FormControlLabelStyled {...props} />;
-};
+// const CustomFilledInput: React.FC<FilledInputProps> = (props) => {
+//   return <FilledInputStyled {...props} />;
+// };
+
+const CustomFilledInput = forwardRef((props, ref) => {
+  return <FilledInputStyled {...props}  />;
+});
+
+const CustomOutlinedInput= forwardRef((props, ref) => {
+  return <OutlinedInputStyled {...props}  />;
+});
+
+const CustomFormControlLabel = forwardRef((props: FormControlLabelProps, ref) => {
+  return <FormControlLabelStyled {...props} ref={ref} />;
+});
 
 export {
   CustomInput,
