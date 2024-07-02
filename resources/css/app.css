@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    .btn {
+      @apply px-4 py-2 min-h-fit
+    }
+    .shadow-xl {
+        background-color: #ffffff09;
+    }
+    [type='radio']:checked {
+        background-image: none;
+      }
+  }
