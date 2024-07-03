@@ -41,14 +41,14 @@
                     <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent {{ request()->routeIs('about') ? 'text-bemsun font-bold' : 'text-gray-500 dark:text-gray-300' }}"
                         href="{{ route('about') }}">Tentang Kami</a>
                 </li>
-                <li>
+                {{-- <li>
                     <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent {{ request()->routeIs('pengurus') ? 'text-bemsun font-bold' : 'text-gray-500 dark:text-gray-300' }}"
                         href="{{ route('pengurus') }}">Pengurus</a>
                 </li>
                 <li>
                     <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent {{ request()->is('kementerian*') ? 'text-bemsun font-bold' : 'text-gray-500 dark:text-gray-300' }}"
                         href="{{ route('kementerian') }}">Kementerian</a>
-                </li>
+                </li> --}}
                 <li>
                     <a class="lg:p-4 py-3 flex hover:text-bemsun rounded-lg w-full lg:w-fit lg:hover:bg-transparent {{ request()->is('artikel*') ? 'text-bemsun font-bold' : 'text-gray-500 dark:text-gray-300' }}"
                         href="{{ route('article.client.index') }}">Artikel</a>

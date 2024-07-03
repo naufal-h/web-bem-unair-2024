@@ -24,14 +24,14 @@
                 data-feather="heart"></i><span class="menu-title text-truncate"
                 data-i18n="Airlangga Care">Airlangga Care</span></a>
             </li> --}}
-            {{-- <li class="nav-item {{ (request()->is('article*')) ? 'active' : ''  }}"><a class="d-flex align-items-center" href="{{ route('article.index') }}"><i
+            <li class="nav-item {{ (request()->is('article*')) ? 'active' : ''  }}"><a class="d-flex align-items-center" href="{{ route('article.index') }}"><i
                 data-feather="book"></i><span class="menu-title text-truncate"
                 data-i18n="Article">Article</span></a>
-            </li> --}}
-            <li class="nav-item {{ (request()->is('feedback*')) ? 'active' : ''  }}"><a class="d-flex align-items-center" href="{{ route('feedback.index') }}"><i
+            </li>
+            {{-- <li class="nav-item {{ (request()->is('feedback*')) ? 'active' : ''  }}"><a class="d-flex align-items-center" href="{{ route('feedback.index') }}"><i
                 data-feather="thumbs-up"></i><span class="menu-title text-truncate"
                 data-i18n="Feedback">Feedback</span></a>
-            </li>
+            </li> --}}
             <li class="nav-item {{ (request()->is('form*')) ? 'active' : ''  }}"><a class="d-flex align-items-center" href="{{ route('admin.form.index') }}"><i
                 data-feather="file-text"></i><span class="menu-title text-truncate"
                 data-i18n="Form">Form</span></a>

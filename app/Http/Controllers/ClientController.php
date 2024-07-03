@@ -11,13 +11,13 @@ class ClientController extends Controller
 {
     public function index()
     {
-        // $articles = Article::where('publish_status', true)->latest('published_at')->limit(4)->get();
-        // foreach ($articles as $article) {
-        //     $text = strip_tags(str_replace('<', ' <', $article->content));
-        //     $text = Str::limit($text, 250);
-        //     $article->content = $text;
-        // };
-        return view('client.landing');
+        $articles = Article::where('publish_status', true)->latest('published_at')->limit(4)->get();
+        foreach ($articles as $article) {
+            $text = strip_tags(str_replace('<', ' <', $article->content));
+            $text = Str::limit($text, 250);
+            $article->content = $text;
+        };
+        return view('client.landing', compact('articles'));
     }
 
     public function about()
@@ -46,29 +46,29 @@ class ClientController extends Controller
         return view('client.kementerian.' . $kementerian);
     }
 
-    // public function article()
-    // {
-    //     $articles = Article::where('publish_status', true)->latest('published_at')->get();
-    //     foreach ($articles as $article) {
-    //         $text = strip_tags(str_replace('<', ' <', $article->content));
-    //         $text = Str::limit($text, 250);
-    //         $article->content = $text;
-    //     };
-    //     return view('client.artikel.index', compact('articles'));
-    // }
+    public function article()
+    {
+        $articles = Article::where('publish_status', true)->latest('published_at')->get();
+        foreach ($articles as $article) {
+            $text = strip_tags(str_replace('<', ' <', $article->content));
+            $text = Str::limit($text, 250);
+            $article->content = $text;
+        };
+        return view('client.artikel.index', compact('articles'));
+    }
 
-    // public function articleDetail($year, $month, $day, $slug)
-    // {
-    //     $article = Article::whereYear('published_at', $year)
-    //         ->whereMonth('published_at', $month)
-    //         ->whereDay('published_at', $day)
-    //         ->where('slug', $slug)
-    //         ->firstOrFail();
-    //     $article->viewer = $article->viewer + 1;
-    //     $article->save();
-    //     $articles = Article::where('id', '!=', $article->id)->where('publish_status', true)->latest('published_at')->limit(5)->get();
-    //     return view('client.artikel.detail', compact('article', 'articles'));
-    // }
+    public function articleDetail($year, $month, $day, $slug)
+    {
+        $article = Article::whereYear('published_at', $year)
+            ->whereMonth('published_at', $month)
+            ->whereDay('published_at', $day)
+            ->where('slug', $slug)
+            ->firstOrFail();
+        $article->viewer = $article->viewer + 1;
+        $article->save();
+        $articles = Article::where('id', '!=', $article->id)->where('publish_status', true)->latest('published_at')->limit(5)->get();
+        return view('client.artikel.detail', compact('article', 'articles'));
+    }
 
     public function feature()
     {

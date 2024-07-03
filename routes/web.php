@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -104,18 +105,19 @@ Route::middleware(['login'])->group(function () {
     Route::get('/pengurus', [ClientController::class, 'pengurus'])->name('pengurus');
     Route::get('/kementerian', [ClientController::class, 'kementerian'])->name('kementerian');
     Route::get('/artikel', [ClientController::class, 'article'])->name('article.client.index');
-
+    Route::get('/artikel/{year}/{month}/{day}/{slug}', [ClientController::class, 'articleDetail'])->name('article.client.detail');
 });
 
-Route::middleware(['auth'])->group(function () {
+//Admin Page
+Route::middleware(['auth'])->group(function(){
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
     Route::get('/dashboard', function () {
         return view('admin.dashboard');
     })->name('admin.dashboard');
 
-    Route::middleware(['superadmin'])->group(function () {
-        Route::group(['prefix' => 'user'], function () {
+    Route::middleware(['superadmin'])->group(function(){
+        Route::group(['prefix' => 'user'], function(){
             Route::get('/', [UserController::class, 'index'])->name('user.index');
             Route::post('/create', [UserController::class, 'store'])->name('user.store');
             Route::get('/create', [UserController::class, 'create'])->name('user.create');
@@ -126,12 +128,12 @@ Route::middleware(['auth'])->group(function () {
             Route::post('/password/{user}', [UserController::class, 'change_password'])->name('user.password');
         });
 
-        Route::group(['prefix' => 'feedback'], function () {
+        Route::group(['prefix' => 'feedback'], function(){
             Route::get('/', [FeedbackController::class, 'index'])->name('feedback.index');
             Route::get('/{feedback}', [FeedbackController::class, 'show'])->name('feedback.show');
         });
 
-        Route::group(['prefix' => 'forms', 'as' => 'admin.form.'], function () {
+        Route::group(['prefix' => 'forms', 'as' => 'admin.form.'], function() {
             Route::get('/', [FormController::class, 'adminIndex'])->name('index');
             Route::post('delete', [FormController::class, 'adminDelete'])->name('delete');
         });
@@ -144,18 +146,18 @@ Route::middleware(['auth'])->group(function () {
     //     });
     // });
 
-    // Route::middleware(['content-writer'])->group(function(){
-    //     Route::group(['prefix' => 'article'], function(){
-    //         Route::get('/', [ArticleController::class, 'index'])->name('article.index');
-    //         Route::post('/create', [ArticleController::class, 'store'])->name('article.store');
-    //         Route::get('/create', [ArticleController::class, 'create'])->name('article.create');
-    //         Route::get('/{article}', [ArticleController::class, 'show'])->name('article.show');
-    //         Route::put('/{article}', [ArticleController::class, 'update'])->name('article.update');
-    //         Route::get('/{article}/edit', [ArticleController::class, 'edit'])->name('article.edit');
-    //         Route::delete('/{article}', [ArticleController::class, 'destroy'])->name('article.destroy');
-    //         Route::get('/change-status/{article}', [ArticleController::class, 'change_publish_status'])->name('article.status');
-    //     });
-    // });
+    Route::middleware(['content-writer'])->group(function(){
+        Route::group(['prefix' => 'article'], function(){
+            Route::get('/', [ArticleController::class, 'index'])->name('article.index');
+            Route::post('/create', [ArticleController::class, 'store'])->name('article.store');
+            Route::get('/create', [ArticleController::class, 'create'])->name('article.create');
+            Route::get('/{article}', [ArticleController::class, 'show'])->name('article.show');
+            Route::put('/{article}', [ArticleController::class, 'update'])->name('article.update');
+            Route::get('/{article}/edit', [ArticleController::class, 'edit'])->name('article.edit');
+            Route::delete('/{article}', [ArticleController::class, 'destroy'])->name('article.destroy');
+            Route::get('/change-status/{article}', [ArticleController::class, 'change_publish_status'])->name('article.status');
+        });
+    });
 });
 
 
