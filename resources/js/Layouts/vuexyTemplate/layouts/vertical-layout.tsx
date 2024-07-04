@@ -1,19 +1,17 @@
 import type { FC } from 'react';
 import { useState } from 'react';
 
-import { ArrowUP } from '@nxweb/icons/tabler';
-import type { LayoutProps as NextWebLayoutProps } from '@nxweb/react/layout';
 
-import { Customizer } from '@components/customizer.js';
-import { Footer } from '@components/footer.js';
-import { Box, Fab, styled } from '@components/material.js';
-import type { BoxProps } from '@components/material.js';
-import { ScrollToTop } from '@components/scroll-to-top.js';
-import { config as themeConfig } from '@config/theme.js';
-import type { LayoutProps } from '@layouts/types.js';
+
 
 import { VerticalAppBar } from './components/vertical/app-bar.js';
 import { Navigation } from './components/vertical/navigation.js';
+import { Box, BoxProps, Fab, styled } from '../components/material.js';
+import { LayoutProps } from './types.js';
+import {config as themeConfig} from '../config/theme.js';
+import { Footer } from '../components/footer.js';
+import { ScrollToTop } from '../components/scroll-to-top.js';
+import { ArrowUp } from 'react-feather';
 
 const VerticalLayoutWrapper = styled('div')({
   display: 'flex',
@@ -39,7 +37,7 @@ const ContentWrapper = styled('main')(({ theme }) => ({
   }
 }));
 
-type VerticalLayoutProps = LayoutProps & NextWebLayoutProps;
+type VerticalLayoutProps = LayoutProps;
 
 // eslint-disable-next-line react/require-default-props
 const VerticalLayout: FC<VerticalLayoutProps> = (props) => {
@@ -127,7 +125,7 @@ const VerticalLayout: FC<VerticalLayoutProps> = (props) => {
       </VerticalLayoutWrapper>
 
       {/* Customizer */}
-      {disableCustomizer || hidden ? null : <Customizer />}
+      {/* {disableCustomizer || hidden ? null : <Customizer />} */}
 
       {/* Scroll to top button */}
       {scrollToTop
@@ -136,7 +134,7 @@ const VerticalLayout: FC<VerticalLayoutProps> = (props) => {
         : (
         <ScrollToTop className="mui-fixed">
           <Fab aria-label="scroll back to top" color="primary" size="small">
-            <ArrowUP />
+            <ArrowUp />
           </Fab>
         </ScrollToTop>
         )}

@@ -1,6 +1,7 @@
+import { NavigationGroup, NavigationLink, NavigationItem } from '@/Layouts/utils/typeLayout';
 import type { Location } from 'react-router-dom';
 
-import type { NavigationGroup, NavigationItem, NavigationLink } from '@nxweb/react/layout';
+
 
 /**
  * Check for URL queries as well for matching
@@ -72,7 +73,7 @@ export const removeChildren = (children: readonly (NavigationGroup | NavigationI
       const index = openGroup.indexOf(child.id);
       if (index > -1) openGroup.splice(index, 1);
 
-      // @ts-expect-error children may not exist
+
       if (child.children) removeChildren(child.children, openGroup, currentActiveGroup);
     }
   });
