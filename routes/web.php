@@ -34,9 +34,9 @@ use App\Http\Controllers\AuthController;
 //     ]);
 // });
 
-Route::get('/test', function () {
-    return Inertia::render('Test');
-});
+// Route::get('/test', function () {
+//     return Inertia::render('Test');
+// });
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
