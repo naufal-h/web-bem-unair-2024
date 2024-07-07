@@ -32,7 +32,9 @@
         "@mui/material": "^5.15.20",
         "@mui/x-data-grid": "^7.6.2",
         "@tabler/icons": "^3.7.0",
+        "keen-slider": "^6.8.6",
         "react-feather": "^2.0.10",
-        "react-router-dom": "6.1"
+        "react-router-dom": "6.1",
+        "styled-components": "^6.1.11"
     }
 }
