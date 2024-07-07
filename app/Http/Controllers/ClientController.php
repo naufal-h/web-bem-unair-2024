@@ -6,6 +6,7 @@ use App\Models\Article;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Crypt;
+use Inertia\Inertia;
 
 class ClientController extends Controller
 {
@@ -73,5 +74,10 @@ class ClientController extends Controller
     public function feature()
     {
         return view('client.feature');
+    }
+
+    // bemu 2024
+    public function bemuLanding(){
+        return Inertia::render('Welcome');
     }
 }

@@ -38,6 +38,8 @@ Route::get('/test', function () {
     return Inertia::render('Test');
 });
 
+// Route::get('/Landing', [ClientController::class, 'bemuLanding']);
+
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
@@ -50,7 +52,7 @@ Route::get('/test', function () {
 
 
 Route::get('/test-blade', function () {
-    return view('testing');
+    return 'testing';
 });
 
 
@@ -100,7 +102,7 @@ Route::middleware(['login'])->group(function () {
     Route::get('/login', [AuthController::class, 'showLogin']);
     Route::post('login', [AuthController::class, 'login'])->name('login');
 
-    Route::get('/', [ClientController::class, 'index'])->name('landing');
+    Route::get('/', [ClientController::class, 'bemuLanding'])->name('landing');
     Route::get('/tentang-kami', [ClientController::class, 'about'])->name('about');
     Route::get('/pengurus', [ClientController::class, 'pengurus'])->name('pengurus');
     Route::get('/kementerian', [ClientController::class, 'kementerian'])->name('kementerian');
