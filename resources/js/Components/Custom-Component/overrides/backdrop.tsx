@@ -1,6 +1,6 @@
 // ** Type Import
 import { styled, Backdrop, BackdropProps } from '@mui/material';
-import { OwnerStateThemeType } from '.';
+// // import { OwnerStateThemeType } from '.';
 import { hexToRGBA } from './utils/hex-to-rgba';
 
 // ** Styled Backdrop Component

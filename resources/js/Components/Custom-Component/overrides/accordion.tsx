@@ -1,5 +1,5 @@
 import { Accordion, AccordionProps, styled } from '@mui/material';
-import { OwnerStateThemeType } from '.';
+// // import { OwnerStateThemeType } from '.';
 import { forwardRef } from 'react';
 
 const AccordionStyled = styled(Accordion)<AccordionProps>(({ theme }) => ({

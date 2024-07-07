@@ -1,6 +1,6 @@
 import { Card as MuiCard, CardProps, styled } from '@mui/material';
 import { forwardRef } from 'react';
-import { OwnerStateThemeType } from '.';
+// // import { OwnerStateThemeType } from '.';
 
 const CardStyled = styled(MuiCard)<CardProps>(({ theme }) => ({
   ...('bordered' && { border: `1px solid ${theme.palette.divider}` }),
