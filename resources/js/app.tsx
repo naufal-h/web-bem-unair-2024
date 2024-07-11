@@ -6,6 +6,7 @@ import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './Components/Custom-Component/overrides/theme';
+import FooterSection from '@/Components/Footer';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -24,4 +25,14 @@ createInertiaApp({
     progress: {
         color: '#4B5563',
     },
+});
+
+
+// Render Footer
+document.addEventListener('DOMContentLoaded', () => {
+    const el = document.getElementById('footer-component');
+    if (el) {
+        const root = createRoot(el);
+        root.render(<FooterSection />);
+    }
 });

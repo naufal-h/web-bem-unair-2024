@@ -1,3 +1,5 @@
+/** @type {import('tailwindcss').Config} */
+
 module.exports = {
     darkMode: 'class',
     content: [
@@ -6,13 +8,27 @@ module.exports = {
         "./resources/**/*.vue",
     ],
     theme: {
+        fontFamily: {
+            'display': ['Inter'],
+            'body': ['"Inter"'],
+            sans: ['Inter', 'sans-serif'],
+        },
+        // screens: {
+        //   'sm': '640px',
+        //   'md': '768px',
+        //   'lg': '1140px',
+        //   'xl': '1280px',
+        //   '2xl': '1536px',
+        // },
         extend: {
             colors: {
-                'bemred': '#000',
-                'bemsun': '#000',
-                'bemfire': '#000',
-                'bemwine': '#000',
-                'bemblue': '#000',
+                'bemred': '#880808',
+                'bemsun': '#E88A45',
+                'bemfire': '#DD2A32',
+                'bemwine': '#701E38',
+                'bemblue': '#132C50',
+                'bempink': '#E4828B',
+                'bembluenew': '#162f6f',
             },
         },
     },
@@ -47,9 +63,9 @@ module.exports = {
     //                 "secondary-content": "#cfcfcf",
     //                 'error': '#DD2A32',
     //                 'info': '#132C50',
-    //             },
+    //               },
     //         },
     //         "dark",
     //     ],
     // },
-};
+}
