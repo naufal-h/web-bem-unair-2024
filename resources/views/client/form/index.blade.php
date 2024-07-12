@@ -3,20 +3,21 @@
 @section('content')
     <section class="min-h-[80vh] lg:container flex justify-center items-center m-auto px-4">
         <div class="shadow-xl border border-gray-800/10 rounded-2xl p-4 grid grid-cols-1 md:grid-cols-2 my-12">
-            <div class="bg-bemblue p-8 flex flex-col justify-between text-white md:aspect-square rounded-lg">
+            <div class="bg-bembluenew p-8 flex flex-col justify-between text-white md:aspect-square rounded-lg">
                 <p class="text-sm font-bold text-bempink">
                     KABINET ASA PROGRESIF
                 </p>
                 <div class="my-8">
                     <h2 class="text-3xl md:text-6xl font-bold mb-4">
-                        Buat form anda sendiri sekarang!
+                        Buat <span class="text-bempink">form</span> anda sendiri sekarang!
                     </h2>
                     <p class="text-sm">
                         Setiap form memiliki token. Token akan dikirim melalui email untuk mengedit form. Jika anda hendak
                         mengakses atau mengedit form yang telah dibuat, buka halaman Edit Form dan siapkan token anda.
                     </p>
                 </div>
-                <div class="h-2 bg-gradient-to-r from-orange-400 via-red-900 to-blue-900 rounded-xl"></div>
+                <div></div>
+                {{-- <div class="h-2 bg-gradient-to-r from-orange-400 via-red-900 to-blue-900 rounded-xl"></div> --}}
             </div>
             <form class="flex flex-col gap-8 p-4 md:p-12 justify-center">
                 <div>
