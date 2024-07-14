@@ -9,7 +9,7 @@ const Welcome = () => {
     return (
       <>
        <ResponsiveAppBar />
-       <FirstSection/>
+       {/* <FirstSection/> */}
        <FooterSection/>
       </>
     );

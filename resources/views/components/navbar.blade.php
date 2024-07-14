@@ -7,10 +7,11 @@
                 </a>
             </div>
             <div class="flex space-x-4 justify-center font-semibold" id="text-navbar" style="width: 80%; font-family:'Open Sans'; font-size: 1rem; padding-left: 8.5%" >
-                <a href="#" class="text-gray-800 hover:text-gray-600 px-7">BERANDA</a>
+                <a href="{{route('landing')}}" class="text-gray-800 hover:text-gray-600 px-7">BERANDA</a>
                 <a href="#" class="text-gray-800 hover:text-gray-600 px-7">TENTANG KAMI</a>
-                <a href="#" class="text-gray-800 hover:text-gray-600 px-7">ARTIKEL</a>
+                <a href="{{route('article.client.index')}}" class="text-gray-800 hover:text-gray-600 px-7">ARTIKEL</a>
                 <a href="#" class="text-gray-800 hover:text-gray-600 px-7">SOP</a>
+                <a href="{{route('form.index')}}" class="text-gray-800 hover:text-gray-600 px-7">FORM GENERATOR</a>
             </div>
         </div>
     </div>
