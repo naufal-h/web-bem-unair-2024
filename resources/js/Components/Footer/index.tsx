@@ -6,11 +6,12 @@ const FooterSection = () => {
         <S.StyledFooterSection>
             <Box
                 sx={{
-                    width: "1345px",
+                    width: "90%",
                     height: "420px",
                     position: "relative",
                     backgroundColor: "#4AA2FF",
                     borderRadius: "20px",
+                    maxWidth: "1600px",
                 }}
             >
                 <Box
@@ -56,7 +57,7 @@ const FooterSection = () => {
                                 Universitas Airlangga
                             </Box>
                         </Box> */}
-                        <Box sx={{ color: "white", fontSize: "15px", marginRight: "63px",marginTop:"80px" }}>
+                        <Box sx={{ color: "white", fontSize: "16px", marginRight: "63px",marginTop:"80px", fontFamily: "Open Sans",textAlign:"right" }}>
                             <Box >
                                 Universitas Airlangga, Surabaya
                             </Box>
@@ -67,12 +68,12 @@ const FooterSection = () => {
                             Kota Surabaya, Jawa Timur 60115
                             </Box>
                             <Box sx={{ mt: "50px", fontWeight: "bold", fontSize: "20px" }}>
-                            Kenali Kami Lebih Dalam
+                            Kenali Kami Lebih Dalam!
                             </Box>
                         </Box>
                     </Box>
 
-                    <Box sx={{position:"absolute",bottom: 0, zIndex: 1, mb: "26px", color: "white", fontSize: "16px"}}>
+                    <Box sx={{position:"absolute",bottom: 0, zIndex: 1, mb: "26px", color: "white", fontSize: "16px", fontFamily: "Open Sans"}}>
                         Copyright 2024 Badan Eksekutif Mahasiswa Universitas Airlangga
                     </Box>
                 </Box>
