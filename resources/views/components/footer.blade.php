@@ -1,89 +1,51 @@
-<div class="bg-bemblue dark:bg-slate-800 flex flex-col items-center justify-center">
-    <div class="lg:container grid grid-cols-1 md:grid-cols-2 px-4 items-center justify-center my-12 gap-4">
-        <div>
-            @if ($theme != 'dark')
-                <img src="{{ asset('assets/images/logo-dark.png') }}" class="h-28" alt="Logo Kabinet Reformasi">
-            @else
-                <img src="{{ asset('assets/images/logo-dark.png') }}" class="h-28" alt="Logo Kabinet Reformasi">
-            @endif
-        </div>
-        {{-- <div class="grid grid-cols-2 col-span-2 gap-y-4 gap-x-2">
-            <div>
-                <p class="text-base text-slate-200 font-bold">Narahubung</p>
-                <p class="text-sm text-slate-200">info@bem.unair.ac.id</p>
-                <p><a href="https://wa.me/6287853806341" class="text-sm text-slate-200" target="__blank">+6287853806341
-                        (Tsabitah)</a></p>
+<div class="styled-footer-section flex justify-center">
+    <div class="relative w-11/12 h-[420px] shadow-lg" style="max-width: 1600px; border-radius: 20px; background-color: #4AA2FF">
+        <div class="flex justify-center relative h-full">
+            <div class="logo-container absolute top-1/2 transform -translate-y-1/2">
+                <img src="/images/logo/mark_white.png" alt="Logo" />
             </div>
-            <div>
-                <p class="text-base text-slate-200 font-bold">Media Partner Internal Unair</p>
-                <p><a href="https://wa.me/6285841753769" class="text-sm text-slate-200" target="__blank">+6285841753769
-                        (Rizqia Luthfi)</a></p>
-            </div>
-            <div>
-                <p class="text-base text-slate-200 font-bold">Media Partner Eksternal Unair</p>
-                <p><a href="https://wa.me/6285214989530" class="text-sm text-slate-200" target="__blank">+6285214989530
-                        (Ilham)</a></p>
-                <p><a href="https://wa.me/6282191666270" class="text-sm text-slate-200" target="__blank">+6282191666270
-                        (Nabila)</a></p>
-            </div>
-            <div>
-                <p class="text-base text-slate-200 font-bold">Kerjasama</p>
-                <p><a href="https://wa.me/6281999152099" class="text-sm text-slate-200" target="__blank">+6281999152099
-                        (Bian)</a></p>
-                <p><a href="https://wa.me/6281929749545" class="text-sm text-slate-200"
-                        target="__blank">+6281929749545 (Kirani)</a></p>
-            </div>
-        </div> --}}
-        <div>
-            <div class="mb-4 md:mb-8">
-                <p class="text-base text-slate-200 font-bold text-left md:text-right">Universitas Airlangga, Surabaya
-                </p>
-                <p class="text-sm text-slate-200 text-left md:text-right">Jl. Dr. Ir. H. Soekarno, Mulyorejo, Kec.
-                    Mulyorejo, Kota Surabaya, Jawa Timur 60115</p>
-            </div>
-
-            <div class="flex flex-col items-start md:items-end">
-                <p class="text-base text-slate-200 font-bold mb-4">Kenali Kami Lebih Dalam!</p>
-                <div class="flex flex-row gap-4">
-                    <a href="https://page.line.me/bemunair" target="__Blank">
-                        <svg width="26" height="24" viewBox="0 0 26 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="fill-slate-200"
-                                d="M21.0004 9.75583C21.3668 9.75583 21.6619 10.0551 21.6619 10.4184C21.6619 10.7807 21.3668 11.0799 21.0004 11.0799H19.1576V12.2612H21.0004C21.3668 12.2612 21.6619 12.5584 21.6619 12.9227C21.6619 13.2839 21.3668 13.5832 21.0004 13.5832H18.495C18.1328 13.5832 17.8366 13.2839 17.8366 12.9227V7.91302C17.8366 7.55076 18.1328 7.2515 18.4982 7.2515H21.0035C21.3668 7.2515 21.6619 7.55076 21.6619 7.91302C21.6619 8.27948 21.3668 8.57454 21.0004 8.57454H19.1576V9.75583H21.0004ZM16.9525 12.9227C16.9525 13.2062 16.7698 13.4582 16.4989 13.5485C16.4317 13.5706 16.3593 13.5811 16.29 13.5811C16.0684 13.5811 15.8794 13.4866 15.7544 13.3186L13.1892 9.83563V12.9227C13.1892 13.2839 12.8963 13.5832 12.5266 13.5832C12.1633 13.5832 11.8693 13.2839 11.8693 12.9227V7.91302C11.8693 7.62952 12.051 7.37751 12.3208 7.28826C12.3838 7.2641 12.4636 7.2536 12.5245 7.2536C12.7293 7.2536 12.9183 7.36281 13.0443 7.52031L15.6295 11.0169V7.91302C15.6295 7.55076 15.9256 7.2515 16.291 7.2515C16.6533 7.2515 16.9525 7.55076 16.9525 7.91302V12.9227ZM10.9243 12.9227C10.9243 13.2839 10.6282 13.5832 10.2617 13.5832C9.89948 13.5832 9.60337 13.2839 9.60337 12.9227V7.91302C9.60337 7.55076 9.89948 7.2515 10.2649 7.2515C10.6282 7.2515 10.9243 7.55076 10.9243 7.91302V12.9227ZM8.33493 13.5832H5.82956C5.4673 13.5832 5.16804 13.2839 5.16804 12.9227V7.91302C5.16804 7.55076 5.4673 7.2515 5.82956 7.2515C6.19497 7.2515 6.49108 7.55076 6.49108 7.91302V12.2612H8.33493C8.70034 12.2612 8.9954 12.5584 8.9954 12.9227C8.9954 13.2839 8.69929 13.5832 8.33493 13.5832ZM25.8673 10.2294C25.8673 4.58968 20.2129 0 13.2669 0C6.32097 0 0.666565 4.58968 0.666565 10.2294C0.666565 15.2811 5.15019 19.5138 11.2036 20.3181C11.6142 20.4042 12.1728 20.589 12.3145 20.9376C12.4405 21.2536 12.3975 21.7419 12.3544 22.0716L12.1822 23.1427C12.135 23.4587 11.9302 24.388 13.2837 23.8199C14.6393 23.254 20.5457 19.5379 23.1918 16.496C25.0021 14.5125 25.8673 12.4807 25.8673 10.2294Z"
-                                fill="#E88A45" />
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com/bemunair_id?s=21&t=y00o0YfMZJ93LzQZIPig4g" target="__Blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
-                            height="24" viewBox="0 0 30 30" style=" fill:#E88A45;">
-                            <path class="fill-slate-200"
-                                d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/bem_unair" target="__Blank">
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="fill-slate-200"
-                                d="M12.8641 7.9983C10.6606 7.9983 8.86242 9.79651 8.86242 12C8.86242 14.2035 10.6606 16.0017 12.8641 16.0017C15.0675 16.0017 16.8657 14.2035 16.8657 12C16.8657 9.79651 15.0675 7.9983 12.8641 7.9983ZM24.8659 12C24.8659 10.3429 24.881 8.70077 24.7879 7.04665C24.6948 5.12536 24.2565 3.4202 22.8516 2.01525C21.4437 0.607302 19.7416 0.172008 17.8203 0.0789456C16.1632 -0.0141173 14.5211 0.000892936 12.8671 0.000892936C11.21 0.000892936 9.56789 -0.0141173 7.9138 0.0789456C5.99254 0.172008 4.28742 0.610305 2.8825 2.01525C1.47457 3.42321 1.03928 5.12536 0.946223 7.04665C0.853162 8.70377 0.868172 10.3459 0.868172 12C0.868172 13.6541 0.853162 15.2992 0.946223 16.9533C1.03928 18.8746 1.47757 20.5798 2.8825 21.9847C4.29042 23.3927 5.99254 23.828 7.9138 23.9211C9.57089 24.0141 11.213 23.9991 12.8671 23.9991C14.5241 23.9991 16.1662 24.0141 17.8203 23.9211C19.7416 23.828 21.4467 23.3897 22.8516 21.9847C24.2595 20.5768 24.6948 18.8746 24.7879 16.9533C24.884 15.2992 24.8659 13.6571 24.8659 12ZM12.8641 18.1572C9.45681 18.1572 6.70701 15.4073 6.70701 12C6.70701 8.5927 9.45681 5.84284 12.8641 5.84284C16.2713 5.84284 19.0211 8.5927 19.0211 12C19.0211 15.4073 16.2713 18.1572 12.8641 18.1572ZM19.2733 7.02864C18.4777 7.02864 17.8353 6.38621 17.8353 5.59067C17.8353 4.79513 18.4777 4.1527 19.2733 4.1527C20.0688 4.1527 20.7112 4.79513 20.7112 5.59067C20.7114 5.77957 20.6744 5.96667 20.6022 6.14124C20.5301 6.31581 20.4241 6.47442 20.2906 6.608C20.157 6.74157 19.9984 6.84748 19.8238 6.91967C19.6493 6.99185 19.4622 7.02888 19.2733 7.02864Z"
-                                fill="#E88A45" />
-                        </svg>
-                    </a>
-                    <a href="https://youtube.com/c/BEMUniversitasAirlangga" target="__Blank">
-                        <svg width="35" height="24" viewBox="0 0 35 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="fill-slate-200"
-                                d="M34.2868 3.75519C33.8942 2.27706 32.7376 1.11294 31.2691 0.717875C28.6072 0 17.9336 0 17.9336 0C17.9336 0 7.26009 0 4.59821 0.717875C3.12967 1.113 1.97307 2.27706 1.58052 3.75519C0.867279 6.43437 0.867279 12.0243 0.867279 12.0243C0.867279 12.0243 0.867279 17.6141 1.58052 20.2933C1.97307 21.7714 3.12967 22.8871 4.59821 23.2821C7.26009 24 17.9336 24 17.9336 24C17.9336 24 28.6072 24 31.2691 23.2821C32.7376 22.8871 33.8942 21.7714 34.2868 20.2933C35 17.6141 35 12.0243 35 12.0243C35 12.0243 35 6.43437 34.2868 3.75519ZM14.4428 17.0994V6.94906L23.3638 12.0244L14.4428 17.0994Z"
-                                fill="#E88A45" />
-                        </svg>
-                    </a>
+            <img class="footer-image w-full h-[156px] absolute bottom-0 z-10" src="/images/footer/Vector (3).png"
+                alt="" />
+            <div class="relative z-20 flex justify-between w-full h-[256px]">
+                <div class="flex items-center mt-20">
+                    <div class="ml-12">
+                        <img src="/images/logo/secondary logo white 2.png" alt="Logo" />
+                    </div>
                 </div>
+                <div class="text-white text-base mr-16 mt-20 font-sans text-right">
+                    <div>
+                        Universitas Airlangga, Surabaya
+                    </div>
+                    <div>
+                        Jl. Dr. Ir. H. Soekarno, Mulyorejo, Kec. Mulyorejo,
+                    </div>
+                    <div>
+                        Kota Surabaya, Jawa Timur 60115
+                    </div>
+                    <div class="mt-12 font-bold text-xl">
+                        Kenali Kami Lebih Dalam!
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 z-10 mb-6 text-white text-base font-sans">
+                Copyright 2024 Badan Eksekutif Mahasiswa Universitas Airlangga
             </div>
         </div>
     </div>
-    <p class="text-gray-400 my-4 px-4 text-center">© Copyright
-        <script>
-            document.write(new Date().getFullYear())
-        </script> Badan Eksekutif Mahasiswa Universitas Airlangga
-    </p>
 </div>
+
+<style>
+    .logo-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .footer-image {
+        width: 100%;
+        height: 156px;
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+</style>

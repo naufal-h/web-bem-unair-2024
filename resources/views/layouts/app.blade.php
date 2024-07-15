@@ -18,6 +18,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon/favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ asset('assets/favicon/site.webmanifest') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-723Y286KJ7"></script>
     <script>
@@ -29,6 +30,7 @@
         gtag('js', new Date());
         gtag('config', 'G-723Y286KJ7');
     </script>
+    {{-- @vite('resources/js/app.tsx') --}}
     {{-- Redirect to secure protocol --}}
     {{-- <script>
         if (location.protocol !== 'https:') {
@@ -52,6 +54,7 @@
     <div style="min-height: 500px; overflow: hidden;">
         @yield('content')
     </div>
+    {{-- <div id="footer-component"></div> --}}
     <x-footer />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="

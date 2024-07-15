@@ -55,7 +55,7 @@
                             </svg>
                         </button>
                     </form>
-                    <label class="btn btn-primary" for="edit-form-modal">
+                    <label class="btn btn-warning" for="edit-form-modal">
                         <span class="mr-2">Edit Detail Form</span>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">

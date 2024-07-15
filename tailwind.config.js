@@ -4,29 +4,38 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-    darkMode: 'class',
+    darkMode: "class",
     content: [
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
     theme: {
+        fontFamily: {
+            display: ["Inter"],
+            body: ['"Inter"'],
+            sans: ["Inter", "sans-serif"],
+        },
+        // screens: {
+        //   'sm': '640px',
+        //   'md': '768px',
+        //   'lg': '1140px',
+        //   'xl': '1280px',
+        //   '2xl': '1536px',
+        // },
         extend: {
             colors: {
-                'bemred': '#000',
-                'bemsun': '#000',
-                'bemfire': '#000',
-                'bemwine': '#000',
-                'bemblue': '#0000ff',
-                'bempink24:': '#D0757D',
+                bemred: "#880808",
+                bemsun: "#E88A45",
+                bemfire: "#DD2A32",
+                bemwine: "#701E38",
+                bemblue: "#132C50",
+                bempink: "#E4828B",
+                bembluenew: "#162f6f",
             },
         },
     },
-    plugins: [
-        require("@tailwindcss/forms"),
-        require("daisyui"),
-    ],
-
+    plugins: [require("@tailwindcss/forms"), require("daisyui")],
     daisyui: {
         styled: true,
         base: true,
@@ -34,7 +43,7 @@ module.exports = {
         themes: [
             {
                 light: {
-                    primary: "#E88A45",
+                    primary: "#E4828B",
                     "primary-content": "#ffffff",
                     "--btn-text-case": "none",
                     secondary: "#F4F4F5",
@@ -42,18 +51,20 @@ module.exports = {
                     accent: "#37cdbe",
                     neutral: "#3d4451",
                     "base-100": "#ffffff",
-                    'error': '#DD2A32',
-                    'info': '#132C50',
+                    error: "#DD2A32",
+                    info: "#132C50",
                 },
                 dark: {
-                    ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+                    ...require("daisyui/src/colors/themes")[
+                        "[data-theme=dark]"
+                    ],
                     primary: "#E88A45",
                     "primary-content": "#ffffff",
                     "--btn-text-case": "none",
                     secondary: "#606060",
                     "secondary-content": "#cfcfcf",
-                    'error': '#DD2A32',
-                    'info': '#132C50',
+                    error: "#DD2A32",
+                    info: "#132C50",
                 },
             },
             "dark",

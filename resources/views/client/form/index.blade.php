@@ -3,26 +3,27 @@
 @section('content')
     <section class="min-h-[80vh] lg:container flex justify-center items-center m-auto px-4">
         <div class="shadow-xl border border-gray-800/10 rounded-2xl p-4 grid grid-cols-1 md:grid-cols-2 my-12">
-            <div class="bg-bemblue p-8 flex flex-col justify-between text-white md:aspect-square rounded-lg">
-                <p class="text-sm font-bold text-bemsun">
-                    KABINET REFORMASI
+            <div class="bg-bembluenew p-8 flex flex-col justify-between text-white md:aspect-square rounded-lg">
+                <p class="text-sm font-bold text-bempink">
+                    KABINET ASA PROGRESIF
                 </p>
                 <div class="my-8">
                     <h2 class="text-3xl md:text-6xl font-bold mb-4">
-                        Buat <span class="text-bemsun">form</span> anda sendiri sekarang!
+                        Buat <span class="text-bempink">form</span> anda sendiri sekarang!
                     </h2>
                     <p class="text-sm">
                         Setiap form memiliki token. Token akan dikirim melalui email untuk mengedit form. Jika anda hendak
                         mengakses atau mengedit form yang telah dibuat, buka halaman Edit Form dan siapkan token anda.
                     </p>
                 </div>
-                <div class="h-2 bg-gradient-to-r from-orange-400 via-red-900 to-blue-900 rounded-xl"></div>
+                <div></div>
+                {{-- <div class="h-2 bg-gradient-to-r from-orange-400 via-red-900 to-blue-900 rounded-xl"></div> --}}
             </div>
             <form class="flex flex-col gap-8 p-4 md:p-12 justify-center">
                 <div>
                     <h4 class="text-3xl font-bold mb-2">Buat Form</h4>
-                    <p class="text-sm">Klik <a href="{{ route('form.help') }}" class="text-bemsun underline">disini</a>
-                        untuk melihat panduan membuat form!</p>
+                    {{-- <p class="text-sm">Klik <a href="{{ route('form.help') }}" class="text-bemsun underline">disini</a>
+                        untuk melihat panduan membuat form!</p> --}}
                 </div>
                 <div class="bg-green-500/30 rounded-xl p-4 hidden text-base transition" name="alert" id="editFormSuccess">
                 </div>
@@ -34,7 +35,7 @@
                     <input type="email" name="email" id="inpEmail" placeholder="Masukkan Email anda"
                         class="input rounded-lg border-gray-300/70 w-full" required>
                     {{-- <span id="createMessage"></span> --}}
-                    <p class="text-sm mt-2">Sudah membuat form? <label class="text-bemsun modal-button cursor-pointer"
+                    <p class="text-sm mt-2">Sudah membuat form? <label class="text-bempink modal-button cursor-pointer"
                             for="my-modal-4">Edit form</label></p>
                 </div>
                 <div>
@@ -77,7 +78,7 @@
                         <input type="email" name="author" placeholder="Masukkan Email Anda"
                             class="form-control input rounded-lg border-gray-300/70 w-full" required>
                     </div>
-                    <p href="" class="text-bemsun underline font-bold text-right w-full mt-2 cursor-pointer"
+                    <p href="" class="text-bempink underline font-bold text-right w-full mt-2 cursor-pointer"
                         id="nextBtn" onclick="nextPrev(1)">Lupa Token Form Anda?</p>
                 </div>
                 <div class="modal-action">
@@ -123,6 +124,8 @@
             </div>
         </label>
     </label>
+
+    
 @endsection
 
 @push('script')
