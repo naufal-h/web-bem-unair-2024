@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="{{ $theme }}" class="{{ $theme }}">
+{{-- <html lang="en" data-theme="{{ $theme }}" class="{{ $theme }}"> --}}
+<html lang="en" data-theme="light" class="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BEM 2022</title>
-    {{-- @vite('resources/css/app.css') --}}
-    <link rel="stylesheet" href="{{ asset('build/assets/app-DazU-V9Y.css') }}">
+    <title>BEM 2024</title>
+    @vite('resources/css/app.css')
+    {{-- <link rel="stylesheet" href="{{ asset('/resources/css/app.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('build/assets/app-DazU-V9Y.css') }}"> --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"

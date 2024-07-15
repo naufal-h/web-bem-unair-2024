@@ -21,44 +21,48 @@ export const FirstSectionStyled = styled.div`
         animation: two 15s infinite;
     }
     .bg-shape1 {
-        width: 500px;
-        height: 500px;
+    z-index: -1;
+        width: 400px;
+        height: 300px;
         border-radius: 50%;
         position: relative;
-        animation: one 15s infinite ease-in-out;
+        top: -350px;
+        // animation: one 15s infinite ease-in-out;
     }
     
     .bg-shape3 {
-        width: 500px;
-        height: 500px;
+    z-index: -1;
+        width: 450px;
+        height: 350px;
         border-radius: 50%;
         position: relative;
-        animation: three 15s infinite ease-in-out;
+        top: -300px;
+        // animation: three 15s infinite ease-in-out;
     }
     
-    @keyframes one {
-        0% { top: 0px; }
-        12.5% { top: 35px; }
-        25% { top: 70px; }
-        37.5% { top: 105px; }
-        50% { top: 350px; }
-        62.5% { top: 105px; }
-        75% { top: 70px; }
-        87.5% { top: 35px; }
-        100% { top: 0px; }
-    }
+    // @keyframes one {
+    //     0% { top: 0px; }
+    //     12.5% { top: 35px; }
+    //     25% { top: 70px; }
+    //     37.5% { top: 105px; }
+    //     50% { top: 350px; }
+    //     62.5% { top: 105px; }
+    //     75% { top: 70px; }
+    //     87.5% { top: 35px; }
+    //     100% { top: 0px; }
+    // }
     
-    @keyframes three {
-        0% { top: 350px; }
-        12.5% { top: 290px; }
-        25% { top: 230px; }
-        37.5% { top: 170px; }
-        50% { top: 0px; }
-        62.5% { top: 170px; }
-        75% { top: 230px; }
-        87.5% { top: 290px; }
-        100% { top: 350px; }
-    }
+    // @keyframes three {
+    //     0% { top: 350px; }
+    //     12.5% { top: 290px; }
+    //     25% { top: 230px; }
+    //     37.5% { top: 170px; }
+    //     50% { top: 0px; }
+    //     62.5% { top: 170px; }
+    //     75% { top: 230px; }
+    //     87.5% { top: 290px; }
+    //     100% { top: 350px; }
+    // }
     
     
     @keyframes two {
