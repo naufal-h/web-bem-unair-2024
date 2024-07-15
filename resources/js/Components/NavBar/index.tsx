@@ -9,8 +9,16 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "@mui/material";
+// import { Link } from "@inertiajs/react";
 
-const pages = ["Beranda", "Tentang Kami", "Artikel", "SOP", "Form Generator"];
+const pages = [
+    { name: "BERANDA", href: "landing" },
+    { name: "TENTANG KAMI", href: "#" },
+    { name: "ARTIKEL", href: "/artikel" },
+    { name: "SOP", href: "#" },
+    { name: "FORM GENERATOR", href: "/form/create" },
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -37,11 +45,10 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="sticky" sx={{ 
-            backgroundColor: "white",
-         }}>
+        <AppBar position="sticky" sx={{ backgroundColor: "white" }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
+                    {/* Logo */}
                     <Box
                         component="img"
                         src="/images/logo/logo.png"
@@ -49,16 +56,26 @@ function ResponsiveAppBar() {
                             height: "100px",
                             overflow: "hidden",
                             display: { xs: "none", md: "flex" },
+                            marginRight: 2,
                         }}
-                    ></Box>
+                    />
 
-                    {/* burger */}
+                    {/* Burger menu */}
                     <Box
                         sx={{
                             flexGrow: 1,
                             display: { xs: "flex", md: "none" },
+                            justifyContent: "space-between",
                         }}
                     >
+                        <Box
+                            component="img"
+                            src="/images/logo/logo.png"
+                            sx={{
+                                height: "100px",
+                                display: { xs: "flex", md: "none" },
+                            }}
+                        />
                         <IconButton
                             size="large"
                             aria-label="account of current user"
@@ -88,56 +105,72 @@ function ResponsiveAppBar() {
                         >
                             {pages.map((page) => (
                                 <MenuItem
-                                    key={page}
+                                    key={page.name}
                                     onClick={handleCloseNavMenu}
                                 >
                                     <Typography
+                                        component={Link}
+                                        href={page.href}
                                         sx={{
                                             fontFamily: "Open Sans",
+                                            textDecoration: "none",
+                                            color: "inherit",
                                         }}
                                         textAlign="center"
                                     >
-                                        {page}
+                                        {page.name}
                                     </Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
                     </Box>
 
-                    {/* normal display */}
-                    <Box
-                        component="img"
-                        sx={{
-                            height: "100px",
-                            display: { xs: "flex", md: "none" },
-                        }}
-                        src="/images/logo/logo.png"
-                    ></Box>
+                    {/* Normal display */}
                     <Box
                         sx={{
                             flexGrow: 1,
                             display: { xs: "none", md: "flex" },
                             justifyContent: "center",
-                            
                         }}
                     >
                         {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{
-                                    fontWeight: "medium",
-                                    fontSize: "1rem",
-                                    fontFamily: "Open Sans",
-                                    my: 2,
-                                    mx: 3,
-                                    color: "black",
-                                    display: "block",
-                                }}
-                            >
-                                {page}
-                            </Button>
+                            <Link key={page.name} href={page.href} sx={{
+                                        fontWeight: "medium",
+                                        fontSize: "1rem",
+                                        fontFamily: "Open Sans",
+                                        my: 2,
+                                        // mx: 3,
+                                        color: "black",
+                                        display: "block",
+                                        textDecoration: 'none',
+                                        paddingX:"28px"
+                                    }}>
+                                        {page.name}   
+                            </Link>
                         ))}
+                        
+
+                        {/* <Link href="/form/create" sx={{ 
+                            textDecoration: 'none',
+                            color: 'black',
+                         }}> Testtt</Link>  */}
+                        {/* {pages.map((page) => (
+                            <Link key={page.name} href={page.href} style={{ textDecoration: 'none' }}>
+                                <Button
+                                    sx={{
+                                        fontWeight: "medium",
+                                        fontSize: "1rem",
+                                        fontFamily: "Open Sans",
+                                        my: 2,
+                                        mx: 3,
+                                        color: "black",
+                                        display: "block",
+                                    }}
+                                >
+                                    {page.name}
+                                </Button>
+                            </Link>
+                        ))} */}
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
@@ -174,4 +207,5 @@ function ResponsiveAppBar() {
         </AppBar>
     );
 }
+
 export default ResponsiveAppBar;

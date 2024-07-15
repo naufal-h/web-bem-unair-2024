@@ -53,7 +53,7 @@ Route::get('/test', function () {
 
 Route::get('/test-blade', function () {
     return 'testing';
-});
+})->name('test.blade');
 
 
 

@@ -3,6 +3,8 @@ import React from "react";
 import * as S from "./FirstSectionStyled";
 import SwiperControls from "@/Components/Swiper/SwiperControls";
 import KeenSliderWrapper from "@/Components/Swiper/keen-slider";
+import { Link } from "@inertiajs/react";
+
 
 export type ImageTypeSwiper = {
     image: string;
@@ -88,6 +90,10 @@ const FirstSection = () => {
                 </div>
                 {/* <div className="trapezium"></div> */}
             </S.FirstSectionStyled>
+
+            <Box>
+                <Link href="/form/create">Testt</Link>
+            </Box>
         </Box>
     );
 };

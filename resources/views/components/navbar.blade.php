@@ -6,7 +6,7 @@
                     <img src="{{ asset('images/logo/logo.png') }}" alt="BEM UNAIR 2024" class="h-10" style="height: 100px">
                 </a>
             </div>
-            <div class="flex space-x-4 justify-center font-semibold" id="text-navbar" style="width: 80%; font-family:'Open Sans'; font-size: 1rem; padding-left: 8.5%" >
+            <div class="flex space-x-4 justify-center font-semibold" id="text-navbar" style="width: 80%; font-family:'Open Sans'; font-size: 1rem; padding-left: 8.5%; padding-right: 8.5%" >
                 <a href="{{route('landing')}}" class="text-gray-800 hover:text-gray-600 px-7">BERANDA</a>
                 <a href="#" class="text-gray-800 hover:text-gray-600 px-7">TENTANG KAMI</a>
                 <a href="{{route('article.client.index')}}" class="text-gray-800 hover:text-gray-600 px-7">ARTIKEL</a>
