@@ -1,5 +1,7 @@
 <?php
 
+
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ProfileController;
@@ -55,6 +57,8 @@ Route::get('/test-blade', function () {
     return 'testing';
 })->name('test.blade');
 
+
+Route::get('/About', [AboutController::class, 'index']);
 
 
 

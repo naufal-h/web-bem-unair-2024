@@ -13,8 +13,8 @@ import { Link } from "@mui/material";
 // import { Link } from "@inertiajs/react";
 
 const pages = [
-    { name: "BERANDA", href: "landing" },
-    { name: "TENTANG KAMI", href: "#" },
+    { name: "BERANDA", href: "/" },
+    { name: "TENTANG KAMI", href: "/About" },
     { name: "ARTIKEL", href: "/artikel" },
     { name: "SOP", href: "#" },
     { name: "FORM GENERATOR", href: "/form/create" },
