@@ -88,12 +88,8 @@ const FirstSection = () => {
                     <div className="bg-shape1 opacity-50 bg-blur"></div>
                     <div className="bg-shape3 opacity-50 bg-blur"></div>
                 </div>
-                {/* <div className="trapezium"></div> */}
             </S.FirstSectionStyled>
 
-            <Box>
-                <Link href="/form/create">Testt</Link>
-            </Box>
         </Box>
     );
 };
