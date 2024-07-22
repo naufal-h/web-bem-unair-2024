@@ -1,3 +1,4 @@
+import exp from "constants";
 import styled from "styled-components";
 
 export const BannerBottom = styled.div`
@@ -6,7 +7,7 @@ export const BannerBottom = styled.div`
 
 
 export const GlowingBlur = styled.div`
-overflow: hidden;
+// overflow: hidden;
     width: 100%;
     position: relative;
     .gradient-color {
@@ -35,7 +36,7 @@ overflow: hidden;
     border-radius: 50%;
     position: relative;
     // right: 100px;
-    top: -1000px;
+    top: -1200px;
     // animation: one 15s infinite ease-in-out;
     }
     
@@ -48,7 +49,7 @@ overflow: hidden;
         position: relative;
         //    transform: translate(-50%, -50%);
         // left: 100px;
-        top: -1000px;
+        top: -1200px;
         // animation: three 15s infinite ease-in-out;
     }
     
@@ -107,9 +108,33 @@ overflow: hidden;
 
 `
 
-export const StartOne = styled.div`
+export const StarOne = styled.div`
     top: 90px;
     right: 500px;
     position: absolute;
     z-index: 5;
+`
+export const StarTwo = styled.div`
+    top: 320px;
+    left: 500px;
+    position: absolute;
+    z-index: 5;
+`
+
+export const StarThree = styled.div`
+    top: 250px;
+    right: 520px;
+    position: absolute;
+    z-index: 5;
+`
+
+export const StarFour = styled.div`
+    width: 100%;
+    z-index: 5;
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 100px;
 `
