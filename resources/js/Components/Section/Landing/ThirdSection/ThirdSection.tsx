@@ -43,7 +43,6 @@ const ThirdSection = () => {
                             <CardNews />
                             </Grid>
                     </Grid>
-                    
                 </S.CardSectionStyled>
             </Box>
         </>

@@ -143,4 +143,9 @@ class ArticleController extends Controller
         return redirect()->route('article.index')
             ->with('success', 'Article published status changed successfully');
     }
+    
+
+    public function inertiaPage() {
+        return Inertia('Article');
+    }
 }

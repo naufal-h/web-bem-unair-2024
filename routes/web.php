@@ -59,6 +59,7 @@ Route::get('/test-blade', function () {
 
 
 Route::get('/About', [AboutController::class, 'index'])->name('about.index');
+Route::get('/ArticleTest', [ArticleController::class, 'inertiaPage'])->name('article.index');
 
 
 
