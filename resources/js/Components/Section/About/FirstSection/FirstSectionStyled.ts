@@ -11,14 +11,12 @@ export const GlowingBlur = styled.div`
     width: 100%;
     position: relative;
     .gradient-color {
-    // overflow: hidden;
+    overflow: hidden;
     width: 100%;
-        position: absolute;
-        // top: 50px !important;
-        // inset: 0px !important;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
     }
     
     .bg-shape2{
@@ -42,17 +40,15 @@ export const GlowingBlur = styled.div`
     
     .bg-shape3 {
         z-index: 99;
-        // overflow: hidden;
+        overflow: hidden;
         width: 650px;
         height: 650px;
         border-radius: 50%;
         position: relative;
-        //    transform: translate(-50%, -50%);
-        // left: 100px;
-        top: -1200px;
-        // animation: three 15s infinite ease-in-out;
+        top: -350px;
     }
-    
+
+
     // @keyframes one {
     //     0% { top: 0px; }
     //     12.5% { top: 35px; }
@@ -103,27 +99,28 @@ export const GlowingBlur = styled.div`
     }
 
     .bg-shape3 {
-        background: #3089E7;
+        background: #0770DF;
     }
 
 `
 
 export const StarOne = styled.div`
-    top: 90px;
-    right: 500px;
+    scale: 0.75;
+    top: 130px;
+    right: 460px;
     position: absolute;
     z-index: 5;
 `
 export const StarTwo = styled.div`
     top: 320px;
-    left: 500px;
+    left: 450px;
     position: absolute;
     z-index: 5;
 `
 
 export const StarThree = styled.div`
-    top: 250px;
-    right: 520px;
+    top: 260px;
+    right: 500px;
     position: absolute;
     z-index: 5;
 `

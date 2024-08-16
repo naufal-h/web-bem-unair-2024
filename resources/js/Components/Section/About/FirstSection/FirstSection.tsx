@@ -1,143 +1,125 @@
-import React from 'react';
-import { useSpring, animated } from '@react-spring/web';
-import { Box, Typography } from '@mui/material';
-import * as S from './FirstSectionStyled';
-import StarIcon from '@/Components/Icons/svg/StarOne';
-import { Opacity } from '@mui/icons-material';
+import { useSpring, animated } from "@react-spring/web";
+import { Box, Typography } from "@mui/material";
+import * as S from "./FirstSectionStyled";
+
 
 const FirstSection = () => {
-  const sparklingAnimation = useSpring({
-    loop: true, // Ensure the animation continues indefinitely
-    from: { opacity: 0.5, transform: 'scale(0.75)' },
-    to: [
-        { opacity: 1, transform: 'scale(0.85)' },
-        { opacity: 0.5, transform: 'scale(0.75)' }
-    ],
-    config: { duration: 2000 },
-});
-  const sparklingAnimationSec = useSpring({
-    loop: true, // Ensure the animation continues indefinitely
-    from: { opacity: 1, transform: 'scale(0.75)' },
-    to: [
-        { opacity: 0.5, transform: 'scale(0.85)' },
-        { opacity: 1, transform: 'scale(0.75)' }
-    ],
-    config: { duration: 2000 },
-});
+    const sparklingAnimation = useSpring({
+        loop: true, // Ensure the animation continues indefinitely
+        from: { opacity: 0.5, transform: "scale(0.75)" },
+        to: [
+            { opacity: 1, transform: "scale(0.85)" },
+            { opacity: 0.5, transform: "scale(0.75)" },
+        ],
+        config: { duration: 2000 },
+    });
+    const sparklingAnimationSec = useSpring({
+        loop: true, // Ensure the animation continues indefinitely
+        from: { opacity: 1, transform: "scale(0.75)" },
+        to: [
+            { opacity: 0.5, transform: "scale(0.85)" },
+            { opacity: 1, transform: "scale(0.75)" },
+        ],
+        config: { duration: 2000 },
+    });
 
-const starAnimation = useSpring({
-    loop: true, // Ensure the animation continues indefinitely
-    from: { opacity: 1, top: 0 },
-    to: [
-      { opacity: 0, top: 600 },
-      { opacity: 1, top: 0 },
-    ],
-    config: { duration: 7000 },
-  });
-  
+    const starAnimation = useSpring({
+        loop: true, // Ensure the animation continues indefinitely
+        from: { opacity: 1, top: -250 },
+        to: [
+            { opacity: 0, top: 609 },
+            { opacity: 1, top: -250 },
+        ],
+        config: { duration: 9000 },
+    });
+
     return (
         <>
             <Box
                 component="section"
                 sx={{
-                    width: '100%',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    flexDirection: 'column',
-                    overflow: 'hidden',
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    flexDirection: "column",
+                    overflow: "hidden",
+                    marginBottom: "1rem",
                 }}
             >
+                <S.GlowingBlur>
+                <div className="gradient-color">
+                    <div className="bg-shape3 opacity-50 bg-blur " style={{ left: "-250px" }}></div>
+                    <div className="bg-shape3 opacity-50 bg-blur " style={{ right: "-450px" }}></div>
+                </div>
+            </S.GlowingBlur>
                 <Box
                     component="div"
                     sx={{
-                        width: '100%',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flexDirection: 'column',
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        flexDirection: "column",
                     }}
                 >
                     <img
                         src="/images/logo/Logo_Bem.png"
-                        style={{ maxWidth: '32%' }}
+                        style={{ maxWidth: "32%" }}
                         alt="Logo"
                     />
                     <Box
                         sx={{
-                            width: '100%',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            marginTop: '-15rem',
-                            marginBottom: '4rem',
+                            width: "100%",
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            justifyContent: "center",
                         }}
                     >
-                        <Typography
+                        {/* <Typography
                             variant="h1"
                             sx={{
-                                color: '#000',
-                                fontSize: '2.5rem',
-                                textAlign: 'center',
-                                fontFamily: 'Open Sans',
-                                fontWeight: 600,
-                                bottom: '200px',
-                                transform: 'translateY(160px)',
+                                color: "#000",
+                                fontSize: "2.5rem",
+                                textAlign: "center",
+                                fontFamily: "Open Sans",
+                                fontWeight: 900,
+                                WebkitTextStroke: '2.5px #fff', // Adds a white stroke around the text
+                                WebkitTextFillColor: '#000', // Ensures the text fill color remains black
+                                filter: "blur(0.5px)", // Slight blur to soften the edges of the shadow
+                                textShadow: '0px 0px 20px #3089E7, 0px 0px 5px rgba(0,0,0,0.7)',
+                                padding: "10px 20px",
+                                borderRadius: "8px",
                             }}
                         >
                             Gerak Progresif <br /> Ciptakan Asa
-                        </Typography>
-                        <img
-                            src="/images/banner-bottom.png"
-                            alt="banner"
-                            style={{
-                                width: '85%',
-                                zIndex: 1,
-                            }}
-                        />
+                        </Typography> */}
                     </Box>
                 </Box>
+            
             </Box>
-            <S.GlowingBlur>
-                <div className="gradient-color">
-                    <div className="bg-shape1 opacity-50 bg-blur"></div>
-                    <div className="bg-shape3 opacity-50 bg-blur"></div>
-                </div>
-            </S.GlowingBlur>
             <S.StarOne>
                 <animated.img
                     src="/images/starOne.png"
                     alt="StarOne"
-                    style={{ width: '100%', ...sparklingAnimation }}
+                    style={{ width: "100%", ...sparklingAnimation }}
                 />
             </S.StarOne>
             <S.StarTwo>
                 <animated.img
                     src="/images/secondStar.png"
                     alt="StarOne"
-                    style={{ width: '100%', ...sparklingAnimation }}
+                    style={{ width: "100%", ...sparklingAnimation }}
                 />
             </S.StarTwo>
             <S.StarThree>
                 <animated.img
                     src="/images/thirdStar.png"
                     alt="StarOne"
-                    style={{ width: '100%', ...sparklingAnimationSec }}
+                    style={{ width: "100%", ...sparklingAnimationSec }}
                 />
             </S.StarThree>
-            <S.StarFour>
-                <animated.img
-                    src="/images/sparkling.png"
-                    alt="StarOne"
-                    style={{position:'relative',  ...starAnimation }}
-                />
-                <animated.img
-                    src="/images/sparkling.png"
-                    alt="StarOne"
-                    style={{position:'relative',  ...starAnimation }}
-                />
-            </S.StarFour>
         </>
     );
 };

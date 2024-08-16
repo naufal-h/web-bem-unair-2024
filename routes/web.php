@@ -58,7 +58,7 @@ Route::get('/test-blade', function () {
 })->name('test.blade');
 
 
-Route::get('/About', [AboutController::class, 'index']);
+Route::get('/About', [AboutController::class, 'index'])->name('about.index');
 
 
 
