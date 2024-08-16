@@ -4,6 +4,7 @@
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\SOPController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -60,6 +61,7 @@ Route::get('/test-blade', function () {
 
 Route::get('/About', [AboutController::class, 'index'])->name('about.index');
 Route::get('/ArticleTest', [ArticleController::class, 'inertiaPage'])->name('article.index');
+Route::get('/SopTest', [SOPController::class, 'index'])->name('sop.index');
 
 
 
