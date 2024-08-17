@@ -21,7 +21,7 @@ const CardAnggota = ({ image, title, text }: CardAnggotaProps) => {
         minWidth: "100px",
         backgroundColor: "#FFF9F9",
         // backgroundColor: "rgba(122,45,52,0.12)",
-        borderRadius: "20px", 
+        borderRadius: "10px", 
         display: "flex",
         flexDirection: "column",
         transition: "background-color 0.3s, transform 0.3s",

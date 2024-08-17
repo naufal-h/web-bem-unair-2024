@@ -10,4 +10,8 @@ class StrukturController extends Controller
     public function index() {
         return Inertia::render('Struktur');
     }
+
+    public function kementrian() {
+        return Inertia::render('Kementrian');
+    }
 }

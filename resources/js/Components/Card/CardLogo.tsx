@@ -19,7 +19,7 @@ const CardLogo = ({ image, text }: CardLogoProps) => {
         width: "250px",
         minWidth: "100px",
         backgroundColor: "rgba(122,45,52,0.12)",
-        borderRadius: "20px",
+        borderRadius: "10px",
         display: "flex",
         flexDirection: "column",
         transition: "background-color 0.3s, transform 0.3s",

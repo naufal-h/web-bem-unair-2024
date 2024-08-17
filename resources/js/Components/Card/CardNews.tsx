@@ -30,7 +30,7 @@ const CardNews: React.FC<CardNewsProps> = ({
         <Card
             sx={{
                 backgroundColor: "#FFF9F9",
-                borderRadius: "20px",
+                borderRadius: "10px",
                 padding: "1rem",
                 display: "flex",
                 flexDirection: "column",

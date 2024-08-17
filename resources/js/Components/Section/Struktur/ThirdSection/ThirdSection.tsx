@@ -5,7 +5,7 @@ type KementrianContentType = {
     image: string;
     title: string;
     text: string;
-    link:string;
+    link: string;
 };
 
 const KementrianContent: KementrianContentType[] = [
@@ -13,7 +13,7 @@ const KementrianContent: KementrianContentType[] = [
         image: "/images/logo/Logo-mini.png",
         title: `Kementrian Lorem Ipsum`,
         text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure. Ullamco et ullamco reprehenderit in nisi irure ex laborum.",
-        link: `/#`,
+        link: `/Struktur/Kementrian`,
     },
     {
         image: "/images/logo/Logo-mini.png",
@@ -37,7 +37,28 @@ const KementrianContent: KementrianContentType[] = [
 
 const ThirdSection = () => {
     return (
-        <Box sx={{ width: "100%", padding: "2rem" }}>
+        <Box
+            sx={{
+                width: "100%",
+                padding: "2rem",
+                position: "relative", // Set relative for absolute positioning of the typography image
+            }}
+        >
+            {/* Teks vertikal yang berada di sebelah kanan */}
+            <Box
+                component="img"
+                src="/images/typography/Asa_pro.svg"
+                alt="Logo"
+                sx={{
+                    position: "absolute",
+                    right: "2%",  // Letakkan di sisi kanan
+                    top: "20%",  // Adjust to vertically align with content
+                    height: "75%",  // Adjust height as needed
+                    zIndex: 1,  // Set to 1 so cards will be on top
+                }}
+            />
+
+            {/* Bagian kartu di tengah */}
             <Box
                 sx={{
                     width: "100%",
@@ -46,6 +67,8 @@ const ThirdSection = () => {
                     alignItems: "center",
                     flexDirection: "column",
                     gap: "5rem",
+                    position: "relative",  // Relative to ensure zIndex works
+                    zIndex: 2,  // Higher than the text to appear on top
                 }}
             >
                 {KementrianContent.map((content, index) => (
