@@ -29,7 +29,6 @@ type LogoContentType = {
 
 
 
-
 const SecondSection = () => {
     return (
         <Box sx={{ 
@@ -39,6 +38,7 @@ const SecondSection = () => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
+            marginY: "4rem",
          }}>
             <Typography
                             variant="h1"
@@ -59,13 +59,11 @@ const SecondSection = () => {
                         >
                             FILOSOFI LOGO
                         </Typography>
-        {/* <CardSectionStyled> */}
           <Box display="flex" justifyContent="space-around" flexWrap="wrap" gap={4}>
             {LogoContent.map((logo, index) => (
                 <CardLogo key={index} image={logo.image} text={logo.text} />
             ))}
           </Box>
-        {/* </CardSectionStyled> */}
     </Box>
       );
 }

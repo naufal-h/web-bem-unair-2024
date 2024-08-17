@@ -47,12 +47,6 @@ const FirstSection = () => {
                     marginBottom: "1rem",
                 }}
             >
-                {/* <S.GlowingBlur>
-                <div className="gradient-color">
-                    <div className="bg-shape3 opacity-50 bg-blur " style={{ left: "-250px" }}></div>
-                    <div className="bg-shape3 opacity-50 bg-blur " style={{ right: "-450px" }}></div>
-                </div>
-            </S.GlowingBlur> */}
                 <Box
                     component="div"
                     sx={{
@@ -77,7 +71,6 @@ const FirstSection = () => {
                             justifyContent: "center",
                         }}
                     >
-
                     </Box>
                 </Box>
             

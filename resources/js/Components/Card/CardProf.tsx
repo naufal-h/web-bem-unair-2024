@@ -74,9 +74,7 @@ const CardProf = ({ direction = "left" }) => {
                         variant="body2"
                         color="text.secondary"
                     >
-                        Lizards are a widespread group of squamate reptiles,
-                        with over 6,000 species, ranging across all continents
-                        except Antarctica
+                        Sint cillum minim aliquip aliquip et Lorem voluptate laborum aute est sint est do. Reprehenderit irure sit pariatur laborum occaecat fugiat qui magna eu pariatur do. Do tempor occaecat voluptate adipisicing reprehenderit cillum culpa eu.
                     </Typography>
                 </CardContent>
             </Card>

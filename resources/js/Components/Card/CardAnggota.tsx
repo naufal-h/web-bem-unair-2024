@@ -6,25 +6,27 @@ import Box from "@mui/material/Box";
 
 // ** Custom Components Imports
 
-type CardLogoProps = {
+type CardAnggotaProps = {
   image: string;
+  title:string;
   text: string;
 };
 
-const CardLogo = ({ image, text }: CardLogoProps) => {
+const CardAnggota = ({ image, title, text }: CardAnggotaProps) => {
   return (
     <Card
       sx={{
         maxWidth: "350px",
         width: "250px",
         minWidth: "100px",
-        backgroundColor: "rgba(122,45,52,0.12)",
-        borderRadius: "20px",
+        backgroundColor: "#FFF9F9",
+        // backgroundColor: "rgba(122,45,52,0.12)",
+        borderRadius: "20px", 
         display: "flex",
         flexDirection: "column",
         transition: "background-color 0.3s, transform 0.3s",
         "&:hover": {
-          backgroundColor: "#9A3935",
+          backgroundColor: "#7A2D35",
           transform: "scale(1.02)",
           "& .headline-text": {
             color: "#850E09",
@@ -51,13 +53,29 @@ const CardLogo = ({ image, text }: CardLogoProps) => {
         <Typography
           className="headline-text"
           sx={{
+            fontSize: "2rem",
+            width: "100%",
+            color: "#7A2D35",
+            // fontWeight: "bold",
+            fontFamily: "open sans",
+            transition: "color 0.3s",
+            fontWeight: "bold",
+          }}
+          
+        >
+          {title}
+        </Typography>
+        <Typography
+          className="headline-text"
+          sx={{
+            fontSize: "1rem",
             width: "100%",
             color: "#D0757D",
-            fontWeight: "bold",
-            fontFamily: "Sansation",
+            // fontWeight: "bold",
+            fontFamily: "montserrat",
             transition: "color 0.3s",
           }}
-          variant="h6"
+          
         >
           {text}
         </Typography>
@@ -66,4 +84,4 @@ const CardLogo = ({ image, text }: CardLogoProps) => {
   );
 };
 
-export default CardLogo;
+export default CardAnggota;

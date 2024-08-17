@@ -1,7 +1,27 @@
 import CardProf from "@/Components/Card/CardProf";
 import { Box, Typography } from "@mui/material";
 
-const MainSection = () => {
+type LogoContentType = {
+    image: string;
+    text: string;
+};
+
+const LogoContent: LogoContentType[] = [
+    {
+        image: "/images/cards/real-pip.png",
+        text: `“Sint pariatur nulla commodo cupidatat non Lorem enim velit ex sit occaecat mollit elit nisi. Voluptate occaecat cillum consequat laboris incididunt dolore est enim ut quis. Aute anim elit nostrud sunt labore. Laborum nulla elit laboris deserunt occaecat eu elit.”`,
+    },
+    {
+        image: "/images/cards/real-pip.png",
+        text: `“Sint pariatur nulla commodo cupidatat non Lorem enim velit ex sit occaecat mollit elit nisi. Voluptate occaecat cillum consequat laboris incididunt dolore est enim ut quis. Aute anim elit nostrud sunt labore. Laborum nulla elit laboris deserunt occaecat eu elit.”`,
+    },
+    {
+        image: "/images/cards/real-pip.png",
+        text: `“Sint pariatur nulla commodo cupidatat non Lorem enim velit ex sit occaecat mollit elit nisi. Voluptate occaecat cillum consequat laboris incididunt dolore est enim ut quis. Aute anim elit nostrud sunt labore. Laborum nulla elit laboris deserunt occaecat eu elit.”`,
+    },
+];
+
+const FirstSection = () => {
     return (
         <Box
             sx={{
@@ -10,6 +30,7 @@ const MainSection = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
+                marginY: "4rem",
             }}
         >
             <Box
@@ -69,4 +90,4 @@ const MainSection = () => {
     );
 };
 
-export default MainSection;
+export default FirstSection;
