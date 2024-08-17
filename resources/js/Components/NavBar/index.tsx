@@ -143,36 +143,16 @@ function ResponsiveAppBar() {
                                         color: "black",
                                         display: "block",
                                         textDecoration: 'none',
-                                        paddingX:"28px"
+                                        paddingX:"28px",
+                                        transition: "all0.3sease", // Transisiuntukefeksmooth
+                                        '&:hover': {
+                                            opacity:0.8, // Mengubahopacitysaatdihoveroutline: "2pxsolid #000", // Menambahkanoutlinesaatdihover
+                                        },
                                     }}>
                                         {page.name}   
                             </Link>
                         ))}
-                        
-
-                        {/* <Link href="/form/create" sx={{ 
-                            textDecoration: 'none',
-                            color: 'black',
-                         }}> Testtt</Link>  */}
-                        {/* {pages.map((page) => (
-                            <Link key={page.name} href={page.href} style={{ textDecoration: 'none' }}>
-                                <Button
-                                    sx={{
-                                        fontWeight: "medium",
-                                        fontSize: "1rem",
-                                        fontFamily: "Open Sans",
-                                        my: 2,
-                                        mx: 3,
-                                        color: "black",
-                                        display: "block",
-                                    }}
-                                >
-                                    {page.name}
-                                </Button>
-                            </Link>
-                        ))} */}
                     </Box>
-
                     <Box sx={{ flexGrow: 0 }}>
                         <Menu
                             sx={{ mt: "45px" }}

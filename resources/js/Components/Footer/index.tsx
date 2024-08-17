@@ -9,7 +9,7 @@ const FooterSection = () => {
                     width: "90%",
                     height: "420px",
                     position: "relative",
-                    backgroundColor: "#4AA2FF",
+                    backgroundColor: "#850E09",
                     borderRadius: "20px",
                     maxWidth: "1600px",
                 }}
@@ -26,7 +26,7 @@ const FooterSection = () => {
                     <S.LogoContainer>
                         <img src="/images/logo/mark_white.png" alt="Logo" />
                     </S.LogoContainer>
-                    <S.FooterImage src="/images/footer/Vector (3).png" alt="" />
+                    <S.FooterImage src="/images/footer/Vector_3.png" alt="" />
                     <Box
                         sx={{
                             zIndex: 2,
