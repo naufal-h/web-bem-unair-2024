@@ -16,7 +16,8 @@ const pages = [
     { name: "BERANDA", href: "/" },
     { name: "TENTANG KAMI", href: "/About" },
     { name: "ARTIKEL", href: "/artikel" },
-    { name: "SOP", href: "#" },
+    { name: "SOP", href: "/Sop" },
+    { name: "STRUKTUR ORGANISASI", href: "/Struktur" },
     { name: "FORM GENERATOR", href: "/form/create" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];

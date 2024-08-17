@@ -17,7 +17,7 @@ const CardNews = () => {
     return (
         <Card
             sx={{
-                backgroundColor: "#FFE7E9",
+                backgroundColor: "#FFF9F9",
                 borderRadius: "20px",
                 padding: "1rem",
                 display: "flex",
@@ -27,13 +27,13 @@ const CardNews = () => {
                 transition: "background-color 0.3s, transform 0.3s",
                 '&:hover': {
                     // borderBottomLeftRadius: "25%",
-                    backgroundColor: "#D0757D",
+                    backgroundColor: "#9A3935",
                     transform: "scale(1.02)",
                     '& .headline-text': {
-                        color: "#FFE7E9",
+                        color: "#850E09",
                     },
                     '& .description-text': {
-                        color: "#FFE7E9",
+                        color: "#850E09",
                     }
                 }
             }}

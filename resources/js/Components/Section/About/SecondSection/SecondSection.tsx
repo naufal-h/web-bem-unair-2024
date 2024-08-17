@@ -34,7 +34,7 @@ const SecondSection = () => {
     return (
         <Box sx={{ 
             width: "100%",
-            height: "100vh",
+            height: "100%",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -43,28 +43,29 @@ const SecondSection = () => {
             <Typography
                             variant="h1"
                             sx={{
-                                color: "#3089E7",
+                                color: "#850E09",
                                 fontSize: "2.5rem",
                                 textAlign: "center",
                                 fontFamily: "Open Sans",
                                 fontWeight: 900,
                                 WebkitTextStroke: '2.5px #fff', // Adds a white stroke around the text
-                                WebkitTextFillColor: '#3089E7', // Ensures the text fill color remains black
+                                WebkitTextFillColor: '#850E09', // Ensures the text fill color remains black
                                 filter: "blur(0.5px)", // Slight blur to soften the edges of the shadow
-                                textShadow: '0px 0px 20px #3089E7, 0px 0px 5px rgba(0,0,0,0.7)',
+                                textShadow: '0px 0px 20px #850E09, 0px 0px 5px rgba(0,0,0,0.7)',
                                 padding: "10px 20px",
                                 borderRadius: "8px",
+                                marginBottom: "3rem",
                             }}
                         >
                             FILOSOFI LOGO
                         </Typography>
-        <CardSectionStyled>
+        {/* <CardSectionStyled> */}
           <Box display="flex" justifyContent="space-around" flexWrap="wrap" gap={4}>
             {LogoContent.map((logo, index) => (
                 <CardLogo key={index} image={logo.image} text={logo.text} />
             ))}
           </Box>
-        </CardSectionStyled>
+        {/* </CardSectionStyled> */}
     </Box>
       );
 }

@@ -47,12 +47,12 @@ const FirstSection = () => {
                     marginBottom: "1rem",
                 }}
             >
-                <S.GlowingBlur>
+                {/* <S.GlowingBlur>
                 <div className="gradient-color">
                     <div className="bg-shape3 opacity-50 bg-blur " style={{ left: "-250px" }}></div>
                     <div className="bg-shape3 opacity-50 bg-blur " style={{ right: "-450px" }}></div>
                 </div>
-            </S.GlowingBlur>
+            </S.GlowingBlur> */}
                 <Box
                     component="div"
                     sx={{
@@ -77,24 +77,7 @@ const FirstSection = () => {
                             justifyContent: "center",
                         }}
                     >
-                        {/* <Typography
-                            variant="h1"
-                            sx={{
-                                color: "#000",
-                                fontSize: "2.5rem",
-                                textAlign: "center",
-                                fontFamily: "Open Sans",
-                                fontWeight: 900,
-                                WebkitTextStroke: '2.5px #fff', // Adds a white stroke around the text
-                                WebkitTextFillColor: '#000', // Ensures the text fill color remains black
-                                filter: "blur(0.5px)", // Slight blur to soften the edges of the shadow
-                                textShadow: '0px 0px 20px #3089E7, 0px 0px 5px rgba(0,0,0,0.7)',
-                                padding: "10px 20px",
-                                borderRadius: "8px",
-                            }}
-                        >
-                            Gerak Progresif <br /> Ciptakan Asa
-                        </Typography> */}
+
                     </Box>
                 </Box>
             

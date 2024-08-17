@@ -16,22 +16,22 @@ const CardLogo = ({ image, text }: CardLogoProps) => {
     <Card
       sx={{
         maxWidth: "350px",
-        width: "300px",
+        width: "250px",
         minWidth: "100px",
-        boxShadow: "0px 0px 15px 5px #C66E75", // Glowing shadow effect
-        backgroundColor: "#FFE7E9", // Background color for the card
+        // boxShadow: "0px 0px 15px 5px #C66E75", // Glowing shadow effect
+        backgroundColor: "#FFF9F9", // Background color for the card
         borderRadius: "20px", // Optional: rounding the corners
         display: "flex",
         flexDirection: "column",
         transition: "background-color 0.3s, transform 0.3s",
         "&:hover": {
-          backgroundColor: "#D0757D",
+          backgroundColor: "#9A3935",
           transform: "scale(1.02)",
           "& .headline-text": {
-            color: "#FFE7E9",
+            color: "#850E09",
           },
           "& .description-text": {
-            color: "#FFE7E9",
+            color: "#850E09",
           },
         },
       }}

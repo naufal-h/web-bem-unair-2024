@@ -13,6 +13,7 @@ use App\Http\Controllers\FormController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\RespondentController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StrukturController;
 use App\Http\Controllers\FeedbackController;
 use App\Http\Controllers\AuthController;
 
@@ -61,7 +62,8 @@ Route::get('/test-blade', function () {
 
 Route::get('/About', [AboutController::class, 'index'])->name('about.index');
 Route::get('/ArticleTest', [ArticleController::class, 'inertiaPage'])->name('article.index');
-Route::get('/SopTest', [SOPController::class, 'index'])->name('sop.index');
+Route::get('/Sop', [SOPController::class, 'index'])->name('sop.index');
+Route::get('/Struktur', [StrukturController::class, 'index'])->name('struktur.index');
 
 
 
