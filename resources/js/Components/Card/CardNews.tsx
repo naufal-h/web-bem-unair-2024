@@ -9,11 +9,23 @@ import CardMedia from "@mui/material/CardMedia";
 import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { Box, Fab } from "@mui/material";
+import { Box, Fab, Link } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-const CardNews = () => {
+interface CardNewsProps {
+    image: string;
+    title: string;
+    url: string;
+    content: string
+}
+
+const CardNews: React.FC<CardNewsProps> = ({
+    image,
+    title,
+    url,
+    content
+}) => {
     return (
         <Card
             sx={{
@@ -25,7 +37,7 @@ const CardNews = () => {
                 justifyContent: "space-between",
                 height: "100%",
                 transition: "background-color 0.3s, transform 0.3s",
-                '&:hover': {
+                "&:hover": {
                     // borderBottomLeftRadius: "25%",
                     backgroundColor: "#9A3935",
                     transform: "scale(1.02)",
@@ -56,30 +68,31 @@ const CardNews = () => {
                     }}
                     variant="h4"
                 >
-                    Headline Title
-                    news update
+                    {title}
                 </Typography>
                 <CardActions>
-                    <Fab
-                        sx={{
-                            backgroundColor: "#D0757D",
-                            transition: "background-color 0.3s",
-                            '&:hover': {
-                                backgroundColor: "#fff",
-                                '& .MuiSvgIcon-root': {
-                                    color: "#D0757D",
-                                },
-                            },
-                        }}
-                        aria-label="add"
-                    >
-                        <ArrowForwardIcon
+                    <Link href={url}>
+                        <Fab
                             sx={{
-                                color: "#fff",
-                                transition: "color 0.3s",
+                                backgroundColor: "#D0757D",
+                                transition: "background-color 0.3s",
+                                "&:hover": {
+                                    backgroundColor: "#fff",
+                                    "& .MuiSvgIcon-root": {
+                                        color: "#D0757D",
+                                    },
+                                },
                             }}
-                        />
-                    </Fab>
+                            aria-label="add"
+                        >
+                            <ArrowForwardIcon
+                                sx={{
+                                    color: "#fff",
+                                    transition: "color 0.3s",
+                                }}
+                            />
+                        </Fab>
+                    </Link>
                 </CardActions>
             </Box>
             <Divider
@@ -100,21 +113,21 @@ const CardNews = () => {
                         transition: "color 0.3s",
                     }}
                 >
-                    Computers have become ubiquitous in almost every facet of
-                    our lives. At work, desk jockeys spend hours in front of
-                    their desktops, while delivery people scan bar codes with
-                    handhelds and workers in the field stay in touch.
+                    <Box
+                    sx={{ marginTop: '1rem' }}
+                    dangerouslySetInnerHTML={{ __html: content }} // Use dangerouslySetInnerHTML here
+                />
                 </Typography>
             </CardContent>
             <CardMedia
                 component="img"
-                image="/images/cards/dummy-collab.png"
+                image={image}
                 alt="collab"
                 sx={{
                     borderRadius: "20px",
                     width: "100%",
-                    height: "auto",
-                    '&:hover': {
+                    height: "400px",
+                    "&:hover": {
                         // borderBottomLeftRadius: "30%",
                     },
                 }}

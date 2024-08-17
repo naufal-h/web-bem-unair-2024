@@ -17,11 +17,32 @@ import {
 } from "react";
 import CardNews from "@/Components/Card/CardNews";
 import * as S from "./MainSectionStyled";
+import { articleType } from "@/Pages/Article";
 
-const MainSection = ({ content }) => {
+interface MainSectionProps {
+    title: string;
+    published_at: string;
+    image1: string;
+    content: string; // Keep content as part of the props
+    slug?: string;
+    articles: articleType[];
+}
+
+const MainSection: React.FC<MainSectionProps> = ({
+    title,
+    published_at,
+    image1,
+    content,
+    slug,
+    articles,
+}) => {
     // Function to split the text into paragraphs
-    const paragraphs = content.split("\n\n");
-
+    // const paragraphs = content.split("\n\n");
+    const date = new Date(published_at)
+    const year = date.getFullYear();
+    const month = (`0${date.getMonth() + 1}`).slice(-2);  // Extract and format the month (0-based index)
+    const day = (`0${date.getDate()}`).slice(-2);
+    const time = published_at.split("T")[1].substring(0, 5);
     return (
         <Box
             sx={{
@@ -49,15 +70,15 @@ const MainSection = ({ content }) => {
                         gap: "1.5rem",
                     }}
                 >
-                    <Box
+                    {/* <Box
                         sx={{
                             display: "flex",
                             gap: "0.75rem",
                         }}
                     >
                         <PermIdentityIcon />
-                        <Typography>BEM UNAIR NEWS</Typography>
-                    </Box>
+                        <Typography>BEM UNAIR</Typography>
+                    </Box> */}
                     <Box
                         sx={{
                             display: "flex",
@@ -65,7 +86,7 @@ const MainSection = ({ content }) => {
                         }}
                     >
                         <CalendarMonthIcon />
-                        <Typography>Agustus, 01, 2024</Typography>
+                        <Typography>{date.toDateString()}</Typography>
                     </Box>
                     <Box
                         sx={{
@@ -74,7 +95,7 @@ const MainSection = ({ content }) => {
                         }}
                     >
                         <AccessTimeIcon />
-                        <Typography>12.00 pm</Typography>
+                        <Typography>{time}</Typography>
                     </Box>
                 </Box>
             </Box>
@@ -95,15 +116,15 @@ const MainSection = ({ content }) => {
                     variant="h1"
                     sx={{ fontWeight: "500", fontSize: "2.5rem" }}
                 >
-                    Lorem ipsum dolor.
+                    {title}
                 </Typography>
-                <Typography
+                {/* <Typography
                     variant="subtitle1"
                     sx={{ fontWeight: "500", fontSize: "1rem" }}
                 >
                     Lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum
                     lorem ipsum lorem ipsum lorem ipsum.
-                </Typography>
+                </Typography> */}
             </Box>
 
             {/* Article Content */}
@@ -113,23 +134,35 @@ const MainSection = ({ content }) => {
                     borderRadius: "12px",
                     padding: "5rem 2rem 2rem 2rem",
                     boxShadow: "0px 14px 80px rgba(34, 35, 58, 0.2)",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
                 }}
             >
                 <CardMedia
                     component="img"
-                    image="/images/cards/dummy-collab.png"
+                    image={image1}
                     sx={{
                         borderRadius: "6px",
-                        width: "100%",
-                        height: "auto",
-                        objectFit: "cover",
+                        // width: "50%",
+                        // height: "50%",
+                        objectFit: "fit-content",
+                        // scale: "0.5",
                         maxHeight: "500px",
+                        maxWidth: "500px",
                         backgroundColor: "rgba(0,0,0,0.08)",
                     }}
                 />
-                <CardContent>
+                <CardContent
+                    sx={{
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "start",
+                    }}
+                >
                     {/* Loop through each paragraph and render it */}
-                    {paragraphs.map(
+                    {/* {paragraphs.map(
                         (
                             paragraph:
                                 | string
@@ -144,11 +177,12 @@ const MainSection = ({ content }) => {
                                 | null
                                 | undefined
                         ) => (
-                            <Typography variant="body1" paragraph>
+                            <Typography variant="body1" paragraph >
                                 {paragraph}
                             </Typography>
                         )
-                    )}
+                    )} */}
+                    <Box dangerouslySetInnerHTML={{ __html: content }} />
                 </CardContent>
             </Card>
 
@@ -174,15 +208,17 @@ const MainSection = ({ content }) => {
                         spacing={{ xs: 2, md: 3 }}
                         columns={{ xs: 4, sm: 8, md: 12 }}
                     >
-                        <Grid item xs={2} sm={4} md={4}>
-                            <CardNews />
-                        </Grid>
-                        <Grid item xs={2} sm={4} md={4}>
-                            <CardNews />
-                        </Grid>
-                        <Grid item xs={2} sm={4} md={4}>
-                            <CardNews />
-                        </Grid>
+                        {articles.map((article) => (
+                            <Grid item xs={2} sm={4} md={4} key={article.slug}>
+                                <CardNews
+                                    content={article.content}
+                                    image={article.image1}
+                                    title={article.title}
+                                    // publishedAt={article.published_at}
+                                    url={`/artikel/${year}/${month}/${day}/${article.slug}`}
+                                />
+                            </Grid>
+                        ))}
                     </Grid>
                 </Box>
             </Box>

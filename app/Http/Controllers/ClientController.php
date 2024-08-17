@@ -51,7 +51,8 @@ class ClientController extends Controller
     {
         $articles = Article::where('publish_status', true)->latest('published_at')->get();
         foreach ($articles as $article) {
-            $text = strip_tags(str_replace('<', ' <', $article->content));
+            $text = strip_tags(str_replace(['&nbsp;', '<'], [' ', ' <'], $article->content));
+            // $text = trim(preg_replace('/\s+/', ' ', $text));
             $text = Str::limit($text, 250);
             $article->content = $text;
         };
@@ -67,8 +68,12 @@ class ClientController extends Controller
             ->firstOrFail();
         $article->viewer = $article->viewer + 1;
         $article->save();
-        $articles = Article::where('id', '!=', $article->id)->where('publish_status', true)->latest('published_at')->limit(5)->get();
-        return view('client.artikel.detail', compact('article', 'articles'));
+
+        $articles = Article::where('id', '!=', $article->id)->where('publish_status', true)
+        ->latest('published_at')->limit(5)->get();
+        
+        // return view('client.artikel.detail', compact('article', 'articles'));
+        return Inertia('Article',compact('article', 'articles'));
     }
 
     public function feature()

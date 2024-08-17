@@ -28,6 +28,7 @@ class ArticleController extends Controller
             'image2' => 'mimes:png,jpg,jpeg | max:5012',
             'image3' => 'mimes:png,jpg,jpeg | max:5012',
         ]);
+        // dd($request);
 
         $input = $request->all();
 
