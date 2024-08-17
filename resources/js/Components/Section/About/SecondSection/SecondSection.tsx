@@ -38,27 +38,40 @@ const SecondSection = () => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            marginY: "4rem",
+            marginBottom: "4rem",
          }}>
-            <Typography
-                            variant="h1"
-                            sx={{
-                                color: "#850E09",
-                                fontSize: "2.5rem",
-                                textAlign: "center",
-                                fontFamily: "Open Sans",
-                                fontWeight: 900,
-                                WebkitTextStroke: '2.5px #fff', // Adds a white stroke around the text
-                                WebkitTextFillColor: '#850E09', // Ensures the text fill color remains black
-                                filter: "blur(0.5px)", // Slight blur to soften the edges of the shadow
-                                textShadow: '0px 0px 20px #850E09, 0px 0px 5px rgba(0,0,0,0.7)',
-                                padding: "10px 20px",
-                                borderRadius: "8px",
-                                marginBottom: "3rem",
-                            }}
-                        >
-                            FILOSOFI LOGO
-                        </Typography>
+          <Box
+                    sx={{
+                        width: "80%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        gap: "1rem",
+                    }}
+                >
+                    <Typography
+                        sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: "4rem",
+                            fontWeight: "bold",
+                            color: "#FFF9F9",
+                            WebkitTextStrokeColor: "#850E09",
+                            WebkitTextStrokeWidth: "1px", // Add this line
+                        }}
+                    >
+                        FILOSOFI
+                    </Typography>
+                    <Typography
+                        sx={{
+                            fontFamily: "Open Sans",
+                            fontSize: "4rem",
+                            fontWeight: "bold",
+                            color: "#850E09",
+                        }}
+                    >
+                        LOGO
+                    </Typography>
+                </Box>
           <Box display="flex" justifyContent="space-around" flexWrap="wrap" gap={4}>
             {LogoContent.map((logo, index) => (
                 <CardLogo key={index} image={logo.image} text={logo.text} />

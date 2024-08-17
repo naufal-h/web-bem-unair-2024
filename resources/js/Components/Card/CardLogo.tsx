@@ -18,19 +18,19 @@ const CardLogo = ({ image, text }: CardLogoProps) => {
         maxWidth: "350px",
         width: "250px",
         minWidth: "100px",
-        backgroundColor: "rgba(122,45,52,0.12)",
+        backgroundColor: "#FFF9F9",
         borderRadius: "10px",
         display: "flex",
         flexDirection: "column",
         transition: "background-color 0.3s, transform 0.3s",
         "&:hover": {
-          backgroundColor: "#9A3935",
+          backgroundColor: "#850E09",
           transform: "scale(1.02)",
           "& .headline-text": {
-            color: "#850E09",
+            color: "#FFF9F9",
           },
           "& .description-text": {
-            color: "#850E09",
+            color: "#FFF9F9",
           },
         },
       }}
