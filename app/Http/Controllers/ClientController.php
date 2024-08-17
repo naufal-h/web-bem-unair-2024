@@ -17,7 +17,8 @@ class ClientController extends Controller
             $text = strip_tags(str_replace('<', ' <', $article->content));
             $text = Str::limit($text, 250);
             $article->content = $text;
-        };
+        }
+        ;
         return view('client.landing', compact('articles'));
     }
 
@@ -39,9 +40,23 @@ class ClientController extends Controller
     public function kementerianDetail($kementerian)
     {
         $pages = array(
-            'sekretaris-kabinet', 'keuangan', 'pendayagunaan-aparatur-kabinet', 'pengembangan-sdm', 'sinergitas-mahasiswa',
-            'riset-keilmuan', 'advokasi-kesejahteraan', 'komunikasi-informasi', 'hubungan-luar', 'sosial-politik', 'kesetaraan-perlindungan',
-            'seni-olahraga', 'pengabdian-masyarakat', 'kesehatan', 'lingkungan-hidup', 'ekonomi-kreatif', 'pengembangan-profesi'
+            'sekretaris-kabinet',
+            'keuangan',
+            'pendayagunaan-aparatur-kabinet',
+            'pengembangan-sdm',
+            'sinergitas-mahasiswa',
+            'riset-keilmuan',
+            'advokasi-kesejahteraan',
+            'komunikasi-informasi',
+            'hubungan-luar',
+            'sosial-politik',
+            'kesetaraan-perlindungan',
+            'seni-olahraga',
+            'pengabdian-masyarakat',
+            'kesehatan',
+            'lingkungan-hidup',
+            'ekonomi-kreatif',
+            'pengembangan-profesi'
         );
 
         return view('client.kementerian.' . $kementerian);
@@ -55,7 +70,8 @@ class ClientController extends Controller
             // $text = trim(preg_replace('/\s+/', ' ', $text));
             $text = Str::limit($text, 250);
             $article->content = $text;
-        };
+        }
+        ;
         return view('client.artikel.index', compact('articles'));
     }
 
@@ -70,10 +86,10 @@ class ClientController extends Controller
         $article->save();
 
         $articles = Article::where('id', '!=', $article->id)->where('publish_status', true)
-        ->latest('published_at')->limit(5)->get();
-        
+            ->latest('published_at')->limit(5)->get();
+
         // return view('client.artikel.detail', compact('article', 'articles'));
-        return Inertia('Article',compact('article', 'articles'));
+        return Inertia('Article', compact('article', 'articles'));
     }
 
     public function feature()
@@ -82,7 +98,12 @@ class ClientController extends Controller
     }
 
     // bemu 2024
-    public function bemuLanding(){
-        return Inertia::render('Welcome');
+    public function bemuLanding()
+    {
+        
+        $articles = Article::where('publish_status', true)
+            ->latest('published_at')->limit(3)->get();
+        return Inertia('Welcome', compact('articles'));
+        // return Inertia::render('Welcome');
     }
 }

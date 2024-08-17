@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { Box, Card, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { Document, Page, pdfjs } from 'react-pdf';
-
 
 // Set the worker for pdfjs
 pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
-const Standar = ({ pdfUrl }) => {
-    // Log PDF URL to console
-    console.log('PDF URL:', pdfUrl); // Ensure this logs the correct URL
-
+const Standar = () => {
+    const pdfUrl = "http://127.0.0.1:8000/pdf/Design_process_and_design_evaluation.pdf";
+    
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
 
@@ -29,6 +27,7 @@ const Standar = ({ pdfUrl }) => {
                 flexDirection: 'column',
             }}
         >
+            {/* Section for Text */}
             <Box
                 sx={{
                     display: 'flex',
@@ -47,15 +46,28 @@ const Standar = ({ pdfUrl }) => {
                     Lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum lorem ipsum lorem ipsum lorem ipsum.
                 </Typography>
             </Box>
+
+            {/* Section for PDF Viewer */}
+            <Box
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    width: '100%',
+                    marginY: '2rem',
+                    flexDirection: 'column',
+                }}
+            >
                 <Document
                     file={pdfUrl}
                     onLoadSuccess={onDocumentLoadSuccess}
                 >
                     <Page pageNumber={pageNumber} />
                 </Document>
-                <Typography>
+                <Typography sx={{ marginTop: '1rem' }}>
                     Page {pageNumber} of {numPages}
                 </Typography>
+            </Box>
         </Box>
     );
 };
