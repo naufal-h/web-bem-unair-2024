@@ -46,6 +46,7 @@ const MainSection: React.FC<MainSectionProps> = ({
     return (
         <Box
             sx={{
+                backgroundColor: "#FFF9F9",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",

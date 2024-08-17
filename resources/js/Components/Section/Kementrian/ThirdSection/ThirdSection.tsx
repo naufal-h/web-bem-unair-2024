@@ -10,6 +10,7 @@ const ThirdSection = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
+                backgroundColor: "#FFF9F9",
             }}
         >
             <Box

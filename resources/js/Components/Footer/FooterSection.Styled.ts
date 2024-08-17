@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledFooterSection = styled.section`
    display: flex;
    justify-content: center;
+   background-color: #FFF9F9;
 `;
 
 export const LogoContainer = styled.div`

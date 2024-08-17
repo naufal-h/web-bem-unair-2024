@@ -42,6 +42,7 @@ const ThirdSection = () => {
                 width: "100%",
                 padding: "2rem",
                 position: "relative", // Set relative for absolute positioning of the typography image
+                backgroundColor: "#FFF9F9",
             }}
         >
             {/* Teks vertikal yang berada di sebelah kanan */}

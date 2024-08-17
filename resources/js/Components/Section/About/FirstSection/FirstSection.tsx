@@ -6,13 +6,14 @@ const FirstSection = () => {
             <Box
                 component="section"
                 sx={{
+                    backgroundColor: "#FFF9F9",
                     width: "100%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
                     overflow: "hidden",
-                    marginBottom: "1rem",
+                    paddingBottom: "1rem",
                 }}
             >
                 <Box

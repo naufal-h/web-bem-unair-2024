@@ -32,6 +32,7 @@ type LogoContentType = {
 const SecondSection = () => {
     return (
         <Box sx={{ 
+          backgroundColor: "#FFF9F9",
             width: "100%",
             height: "100%",
             display: "flex",

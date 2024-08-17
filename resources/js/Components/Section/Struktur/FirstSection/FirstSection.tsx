@@ -30,7 +30,8 @@ const FirstSection = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
-                marginY: "4rem",
+                paddingY: "4rem",
+                backgroundColor: "#FFF9F9",
             }}
         >
             <Box

@@ -16,6 +16,7 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
                 width: "90%",
                 position: "relative", // Mengontrol posisi elemen anak
                 transition: "transform 0.3s ease-in-out",
+                backgroundColor: "#FFF9F9",
                 '&:hover': {
                     // transform: "scale(1.05)", // Membuat efek zoom saat hover
                     '& .hoverFab': { // Targetkan elemen hanya ketika Card di-hover
