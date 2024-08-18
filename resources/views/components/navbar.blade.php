@@ -9,8 +9,8 @@
             <a href="{{ route('landing') }}" class="text-gray-800 hover:text-gray-600 px-5">BERANDA</a>
             <a href="{{ route('about.index') }}" class="text-gray-800 hover:text-gray-600 px-5">TENTANG KAMI</a>
             <a href="{{ route('article.client.index') }}" class="text-gray-800 hover:text-gray-600 px-5">ARTIKEL</a>
-            <a href="#" class="text-gray-800 hover:text-gray-600 px-5">SOP</a>
-            <a href="#" class="text-gray-800 hover:text-gray-600 px-5">STRUKTUR ORGANISASI</a>
+            <a href="{{route('sop.index')}}" class="text-gray-800 hover:text-gray-600 px-5">SOP</a>
+            <a href="{{ route('struktur.index') }}" class="text-gray-800 hover:text-gray-600 px-5">STRUKTUR ORGANISASI</a>
             <a href="{{ route('form.index') }}" class="text-gray-800 hover:text-gray-600 px-5">FORM GENERATOR</a>
         </div>
     </div>

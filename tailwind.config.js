@@ -30,7 +30,7 @@ module.exports = {
                 bemfire: "#DD2A32",
                 bemwine: "#701E38",
                 bemblue: "#132C50",
-                bempink: "#E4828B",
+                bempink: "#850E09",
                 bembluenew: "#162f6f",
             },
         },
@@ -43,7 +43,7 @@ module.exports = {
         themes: [
             {
                 light: {
-                    primary: "#E4828B",
+                    primary: "#850E09",
                     "primary-content": "#ffffff",
                     "--btn-text-case": "none",
                     secondary: "#F4F4F5",
