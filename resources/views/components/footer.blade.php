@@ -1,10 +1,10 @@
 <div class="styled-footer-section flex justify-center">
-    <div class="relative w-11/12 h-[420px] shadow-lg" style="max-width: 1600px; border-radius: 20px; background-color: #4AA2FF">
+    <div class="relative w-11/12 h-[420px] shadow-lg" style="max-width: 1600px; border-radius: 20px; background-color: #850E09">
         <div class="flex justify-center relative h-full">
             <div class="logo-container absolute top-1/2 transform -translate-y-1/2">
                 <img src="/images/logo/mark_white.png" alt="Logo" />
             </div>
-            <img class="footer-image w-full h-[156px] absolute bottom-0 z-10" src="/images/footer/Vector (3).png"
+            <img class="footer-image w-full h-[156px] absolute bottom-0 z-10" src="/images/footer/Vector_3.png"
                 alt="" />
             <div class="relative z-20 flex justify-between w-full h-[256px]">
                 <div class="flex items-center mt-20">
