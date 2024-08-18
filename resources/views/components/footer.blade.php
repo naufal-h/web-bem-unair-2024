@@ -1,4 +1,4 @@
-<div class="styled-footer-section flex justify-center">
+<div class="bg-[#FFF9F9] styled-footer-section flex justify-center">
     <div class="relative w-11/12 h-[420px] shadow-lg" style="max-width: 1600px; border-radius: 20px; background-color: #850E09">
         <div class="flex justify-center relative h-full">
             <div class="logo-container absolute top-1/2 transform -translate-y-1/2">

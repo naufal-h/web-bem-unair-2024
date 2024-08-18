@@ -62,7 +62,7 @@
                         <div class="card mb-0">
                             <div class="card-body">
                                 <div class="brand-logo">
-                                    <h2 class="brand-text text-primary">BEM 2022</h2>
+                                    <h2 class="brand-text text-primary">BEM 2024</h2>
                                 </div>
 
                                 <p class="card-text mb-2">Login untuk mengakses fitur admin</p>

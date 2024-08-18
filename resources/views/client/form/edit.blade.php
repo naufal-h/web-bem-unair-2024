@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="lg:container flex flex-col justify-start align-top items-center m-auto px-4 mb-32">
+    <section class="lg:container flex flex-col justify-start align-top items-center m-auto px-4 pb-32 bg-[#FFF9F9]">
         <div class="tabs tabs-boxed my-12">
             <a class="tab" onclick="toggleTab('information')" id="informationTab">Informasi Form</a>
             <a class="tab" onclick="toggleTab('questions')" id="questionsTab">Edit Pertanyaan Form</a>

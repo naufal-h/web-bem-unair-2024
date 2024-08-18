@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Responden {{ Str::limit($form->title, 15, '...') }}</title>
 </head>
-<body>
+<body class="bg-[#FFF9F9]">
     {{-- General Information --}}
     {{-- <p><b>{{ $form->title }}</b></p>
     <p><b>Author:</b>{{ $form->author }}</p>
