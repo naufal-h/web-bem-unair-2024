@@ -45,7 +45,7 @@ const FirstSection = () => {
             >
                 <Box
                     sx={{
-                        marginY: "4rem",
+                        paddingY: "4rem",
                         width: "90%",
                         display: "flex",
                         justifyContent: "center",

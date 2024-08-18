@@ -39,7 +39,7 @@ const SecondSection = () => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            marginBottom: "4rem",
+            paddingBottom: "4rem",
          }}>
           <Box
                     sx={{
