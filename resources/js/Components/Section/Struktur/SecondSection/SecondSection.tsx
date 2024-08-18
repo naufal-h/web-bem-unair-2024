@@ -57,8 +57,9 @@ const SecondSection = () => {
             width: "100%",
             padding: "2rem",
             zIndex: 2,  // Ensure cards are above the logo
+            display: "flex", justifyContent: "center",
          }}>
-            <Box display="flex" justifyContent="space-around" flexWrap="wrap" gap={1}>
+            <Box sx={{width: "70%"}} display="flex" justifyContent="space-around" flexWrap="wrap" gap={1}>
                 {AnggotaContent.map((anggota, index) => (
                     <CardAnggota key={index} image={anggota.image} title={anggota.title} text={anggota.text} />
                 ))}

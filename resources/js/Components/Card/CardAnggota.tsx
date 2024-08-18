@@ -26,13 +26,13 @@ const CardAnggota = ({ image, title, text }: CardAnggotaProps) => {
         flexDirection: "column",
         transition: "background-color 0.3s, transform 0.3s",
         "&:hover": {
-          backgroundColor: "#7A2D35",
+          backgroundColor: "#850E09",
           transform: "scale(1.02)",
           "& .headline-text": {
-            color: "#850E09",
+            color: "#FFF9F9",
           },
           "& .description-text": {
-            color: "#850E09",
+            color: "#FFF9F9",
           },
         },
       }}
