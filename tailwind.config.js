@@ -11,6 +11,7 @@ module.exports = {
         "./resources/**/*.vue",
     ],
     theme: {
+
         fontFamily: {
             display: ["Inter"],
             body: ['"Inter"'],
@@ -24,6 +25,14 @@ module.exports = {
         //   '2xl': '1536px',
         // },
         extend: {
+
+
+            textStrokeWidth: {
+                '1': '1px',
+            },
+            textStrokeColor: {
+                red: '#850E09',
+    },
             colors: {
                 bemred: "#880808",
                 bemsun: "#E88A45",
@@ -35,7 +44,7 @@ module.exports = {
             },
         },
     },
-    plugins: [require("@tailwindcss/forms"), require("daisyui")],
+    plugins: [require("@tailwindcss/forms"), require("daisyui"),],
     daisyui: {
         styled: true,
         base: true,

@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="min-h-[80vh] lg:container flex justify-center items-center m-auto px-4">
-        <div class="shadow-xl border border-gray-800/10 rounded-2xl p-4 grid grid-cols-1 md:grid-cols-2 my-12">
-            <div class="bg-bembluenew p-8 flex flex-col justify-between text-white md:aspect-square rounded-lg">
-                <p class="text-sm font-bold text-bempink">
+    <section class="min-h-[80vh] lg:container flex justify-center items-center m-auto px-4 bg-[#FFF9F9]">
+        <div class="shadow-xl border border-gray-800/10 rounded-2xl p-4 grid grid-cols-1 md:grid-cols-2 my-12 bg-[#FFF9F9]">
+            <div class="bg-bempink p-8 flex flex-col justify-between text-white md:aspect-square rounded-lg">
+                <p class="text-3xl font-bold text-bempink" style="font-family: 'open sans';-webkit-text-stroke: 1px #FFF9F9;">
                     KABINET ASA PROGRESIF
                 </p>
                 <div class="my-8">
-                    <h2 class="text-3xl md:text-6xl font-bold mb-4">
-                        Buat <span class="text-bempink">form</span> anda sendiri sekarang!
+                    <h2 class="text-3xl md:text-6xl font-bold mb-4" style="font-family: 'open sans'">
+                        Buat <span class="text-[#850E09]"  style=" font-family: 'open sans';-webkit-text-stroke: 1px #FFF9F9;">form</span> anda sendiri sekarang!
                     </h2>
-                    <p class="text-sm">
+                    <p class="text-sm" style="font-family: 'open sans'">
                         Setiap form memiliki token. Token akan dikirim melalui email untuk mengedit form. Jika anda hendak
                         mengakses atau mengedit form yang telah dibuat, buka halaman Edit Form dan siapkan token anda.
                     </p>
@@ -21,7 +21,7 @@
             </div>
             <form class="flex flex-col gap-8 p-4 md:p-12 justify-center">
                 <div>
-                    <h4 class="text-3xl font-bold mb-2">Buat Form</h4>
+                    <h4 class="text-3xl font-bold mb-2" style="font-family: 'open sans'">Buat Form</h4>
                     {{-- <p class="text-sm">Klik <a href="{{ route('form.help') }}" class="text-bemsun underline">disini</a>
                         untuk melihat panduan membuat form!</p> --}}
                 </div>
@@ -31,15 +31,15 @@
                 </div>
                 <x-alert.tailwind></x-alert.tailwind>
                 <div>
-                    <label for="" class="text-base text-gray-500 block mb-1">Email</label>
+                    <label for="" class="text-base text-gray-500 block mb-1" style="font-family: 'open sans'">Email</label>
                     <input type="email" name="email" id="inpEmail" placeholder="Masukkan Email anda"
                         class="input rounded-lg border-gray-300/70 w-full" required>
                     {{-- <span id="createMessage"></span> --}}
-                    <p class="text-sm mt-2">Sudah membuat form? <label class="text-bempink modal-button cursor-pointer"
-                            for="my-modal-4">Edit form</label></p>
+                    <p class="text-sm mt-2" style="font-family: 'open sans'">Sudah membuat form? <label class="text-bempink modal-button cursor-pointer"
+                            for="my-modal-4" style="font-family: 'open sans'">Edit form</label></p>
                 </div>
                 <div>
-                    <button id="btnEmail" type="button" class="btn btn-primary">
+                    <button id="btnEmail" type="button" class="btn btn-primary" style="font-family: 'open sans'">
                         Kirim Token
                         <svg class="w-5 h-5 hidden" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
