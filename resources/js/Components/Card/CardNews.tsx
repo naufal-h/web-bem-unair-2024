@@ -38,10 +38,10 @@ const CardNews: React.FC<CardNewsProps> = ({ image, title, url, content }) => {
                     backgroundColor: "#850E09",
                     transform: "scale(1.02)",
                     "& .headline-text": {
-                        color: "#850E09",
+                        color: "#FFF9F9",
                     },
                     "& .description-text": {
-                        color: "#850E09",
+                        color: "#FFF9F9",
                     },
                 },
             }}
