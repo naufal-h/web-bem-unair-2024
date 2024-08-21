@@ -1,11 +1,8 @@
-import { Link, Head } from "@inertiajs/react";
-import { PageProps } from "@/types";
-import { Typography } from "@mui/material";
-import ResponsiveAppBar from "@/Components/NavBar";
-import FirstSection from "@/Components/Section/Landing/FirstSection/FirstSection";
-import ThirdSection from "@/Components/Section/Landing/ThirdSection/ThirdSection";
 import FooterSection from "@/Components/Footer";
-
+import ResponsiveAppBar from "@/Components/NavBar";
+import FifthSection from "@/Components/Section/Landing/FifthSection/FifthSection";
+import FirstSection from "@/Components/Section/Landing/FirstSection/FirstSection";
+import FourthSection from "@/Components/Section/Landing/FourthSection/FourthSection";
 export type articleType = {
     title: string;
     published_at: string;
@@ -21,9 +18,8 @@ const Welcome: React.FC<ArticleProps> = ({ articles }) => {
         <>
             <ResponsiveAppBar />
             <FirstSection />
-            <ThirdSection
-                articles={articles}
-            />
+            <FourthSection />
+            <FifthSection articles={articles} />
             <FooterSection />
         </>
     );

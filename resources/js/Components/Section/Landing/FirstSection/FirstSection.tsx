@@ -1,10 +1,9 @@
-import { AppBar, Box, Card, Container, Typography } from "@mui/material";
-import React from "react";
-import * as S from "./FirstSectionStyled";
 import SwiperControls from "@/Components/Swiper/SwiperControls";
 import KeenSliderWrapper from "@/Components/Swiper/keen-slider";
 import { Link } from "@inertiajs/react";
-
+import { AppBar, Box, Card, Container, Typography } from "@mui/material";
+import React from "react";
+import * as S from "./FirstSectionStyled";
 
 export type ImageTypeSwiper = {
     image: string;
@@ -46,7 +45,7 @@ const FirstSection = () => {
                     variant="h2"
                     sx={{
                         fontFamily: "Sansation",
-                        color: "#D0757D",
+                        color: "#7A2D35",
                         fontWeight: "bold",
                         fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, // responsive font size
                     }}
@@ -76,11 +75,9 @@ const FirstSection = () => {
                     height: "600px",
                 }}
             >
-                    <KeenSliderWrapper>
-               
-                        <SwiperControls direction={"ltr"} />
-             
-                    </KeenSliderWrapper>
+                <KeenSliderWrapper>
+                    <SwiperControls direction={"ltr"} />
+                </KeenSliderWrapper>
             </Box>
 
             <S.FirstSectionStyled>
@@ -89,7 +86,6 @@ const FirstSection = () => {
                     <div className="bg-shape3 opacity-50 bg-blur"></div>
                 </div>
             </S.FirstSectionStyled>
-
         </Box>
     );
 };

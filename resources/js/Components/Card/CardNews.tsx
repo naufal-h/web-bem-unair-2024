@@ -1,53 +1,49 @@
 import React from "react";
 // ** MUI Imports
-import Card from "@mui/material/Card";
-import Typography from "@mui/material/Typography";
-import CardHeader from "@mui/material/CardHeader";
-import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
-import CardMedia from "@mui/material/CardMedia";
-import Divider from "@mui/material/Divider";
-import Button from "@mui/material/Button";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { Box, Fab, Link } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { Box, Fab, Link } from "@mui/material";
+import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import CardMedia from "@mui/material/CardMedia";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
 
 interface CardNewsProps {
     image: string;
     title: string;
     url: string;
-    content: string
+    content: string;
 }
 
-const CardNews: React.FC<CardNewsProps> = ({
-    image,
-    title,
-    url,
-    content
-}) => {
+const CardNews: React.FC<CardNewsProps> = ({ image, title, url, content }) => {
     return (
         <Card
             sx={{
                 backgroundColor: "#FFF9F9",
-                borderRadius: "20px",
-                padding: "1rem",
+                borderRadius: "8px",
+                padding: "2rem",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
                 height: "100%",
+                margin: "0",
                 transition: "background-color 0.3s, transform 0.3s",
                 "&:hover": {
                     // borderBottomLeftRadius: "25%",
-                    backgroundColor: "#9A3935",
+                    backgroundColor: "#850E09",
                     transform: "scale(1.02)",
-                    '& .headline-text': {
+                    "& .headline-text": {
                         color: "#850E09",
                     },
-                    '& .description-text': {
+                    "& .description-text": {
                         color: "#850E09",
-                    }
-                }
+                    },
+                },
             }}
         >
             <Box
@@ -61,7 +57,7 @@ const CardNews: React.FC<CardNewsProps> = ({
                 <Typography
                     className="headline-text"
                     sx={{
-                        color: "#D0757D",
+                        color: "#850E09",
                         fontWeight: "bold",
                         fontFamily: "Sansation",
                         transition: "color 0.3s",
@@ -74,12 +70,12 @@ const CardNews: React.FC<CardNewsProps> = ({
                     <Link href={url}>
                         <Fab
                             sx={{
-                                backgroundColor: "#D0757D",
+                                backgroundColor: "#850E09",
                                 transition: "background-color 0.3s",
                                 "&:hover": {
                                     backgroundColor: "#fff",
                                     "& .MuiSvgIcon-root": {
-                                        color: "#D0757D",
+                                        color: "#850E09",
                                     },
                                 },
                             }}
@@ -114,9 +110,9 @@ const CardNews: React.FC<CardNewsProps> = ({
                     }}
                 >
                     <Box
-                    sx={{ marginTop: '1rem' }}
-                    dangerouslySetInnerHTML={{ __html: content }} // Use dangerouslySetInnerHTML here
-                />
+                        sx={{ marginTop: "1rem" }}
+                        dangerouslySetInnerHTML={{ __html: content }} // Use dangerouslySetInnerHTML here
+                    />
                 </Typography>
             </CardContent>
             <CardMedia
@@ -124,7 +120,7 @@ const CardNews: React.FC<CardNewsProps> = ({
                 image={image}
                 alt="collab"
                 sx={{
-                    borderRadius: "20px",
+                    borderRadius: "8px",
                     width: "100%",
                     height: "400px",
                     "&:hover": {

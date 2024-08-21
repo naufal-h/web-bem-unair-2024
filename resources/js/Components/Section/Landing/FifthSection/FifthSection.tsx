@@ -1,13 +1,13 @@
-import { Box, Grid, Typography } from "@mui/material";
-import * as S from "./ThirdSectionStyled";
 import CardNews from "@/Components/Card/CardNews";
 import { articleType } from "@/Pages/Welcome";
+import { Box, Grid, Typography } from "@mui/material";
+import * as S from "./FifthSectionStyled";
 
 interface ArticleProps {
     articles: articleType[];
 }
 
-const ThirdSection: React.FC<ArticleProps> = ({ articles }) => {
+const FifthSection: React.FC<ArticleProps> = ({ articles }) => {
     // // const date = new Date(published_at);
     // const year = date.getFullYear();
     // const month = `0${date.getMonth() + 1}`.slice(-2); // Extract and format the month (0-based index)
@@ -22,6 +22,9 @@ const ThirdSection: React.FC<ArticleProps> = ({ articles }) => {
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
+                    paddingBottom: "2rem",
+                    marginBottom: "2rem",
+                    backgroundColor: "#7A2D35 !important",
                 }}
             >
                 <Typography
@@ -29,8 +32,9 @@ const ThirdSection: React.FC<ArticleProps> = ({ articles }) => {
                     sx={{
                         textAlign: "center",
                         fontFamily: "Open Sans",
-                        color: "#D0757D",
+                        color: "#FFF9F9",
                         fontWeight: "bold",
+                        marginY: "2rem",
                     }}
                 >
                     News Update <br />
@@ -78,4 +82,4 @@ const ThirdSection: React.FC<ArticleProps> = ({ articles }) => {
     );
 };
 
-export default ThirdSection;
+export default FifthSection;
