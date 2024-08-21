@@ -12,8 +12,8 @@ export const FirstSectionStyled = styled.div`
         flex-direction: row;
         justify-content: space-between;
     }
-    
-    .bg-shape2{
+
+    .bg-shape2 {
         width: 300px;
         height: 300px;
         border-radius: 50%;
@@ -21,7 +21,7 @@ export const FirstSectionStyled = styled.div`
         animation: two 15s infinite;
     }
     .bg-shape1 {
-    z-index: -1;
+        z-index: -1;
         width: 400px;
         height: 300px;
         border-radius: 50%;
@@ -29,9 +29,9 @@ export const FirstSectionStyled = styled.div`
         top: -350px;
         // animation: one 15s infinite ease-in-out;
     }
-    
+
     .bg-shape3 {
-    z-index: -1;
+        z-index: -1;
         width: 450px;
         height: 350px;
         border-radius: 50%;
@@ -39,7 +39,7 @@ export const FirstSectionStyled = styled.div`
         top: -300px;
         // animation: three 15s infinite ease-in-out;
     }
-    
+
     // @keyframes one {
     //     0% { top: 0px; }
     //     12.5% { top: 35px; }
@@ -51,7 +51,7 @@ export const FirstSectionStyled = styled.div`
     //     87.5% { top: 35px; }
     //     100% { top: 0px; }
     // }
-    
+
     // @keyframes three {
     //     0% { top: 350px; }
     //     12.5% { top: 290px; }
@@ -63,14 +63,28 @@ export const FirstSectionStyled = styled.div`
     //     87.5% { top: 290px; }
     //     100% { top: 350px; }
     // }
-    
-    
+
     @keyframes two {
-        0%{left: 0px; top: 0px;}
-        25%{left: 50px; top: 10px;}
-        50%{left: 100px; top: 50px;}
-        75%{left: 50; top: 100px;}
-        100%{left: 0px; top: 0px;}
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+        25% {
+            left: 50px;
+            top: 10px;
+        }
+        50% {
+            left: 100px;
+            top: 50px;
+        }
+        75% {
+            left: 50;
+            top: 100px;
+        }
+        100% {
+            left: 0px;
+            top: 0px;
+        }
     }
 
     .opacity-50 {
@@ -81,17 +95,17 @@ export const FirstSectionStyled = styled.div`
         filter: blur(90px);
     }
 
-    .bg-shape1 {
-        background: #D0757D;
-    }
+    // .bg-shape1 {
+    //     background: #D0757D;
+    // }
 
-    .bg-shape2 {
-        background: #FF4C60;
-    }
+    // .bg-shape2 {
+    //     background: #FF4C60;
+    // }
 
-    .bg-shape3 {
-        background: #3089E7;
-    }
+    // .bg-shape3 {
+    //     background: #3089E7;
+    // }
 
     .trapezium {
         width: 100%;
@@ -103,4 +117,4 @@ export const FirstSectionStyled = styled.div`
         z-index: 2;
         transform-origin: bottom left;
     }
-`
+`;

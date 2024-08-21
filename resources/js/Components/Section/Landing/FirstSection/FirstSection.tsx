@@ -33,6 +33,27 @@ const FirstSection = () => {
             <Box
                 component="div"
                 sx={{
+                    width: "100%",
+                    height: "100%",
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    zIndex: "-1",
+                }}
+            >
+                <img
+                    src="/images/section-background.png"
+                    alt="first section background"
+                    style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                    }}
+                />
+            </Box>
+            <Box
+                component="div"
+                sx={{
                     marginTop: "2rem",
                     width: "100%",
                     display: "flex",
@@ -44,7 +65,7 @@ const FirstSection = () => {
                 <Typography
                     variant="h2"
                     sx={{
-                        fontFamily: "Sansation",
+                        fontFamily: "Open Sans",
                         color: "#7A2D35",
                         fontWeight: "bold",
                         fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, // responsive font size
