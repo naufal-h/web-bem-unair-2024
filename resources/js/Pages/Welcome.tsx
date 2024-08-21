@@ -3,6 +3,7 @@ import ResponsiveAppBar from "@/Components/NavBar";
 import FifthSection from "@/Components/Section/Landing/FifthSection/FifthSection";
 import FirstSection from "@/Components/Section/Landing/FirstSection/FirstSection";
 import FourthSection from "@/Components/Section/Landing/FourthSection/FourthSection";
+import SecondSection from "@/Components/Section/Landing/SecondSection/SecondSection";
 export type articleType = {
     title: string;
     published_at: string;
@@ -18,6 +19,7 @@ const Welcome: React.FC<ArticleProps> = ({ articles }) => {
         <>
             <ResponsiveAppBar />
             <FirstSection />
+            <SecondSection />
             <FourthSection />
             <FifthSection articles={articles} />
             <FooterSection />
