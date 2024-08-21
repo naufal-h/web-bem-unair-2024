@@ -25,13 +25,8 @@ const CardNews: React.FC<CardNewsProps> = ({ image, title, url, content }) => {
         <Card
             sx={{
                 backgroundColor: "#FFF9F9",
-<<<<<<< HEAD
-                borderRadius: "10px",
-                padding: "1rem",
-=======
                 borderRadius: "8px",
                 padding: "2rem",
->>>>>>> 23ee412f1b751f3b1b81fbf739db55d6a26942a1
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
