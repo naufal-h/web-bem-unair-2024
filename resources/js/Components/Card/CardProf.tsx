@@ -20,7 +20,7 @@ const CardProf = ({ direction = "left" }) => {
         >
             <Box
                 sx={{
-                    maxWidth: "350px",
+                    maxWidth: { xs: "65%", sm: "200px", md: "350px" },
                     border: "1px solid #e0e0e0",
                     borderRadius: "10px",
                     objectFit: "cover",
@@ -43,8 +43,8 @@ const CardProf = ({ direction = "left" }) => {
                     backgroundColor: "#FFF9F9",
                     position: "relative",
                     bottom: -10,
-                    maxWidth: "450px",
-                    maxHeight: "250px",
+                    maxWidth: { xs: "200px", sm: "350px", md: "450px" },
+                    maxHeight: {xs: "100px", sm: "125px", md: "250px"},
                     zIndex: 1, // Ensure card is below the image
                     [isLeft ? "right" : "left"]: 30,
                     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Optional shadow for better visibility
@@ -60,6 +60,7 @@ const CardProf = ({ direction = "left" }) => {
                             fontFamily: "Open Sans",
                             color: "#7A2D35",
                             fontWeight: 700,
+                            fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
                         
                         }}
                     >
@@ -70,6 +71,7 @@ const CardProf = ({ direction = "left" }) => {
                             fontFamily: "montserrat",
                             fontWeight: 500,
                             color: "#251A1A",
+                            fontSize: { xs: "0.5rem", sm: "0.8rem", md: "0.85rem" },
                         }}
                         variant="body2"
                         color="text.secondary"
