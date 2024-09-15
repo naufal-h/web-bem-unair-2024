@@ -30,13 +30,14 @@ const SecondSection = () => {
         <Box
             sx={{
                 width: "100%",
-                height: "100vh",
+                height: { xs: "auto", md: "100vh" }, // Adjust height for mobile
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
                 backgroundColor: "#850E09",
                 position: "relative", // Set parent as relative for absolute positioning
+                padding: { xs: "1rem", md: "2rem" }, // Responsive padding
             }}
         >
             <Box
@@ -50,38 +51,38 @@ const SecondSection = () => {
                     transform: "translate(-50%, -50%)", // Center the logo
                     zIndex: 1, // Lower z-index to be behind other elements
                     opacity: 0.2, // Adjust opacity for background effect
-                    maxWidth: "600px", // Adjust size as needed
+                    maxWidth: { xs: "300px", md: "600px" }, // Responsive size for logo
                 }}
             />
             <Box
                 sx={{
                     width: "100%",
-                    padding: "2rem",
                     zIndex: 2, // Ensure cards are above the logo
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                     flexDirection: "column",
-                    gap: "1.5rem",
+                    gap: { xs: "1rem", md: "1.5rem" }, // Responsive gap
                 }}
             >
                 <Box
                     sx={{
-                        width: "80%",
+                        width: { xs: "90%", md: "80%" },
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
-                        gap: "1rem",
+                        gap: { xs: "0.5rem", md: "1rem" }, // Adjust gap for mobile
+                        flexDirection: { xs: "column", md: "row" }, // Stack vertically on mobile
                     }}
                 >
                     <Typography
                         sx={{
                             fontFamily: "Open Sans",
-                            fontSize: "4rem",
+                            fontSize: { xs: "2.5rem", md: "4rem" }, // Responsive font size
                             fontWeight: "bold",
                             color: "#850E09",
                             WebkitTextStrokeColor: "#FFF9F9",
-                            WebkitTextStrokeWidth: "1px", // Add this line
+                            WebkitTextStrokeWidth: "1px",
                         }}
                     >
                         KEMENKOAN
@@ -89,7 +90,7 @@ const SecondSection = () => {
                     <Typography
                         sx={{
                             fontFamily: "Open Sans",
-                            fontSize: "4rem",
+                            fontSize: { xs: "2.5rem", md: "4rem" }, // Responsive font size
                             fontWeight: "bold",
                             color: "#FFF9F9",
                         }}
@@ -100,9 +101,9 @@ const SecondSection = () => {
                 <Typography
                     sx={{
                         textAlign: "center",
-                        width: "60%",
-                        fontFamily: "montserrat",
-                        fontSize: "1.5rem",
+                        width: { xs: "90%", md: "60%" },
+                        fontFamily: "Montserrat",
+                        fontSize: { xs: "1rem", md: "1.5rem" }, // Responsive text size
                         color: "#FFF9F9",
                     }}
                 >
@@ -112,12 +113,12 @@ const SecondSection = () => {
                 </Typography>
                 <Box
                     sx={{
-                        width: "70%",
+                        width: { xs: "90%", md: "70%" }, // Adjust width for mobile
                     }}
                     display="flex"
                     justifyContent="space-around"
                     flexWrap="wrap"
-                    gap={1}
+                    gap={2}
                 >
                     {AnggotaContent.map((anggota, index) => (
                         <CardAnggota
@@ -132,4 +133,5 @@ const SecondSection = () => {
         </Box>
     );
 };
+
 export default SecondSection;

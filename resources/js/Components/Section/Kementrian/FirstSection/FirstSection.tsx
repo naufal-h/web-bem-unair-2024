@@ -40,7 +40,9 @@ const FirstSection = () => {
                     zIndex: 3,
                     top: "17.5%",
                     transform:{
-                        xs: "translateY(-20%)",
+                        xs: "translateY(-40%)",
+                        sm: "none",
+                        md: "none",
                     },
                     position: "relative",
                     display: "flex",
