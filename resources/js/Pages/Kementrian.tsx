@@ -11,8 +11,8 @@ const KementrianPage = () => {
         <>
             <ResponsiveAppBar />
             <FirstSection/>
-            <SecondSection/>
-            <ThirdSection/>
+            {/* <SecondSection/> */}
+            {/* <ThirdSection/> */}
             <FooterSection/>
         </>
     );
