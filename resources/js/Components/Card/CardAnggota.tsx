@@ -1,14 +1,11 @@
-// ** MUI Imports
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 
-// ** Custom Components Imports
-
 type CardAnggotaProps = {
   image: string;
-  title:string;
+  title: string;
   text: string;
 };
 
@@ -16,12 +13,10 @@ const CardAnggota = ({ image, title, text }: CardAnggotaProps) => {
   return (
     <Card
       sx={{
-        maxWidth: "350px",
-        width: "250px",
-        minWidth: "100px",
+        maxWidth: {xs:"90px" , sm: "200px", md: "220px", lg: "300px"},
+        maxHeight: {xs:"100px" , sm: "200px", md: "250px", lg: "400px"},
         backgroundColor: "#FFF9F9",
-        // backgroundColor: "rgba(122,45,52,0.12)",
-        borderRadius: "10px", 
+        borderRadius: "10px",
         display: "flex",
         flexDirection: "column",
         transition: "background-color 0.3s, transform 0.3s",
@@ -35,6 +30,14 @@ const CardAnggota = ({ image, title, text }: CardAnggotaProps) => {
             color: "#FFF9F9",
           },
         },
+        "@media (max-width: 600px)": {
+          maxWidth: "250px",
+          width: "200px",
+        },
+        "@media (max-width: 375px)": {
+          maxWidth: "200px",
+          width: "180px",
+        },
       }}
     >
       <CardContent
@@ -43,39 +46,64 @@ const CardAnggota = ({ image, title, text }: CardAnggotaProps) => {
           textAlign: "center",
           alignItems: "center",
           flexDirection: "column",
-          p: (theme) => `${theme.spacing(8.75, 2, 9.25)} !important`,
+          p: (theme) => `${theme.spacing(7, 2, 7.5)} !important`,
+          "@media (max-width: 600px)": {
+            p: (theme) => `${theme.spacing(6, 2, 6.5)} !important`,
+          },
+          "@media (max-width: 375px)": {
+            p: (theme) => `${theme.spacing(5, 2, 5.5)} !important`,
+          },
         }}
       >
-        <Box sx={{ 
-          width: "75%",
-         }} component="img" src={image} alt={text} />
+        <Box
+          sx={{
+            width: "70%",
+            "@media (max-width: 600px)": {
+              width: "60%",
+            },
+            "@media (max-width: 375px)": {
+              width: "55%",
+            },
+          }}
+          component="img"
+          src={image}
+          alt={text}
+        />
 
         <Typography
           className="headline-text"
           sx={{
-            fontSize: "2rem",
+            fontSize: "1.8rem",
             width: "100%",
             color: "#7A2D35",
-            // fontWeight: "bold",
             fontFamily: "open sans",
             transition: "color 0.3s",
             fontWeight: "bold",
+            "@media (max-width: 600px)": {
+              fontSize: "1.5rem",
+            },
+            "@media (max-width: 375px)": {
+              fontSize: "1.3rem",
+            },
           }}
-          
         >
           {title}
         </Typography>
         <Typography
-          className="headline-text"
+          className="description-text"
           sx={{
-            fontSize: "1rem",
+            fontSize: "0.9rem",
             width: "100%",
             color: "#D0757D",
-            // fontWeight: "bold",
             fontFamily: "montserrat",
             transition: "color 0.3s",
+            "@media (max-width: 600px)": {
+              fontSize: "0.8rem",
+            },
+            "@media (max-width: 375px)": {
+              fontSize: "0.7rem",
+            },
           }}
-          
         >
           {text}
         </Typography>

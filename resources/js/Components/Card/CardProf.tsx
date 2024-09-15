@@ -1,10 +1,5 @@
 import React from "react";
-import {
-    Box,
-    Typography,
-    Card,
-    CardContent,
-} from "@mui/material";
+import { Box, Typography, Card, CardContent } from "@mui/material";
 
 const CardProf = ({ direction = "left" }) => {
     const isLeft = direction === "left";
@@ -14,7 +9,7 @@ const CardProf = ({ direction = "left" }) => {
             sx={{
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center",
+                alignItems: { xs: "flex-start", sm: "center", md: "center" },
                 flexDirection: isLeft ? "row" : "row-reverse",
             }}
         >
@@ -44,14 +39,19 @@ const CardProf = ({ direction = "left" }) => {
                     position: "relative",
                     bottom: -10,
                     maxWidth: { xs: "200px", sm: "350px", md: "450px" },
-                    maxHeight: {xs: "100px", sm: "125px", md: "250px"},
+                    maxHeight: { xs: "100px", sm: "125px", md: "250px" },
                     zIndex: 1, // Ensure card is below the image
                     [isLeft ? "right" : "left"]: 30,
                     boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Optional shadow for better visibility
                     opacity: 1, // Ensure full opacity
                 }}
             >
-                <CardContent>
+                <CardContent
+                sx={{
+                    overflow: "hidden", // Menyembunyikan teks yang keluar dari wadah
+                    textOverflow: "ellipsis",
+                }}
+                >
                     <Typography
                         gutterBottom
                         variant="h5"
@@ -60,8 +60,11 @@ const CardProf = ({ direction = "left" }) => {
                             fontFamily: "Open Sans",
                             color: "#7A2D35",
                             fontWeight: 700,
-                            fontSize: { xs: "0.9rem", sm: "1rem", md: "1.1rem" },
-                        
+                            fontSize: {
+                                xs: "0.9rem",
+                                sm: "1rem",
+                                md: "1.1rem",
+                            },
                         }}
                     >
                         Aulia Athaariq Akbar
@@ -71,12 +74,21 @@ const CardProf = ({ direction = "left" }) => {
                             fontFamily: "montserrat",
                             fontWeight: 500,
                             color: "#251A1A",
-                            fontSize: { xs: "0.5rem", sm: "0.8rem", md: "0.85rem" },
+                            fontSize: {
+                                xs: "0.5rem",
+                                sm: "0.8rem",
+                                md: "0.85rem",
+                            },
+                            overflow: "hidden", // Menyembunyikan teks yang keluar dari wadah
+                            textOverflow: "ellipsis",
                         }}
                         variant="body2"
                         color="text.secondary"
                     >
-                        Sint cillum minim aliquip aliquip et Lorem voluptate laborum aute est sint est do. Reprehenderit irure sit pariatur laborum occaecat fugiat qui magna eu pariatur do. Do tempor occaecat voluptate adipisicing reprehenderit cillum culpa eu.
+                        Sint cillum minim aliquip aliquip et Lorem voluptate
+                        laborum aute est sint est do. Reprehenderit irure sit
+                        pariatur laborum occaecat fugiat qui magna eu pariatur
+                        do.
                     </Typography>
                 </CardContent>
             </Card>

@@ -60,15 +60,18 @@ const FirstSection = () => {
                         alt="ASA PROGRESIF"
                         sx={{ 
                             opacity: 0.8, 
-                            width: { xs: "80%", sm: "85%", md: "90%" } // Responsive image size
+                            width: { xs: "80%", sm: "85%", md: "90%" }, // Responsive image size
+                            display: {
+                                xs: "none",
+                            }
                         }}
                     />
                 </Box>
                 <Typography
                     sx={{
-                        fontSize: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive font size
+                        fontSize: { xs: "1.25rem", sm: "3rem", md: "4rem" }, // Responsive font size
                         fontWeight: "bold",
-                        color: "#800000",
+                        color: "#7A2D35",
                         position: "absolute",
                         textAlign: "center",
                     }}
@@ -78,11 +81,12 @@ const FirstSection = () => {
             </Box>
             <Box
                 sx={{
-                    width: { xs: "100%", sm: "90%" }, // Responsive width
+                    width: { xs: "95%", sm: "90%" }, // Responsive width
                     marginTop: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive margin
                     display: "flex",
                     flexDirection:"column", // Responsive flex direction
                     gap: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive gap
+                    marginX: { xs: "2rem" }, // Responsive margin
                 }}
             >
                 {/* Image on the left, card on the right */}
