@@ -63,6 +63,7 @@ const FirstSection = () => {
                             width: { xs: "80%", sm: "85%", md: "90%" }, // Responsive image size
                             display: {
                                 xs: "none",
+                                md: "block",
                             }
                         }}
                     />
