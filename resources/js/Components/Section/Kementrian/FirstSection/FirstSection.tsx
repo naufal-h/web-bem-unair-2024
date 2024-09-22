@@ -13,7 +13,7 @@ const FirstSection = () => {
                 flexDirection: "column",
             }}
         >
-            <Box
+            {/* <Box
                 component="img"
                 src="/images/logo/mark_3_kem.svg"
                 alt="Logo"
@@ -23,7 +23,7 @@ const FirstSection = () => {
                     height: { xs: "50%", sm: "70%", md: "100%" }, // Responsive height
                     zIndex: 1,
                 }}
-            />
+            /> */}
             <Box
                 component="img"
                 src="/images/anggota/pipKetuKem.png"
