@@ -195,8 +195,11 @@ const FooterSection = () => {
                                     },
                                 }}
                             >
-                                <span>narahubung 1: 0822 1234 5678 (name)</span>
-                                <span>narahubung 2: 0822 1234 5678 (name)</span>
+                                <span>Media dan Informasi (Naufal - 62856-0762-2950)</span>
+                                <span>Eksternal Unair (Mufida - 62821-4182-6030)
+                                </span>
+                                <span>Internal Unair (Satrio - 62857-2426-9372)
+                                </span>
                             </Box>
                         </Box>
                     </Box>

@@ -92,8 +92,8 @@ const ThirdSection = () => {
                         >
                             <center>
                                 <img
-                                    alt="Ketua BEM"
-                                    src="https://gowest.id/wp-content/uploads/2024/02/Wendy_YoungStreet_220601.jpg"
+                                    alt="Presiden BEM"
+                                    src="/images/fungsionaris/Pres dan Wapres/Presbem_aULIA THAARIQ aKBAR.png"
                                     width={150}
                                     height={150}
                                     style={{
@@ -107,7 +107,7 @@ const ThirdSection = () => {
                                 textAlign="center"
                                 fontWeight="bold"
                             >
-                                Ketua BEM
+                                Presiden BEM
                             </Typography>
                         </Card>
                     </Box>
