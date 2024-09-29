@@ -6,7 +6,7 @@
         {{-- style --}}
         @vite('resources/css/app.css')
 
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
+        <title inertia>BEM UNAIR 2024</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">

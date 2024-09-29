@@ -8,13 +8,13 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from './Components/Custom-Component/overrides/theme';
 import { pdfjs } from 'react-pdf';
 
-const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
+const appName = 'BEM UNAIR 2024';
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.mjs',
     import.meta.url,
   ).toString();
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+    title: (title) => `${appName}`,
     resolve: (name) => resolvePageComponent(`./Pages/${name}.tsx`, import.meta.glob('./Pages/**/*.tsx')),
     setup({ el, App, props }) {
         const root = createRoot(el);
