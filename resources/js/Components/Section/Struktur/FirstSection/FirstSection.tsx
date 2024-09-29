@@ -30,7 +30,7 @@ const FirstSection = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
-                paddingY: "4rem",
+                paddingY: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive padding
                 backgroundColor: "#FFF9F9",
             }}
         >
@@ -45,8 +45,8 @@ const FirstSection = () => {
             >
                 <Box
                     sx={{
-                        paddingY: "4rem",
-                        width: "90%",
+                        paddingY: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive padding
+                        width: { xs: "100%", sm: "85%", md: "90%" }, // Responsive width
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
@@ -58,27 +58,36 @@ const FirstSection = () => {
                         component="img"
                         src="/images/typography/ASA_PROGRESIF.svg"
                         alt="ASA PROGRESIF"
-                        sx={{ opacity: 0.8, width: "90%" }}
+                        sx={{ 
+                            opacity: 0.8, 
+                            width: { xs: "80%", sm: "85%", md: "90%" }, // Responsive image size
+                            display: {
+                                xs: "none",
+                                md: "block",
+                            }
+                        }}
                     />
                 </Box>
                 <Typography
                     sx={{
-                        fontSize: "4rem",
+                        fontSize: { xs: "1.25rem", sm: "3rem", md: "4rem" }, // Responsive font size
                         fontWeight: "bold",
-                        color: "#800000",
+                        color: "#7A2D35",
                         position: "absolute",
                         textAlign: "center",
                     }}
                 >
                     STRUKTUR BEM <br /> UNIVERSITAS AIRLANGGA 2024
                 </Typography>
-                {/* <Box>
-                <CardProf />
-            </Box> */}
             </Box>
             <Box
                 sx={{
-                    width: "90%",
+                    width: { xs: "95%", sm: "90%" }, // Responsive width
+                    marginTop: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive margin
+                    display: "flex",
+                    flexDirection:"column", // Responsive flex direction
+                    gap: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive gap
+                    marginX: { xs: "2rem" }, // Responsive margin
                 }}
             >
                 {/* Image on the left, card on the right */}

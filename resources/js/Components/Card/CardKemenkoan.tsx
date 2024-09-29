@@ -13,7 +13,7 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
         <Card
             sx={{
                 display: "flex",
-                width: "90%",
+                width: { xs: "100%", sm: "90%" },
                 position: "relative", // Mengontrol posisi elemen anak
                 transition: "transform 0.3s ease-in-out",
                 backgroundColor: "#FFF9F9",
@@ -30,9 +30,17 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
             <Box sx={{
                 width: "95%",
                 display: "flex",
+                alignItems: "center",
             }}>
 
-                <Box component="img" src={image}></Box>
+                <Box sx={{ 
+                    maxHeight:{
+                        xs: "150px",
+                        sm: "250px",
+                        md: "300px",
+                        lg: "400px",
+                    }
+                 }} component="img" src={image}></Box>
                 <CardContent
                     sx={{
                         display: "flex",
@@ -43,7 +51,12 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
                 >
                     <Typography
                         sx={{
-                            fontSize: "2rem",
+                            fontSize:{
+                                xs: "1.25rem",
+                                sm: "1.5rem",
+                                md: "1.75rem",
+                                lg: "2rem",
+                            },
                             width: "100%",
                             color: "#7A2D35",
                             fontWeight: "bold",
@@ -55,7 +68,12 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
                     </Typography>
                     <Typography
                         sx={{
-                            fontSize: "1rem",
+                            fontSize:{
+                                xs: "0.65rem",
+                                sm: "1.125rem",
+                                md: "1.25rem",
+                                lg: "1.5rem",
+                            },
                             width: "100%",
                             color: "#7A2D35",
                             fontWeight: "normal",
