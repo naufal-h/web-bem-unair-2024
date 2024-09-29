@@ -35,7 +35,7 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
 
                 <Box sx={{ 
                     maxHeight:{
-                        xs: "150px",
+                        xs: "100px",
                         sm: "250px",
                         md: "300px",
                         lg: "400px",
@@ -52,7 +52,7 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
                     <Typography
                         sx={{
                             fontSize:{
-                                xs: "1.25rem",
+                                xs: "1rem",
                                 sm: "1.5rem",
                                 md: "1.75rem",
                                 lg: "2rem",
@@ -69,7 +69,7 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
                     <Typography
                         sx={{
                             fontSize:{
-                                xs: "0.65rem",
+                                xs: "0.55rem",
                                 sm: "1.125rem",
                                 md: "1.25rem",
                                 lg: "1.5rem",

@@ -113,7 +113,7 @@ const FirstSection = () => {
                     src="/images/logo/Logo_Bem.png"
                     alt="Logo"
                     sx={{
-                        maxWidth: "52%",
+                        maxWidth: "30%",
                     }}
                 />
             </Box>
