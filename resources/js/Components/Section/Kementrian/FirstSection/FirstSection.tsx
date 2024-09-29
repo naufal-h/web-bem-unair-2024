@@ -13,17 +13,17 @@ const FirstSection = () => {
                 flexDirection: "column",
             }}
         >
-            <Box
+            {/* <Box
                 component="img"
                 src="/images/logo/mark_3_kem.svg"
                 alt="Logo"
                 sx={{
                     position: "absolute",
                     top: "15%",
-                    height: "100%", // Adjust height as needed
-                    zIndex: 1, // Set to 1 so cards will be on top
+                    height: { xs: "50%", sm: "70%", md: "100%" }, // Responsive height
+                    zIndex: 1,
                 }}
-            />
+            /> */}
             <Box
                 component="img"
                 src="/images/anggota/pipKetuKem.png"
@@ -31,14 +31,19 @@ const FirstSection = () => {
                 sx={{
                     position: "absolute",
                     top: "37.5%",
-                    width: "300px",
-                    zIndex: 2, // Set to 1 so cards will be on top
+                    width: { xs: "150px", sm: "200px", md: "300px" }, // Responsive width
+                    zIndex: 2,
                 }}
             />
             <Box
                 sx={{
                     zIndex: 3,
                     top: "17.5%",
+                    transform:{
+                        xs: "translateY(-40%)",
+                        sm: "none",
+                        md: "none",
+                    },
                     position: "relative",
                     display: "flex",
                     justifyContent: "center",
@@ -53,12 +58,15 @@ const FirstSection = () => {
                         gap: "10px",
                         justifyContent: "center",
                         alignItems: "center",
+                        transform: {
+                            
+                        }
                     }}
                 >
                     <Typography
                         sx={{
                             fontWeight: "bold",
-                            fontSize: "3rem",
+                            fontSize: { xs: "1.75rem", sm: "2.5rem", md: "3rem" }, // Responsive font size
                             fontFamily: "open sans",
                         }}
                     >
@@ -67,7 +75,7 @@ const FirstSection = () => {
                     <Typography
                         sx={{
                             fontWeight: "bold",
-                            fontSize: "3rem",
+                            fontSize: { xs: "1.75rem", sm: "2.5rem", md: "3rem" },
                             fontFamily: "open sans",
                             color: "#7A2D35",
                         }}
@@ -77,7 +85,7 @@ const FirstSection = () => {
                 </Box>
                 <Box
                     sx={{
-                        width: "60%",
+                        width: { xs: "90%", sm: "70%", md: "60%" }, // Responsive width
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
@@ -104,7 +112,7 @@ const FirstSection = () => {
                             <Typography
                                 sx={{
                                     fontWeight: "bold",
-                                    fontSize: "2rem",
+                                    fontSize: { xs: "1.5rem", md: "2rem" }, // Responsive font size
                                     fontFamily: "open sans",
                                     color: "#7A2D35",
                                 }}
@@ -122,7 +130,7 @@ const FirstSection = () => {
                         >
                             <Typography
                                 sx={{
-                                    fontSize: "1rem",
+                                    fontSize: { xs: "0.8rem", md: "1rem" }, // Responsive font size
                                     fontFamily: "montserrat",
                                 }}
                             >
@@ -134,16 +142,24 @@ const FirstSection = () => {
                         sx={{
                             width: "100%",
                             display: "flex",
+                            flexDirection: {
+                                sx: "row"
+                            },
                             justifyContent: "space-between",
+                            gap: "10px",
+                            flexWrap: {
+                                xs: "nowrap",
+                                sm: "wrap",
+                                md: "wrap",
+                            } // Allow items to wrap on smaller screens
                         }}
                     >
                         <Card
                             sx={{
                                 paddingY: "0.5rem",
-                                width: "calc(100%/3 - 20px)",
+                                width: { xs: "100%", sm: "calc(100%/3 - 20px)" }, // Full width on xs
                                 backgroundColor: "rgba(255,249,249,0.8)",
-                                boxShadow:
-                                    "0px 4px 4px rgba(122, 45, 53, 0.12)",
+                                boxShadow: "0px 4px 4px rgba(122, 45, 53, 0.12)",
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
@@ -154,6 +170,7 @@ const FirstSection = () => {
                                     fontFamily: "montserrat",
                                     textAlign: "center",
                                     color: "#7A2D35",
+                                    fontSize: { xs: "0.9rem", md: "1rem" }, // Responsive font size
                                 }}
                             >
                                 KEMENTRIAN MEDIA DAN INFORMASI
@@ -162,10 +179,9 @@ const FirstSection = () => {
                         <Card
                             sx={{
                                 paddingY: "0.5rem",
-                                width: "calc(100%/3 - 20px)",
+                                width: { xs: "100%", sm: "calc(100%/3 - 20px)" }, // Full width on xs
                                 backgroundColor: "rgba(255,249,249,0.8)",
-                                boxShadow:
-                                    "0px 4px 4px rgba(122, 45, 53, 0.12)",
+                                boxShadow: "0px 4px 4px rgba(122, 45, 53, 0.12)",
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
@@ -176,6 +192,7 @@ const FirstSection = () => {
                                     fontFamily: "montserrat",
                                     textAlign: "center",
                                     color: "#7A2D35",
+                                    fontSize: { xs: "0.9rem", md: "1rem" }, // Responsive font size
                                 }}
                             >
                                 KEMENTRIAN SINERGITAS MAHASISWA
@@ -184,10 +201,9 @@ const FirstSection = () => {
                         <Card
                             sx={{
                                 paddingY: "0.5rem",
-                                width: "calc(100%/3 - 20px)",
+                                width: { xs: "100%", sm: "calc(100%/3 - 20px)" }, // Full width on xs
                                 backgroundColor: "rgba(255,249,249,0.8)",
-                                boxShadow:
-                                    "0px 4px 4px rgba(122, 45, 53, 0.12)",
+                                boxShadow: "0px 4px 4px rgba(122, 45, 53, 0.12)",
                                 display: "flex",
                                 justifyContent: "center",
                                 alignItems: "center",
@@ -198,6 +214,7 @@ const FirstSection = () => {
                                     fontFamily: "montserrat",
                                     textAlign: "center",
                                     color: "#7A2D35",
+                                    fontSize: { xs: "0.9rem", md: "1rem" }, // Responsive font size
                                 }}
                             >
                                 KEMENTRIAN HUBUNGAN LUAR
