@@ -1,7 +1,7 @@
 import CardKemenkoan from "@/Components/Card/CardKemenkoan";
 import { Box } from "@mui/material";
 
-type KementrianContentType = {
+interface KementrianContentType {
     image: string;
     title: string;
     text: string;

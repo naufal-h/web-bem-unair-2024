@@ -7,13 +7,40 @@ export const KementrianKominfo: MainKemenkoanInterface[] = [
         nama: "AHMAD JABIR",
         kemenkoan: [
             {
-                title: "KEMENTRIAN MEDIA DAN INFORMASI",
+                detail:[{
+                    nama: "KEMENTRIAN MEDIA DAN INFORMASI",
+                    text_kementrian:"",
+                    proker: [
+                        {
+                            judul:"",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }],
             },
             {
-                title: "KEMENTRIAN SINEGRITAS MAHASISWA",
+                detail:[{
+                    nama: "KEMENTRIAN SINERGITAS MAHASISWA",
+                    text_kementrian:"",
+                    proker: [
+                        {
+                            judul:"",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }],
             },
             {
-                title: "KEMENTRIAN HUBUNGAN LUAR",
+                detail:[{
+                    nama: "KEMENTRIAN HUBUNGAN LUAR",
+                    text_kementrian:"",
+                    proker: [
+                        {
+                            judul:"",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }],
             },
         ],
         jabatan: "Menteri Koordinator",
@@ -28,13 +55,40 @@ export const KementrianKemahasiswaan: MainKemenkoanInterface[] = [
         nama: "VIKRI BUDI",
         kemenkoan: [
             {
-                title: "KEMENTRIAN PENGEMBANGAN PROFESI",
+                detail:[{
+                    nama: "KEMENTRIAN PENGEMBANGAN PROFESI",
+                    text_kementrian:"",
+                    proker: [
+                        {
+                            judul:"",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }],
             },
             {
-                title: "KEMENTRIAN PSDM",
+                detail:[{
+                    nama: "KEMENTRIAN PSDM",
+                    text_kementrian:"",
+                    proker: [
+                        {
+                            judul:"",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }],
             },
             {
-                title: "KEMENTRIAN ADKESMA",
+                detail:[{
+                    nama: "KEMENTRIAN ADKESMA",
+                    text_kementrian:"",
+                    proker: [
+                        {
+                            judul:"",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }],
             },
         ],
         jabatan: "Menteri Koordinator",
@@ -48,19 +102,47 @@ export const KementrianKemasyarakatan: MainKemenkoanInterface[] = [
         nama: "RAHMAN HAKIM",
         kemenkoan: [
             {
-                title: "KEMENTRIAN KESEHATAN",
+                detail: [{
+                    nama: "KEMENTRIAN KESEHATAN",
+                    text_kementrian: "",
+                    proker: [
+                        {
+                            judul: "",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }]
             },
             {
-                title: "KEMENTRIAN PENGABDIAN MASAYARAKAT",
+                detail: [{
+                    nama: "KEMENTRIAN PENGABDIAN MASYARAKAT",
+                    text_kementrian: "",
+                    proker: [
+                        {
+                            judul: "",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }]
             },
             {
-                title: "KEMENTRIAN LINGKUNGAN HIDUP",
-            },
+                detail: [{
+                    nama: "KEMENTRIAN LINGKUNGAN HIDUP",
+                    text_kementrian: "",
+                    proker: [
+                        {
+                            judul: "",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }]
+            }
         ],
         jabatan: "Menteri Koordinator",
     }
     
-]
+];
+
 export const KementrianPergerakan: MainKemenkoanInterface[] = [
 
     {
@@ -68,16 +150,35 @@ export const KementrianPergerakan: MainKemenkoanInterface[] = [
         nama: "M. ARIF AMRULLAH",
         kemenkoan: [
             {
-                title: "KEMENTRIAN SOSIAL DAN POLITIK",
+                detail: [{
+                    nama: "KEMENTRIAN SOSIAL DAN POLITIK",
+                    text_kementrian: "",
+                    proker: [
+                        {
+                            judul: "",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }]
             },
             {
-                title: "KEMENTRIAN KESETARAAN GENDER",
-            },
+                detail: [{
+                    nama: "KEMENTRIAN KESETARAAN GENDER",
+                    text_kementrian: "",
+                    proker: [
+                        {
+                            judul: "",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }]
+            }
         ],
         jabatan: "Menteri Koordinator",
     }
     
-]
+];
+
 export const KementrianPPK: MainKemenkoanInterface[] = [
 
     {
@@ -85,19 +186,43 @@ export const KementrianPPK: MainKemenkoanInterface[] = [
         nama: "NOTUSA GELAR",
         kemenkoan: [
             {
-                title: "KEMENTRIAN RISET DAN KEILMUAN",
+                detail: [{
+                    nama: "KEMENTRIAN RISET DAN KEILMUAN",
+                    text_kementrian: "",
+                    proker: [
+                        {
+                            judul: "",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }]
             },
             {
-                title: "KEMENTRIAN SENI DAN OLAHRAGA",
+                detail: [{
+                    nama: "KEMENTRIAN SENI DAN OLAHRAGA",
+                    text_kementrian: "",
+                    proker: [
+                        {
+                            judul: "",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }]
             },
             {
-                title: "KEMENTRIAN EDIGPRO",
-            },
+                detail: [{
+                    nama: "KEMENTRIAN EDIGPRO",
+                    text_kementrian: "",
+                    proker: [
+                        {
+                            judul: "",
+                            deskripsi_proker: "",
+                        }
+                    ]
+                }]
+            }
         ],
         jabatan: "Menteri Koordinator",
     }
     
-]
-
-
-
+];
