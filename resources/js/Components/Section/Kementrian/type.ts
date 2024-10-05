@@ -11,13 +11,18 @@ export interface KementrianType  {
 
 export interface DetailKementrianType {
     nama: string
-    text: string
+    text_kementrian: string
+    proker: ProkerType[]
 }
 
 
 export type AnggotaType = {
     image: string
     name: string
-    department: string
-    faculty: string
+    jabatan: string
+}
+
+export type ProkerType = {
+    judul: string
+    deskripsi_proker: string
 }
