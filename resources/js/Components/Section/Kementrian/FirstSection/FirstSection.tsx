@@ -26,7 +26,7 @@ const FirstSection = () => {
             /> */}
             <Box
                 component="img"
-                src="/images/anggota/pipKetuKem.png"
+                src="/images/cards/real-pip.png"
                 alt="Logo"
                 sx={{
                     position: "absolute",

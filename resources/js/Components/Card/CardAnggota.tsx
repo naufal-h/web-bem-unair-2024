@@ -15,10 +15,16 @@ const CardAnggota = ({ image, title, text }: CardAnggotaProps) => {
             sx={{
                 maxWidth: { xs: "90px", sm: "200px", md: "220px", lg: "300px" },
                 maxHeight: {
-                    xs: "170px",
-                    sm: "300px",
-                    md: "450px",
-                    lg: "500px",
+                    xs: "200px",
+                    sm: "150px",
+                    md: "350px",
+                    lg: "400px",
+                },
+                minHeight: {
+                    xs: "200px",
+                    sm: "150px",
+                    md: "350px",
+                    lg: "400px",
                 },
                 backgroundColor: "#FFF9F9",
                 borderRadius: "10px",
@@ -88,7 +94,7 @@ const CardAnggota = ({ image, title, text }: CardAnggotaProps) => {
                 <Typography
                     className="description-text"
                     sx={{
-                        fontSize: { xs: "0.7rem", sm: "0.8rem", md: "0.9rem" }, // Responsiveness for fontSize
+                        fontSize: { xs: "0.7rem", sm: "0.8rem", md: "1rem" }, // Responsiveness for fontSize
                         width: "100%",
                         color: "#D0757D",
                         fontFamily: "montserrat",

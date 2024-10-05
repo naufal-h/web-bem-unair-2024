@@ -11,25 +11,31 @@ type KementrianContentType = {
 const KementrianContent: KementrianContentType[] = [
     {
         image: "/images/logo/Logo-mini.png",
-        title: `Kementrian Lorem Ipsum`,
+        title: `KEMENTRIAN KEMAHASISWAAN`,
         text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
         link: `/Struktur/Kementrian`,
     },
     {
         image: "/images/logo/Logo-mini.png",
-        title: `Kementrian Lorem Ipsum`,
+        title: `KEMENTRIAN PERGERAKAN`,
         text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
         link: `/#`,
     },
     {
         image: "/images/logo/Logo-mini.png",
-        title: `Kementrian Lorem Ipsum`,
+        title: `KEMENKOAN KEMASYARAKATAN`,
         text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
         link: `/#`,
     },
     {
         image: "/images/logo/Logo-mini.png",
-        title: `Kementrian Lorem Ipsum`,
+        title: `KEMENKOAN KOMINFO`,
+        text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure..",
+        link: `/#`,
+    },
+    {
+        image: "/images/logo/Logo-mini.png",
+        title: `KEMENKOAN PPK`,
         text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure..",
         link: `/#`,
     },

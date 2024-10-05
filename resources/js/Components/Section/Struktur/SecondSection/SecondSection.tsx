@@ -9,19 +9,19 @@ type AnggotaContentType = {
 
 const AnggotaContent: AnggotaContentType[] = [
     {
-        image: "/images/cards/real-pip.png",
-        title: "Lorem Ipsum",
+        image: "/images/fungsionaris/SESKAB/Menteri_SESKAB_DIFA_DWI.png",
+        title: "DIFA DWI",
         text: `Sekretaris Kabinet.`,
     },
     {
-        image: "/images/cards/real-pip.png",
-        title: "Lorem Ipsum",
-        text: `Menteri Keuangan.`,
+        image: "/images/fungsionaris/PAK/Kepala_PAK_NURUDDIN_HAQUEL.png",
+        title: "NURUDDIN HAQUEL",
+        text: `Pemberdayaan Aparatur Kabinet.`,
     },
     {
-        image: "/images/cards/real-pip.png",
-        title: "Lorem Ipsum",
-        text: `Pemberdayaan Aparatur Kabinet.`,
+        image: "/images/fungsionaris/BENKAB/Menteri_Benkab_ZOLFA_SAFITRI.png",
+        title: "ZOLFA SAFITRI",
+        text: `Menteri Keuangan.`,
     },
 ];
 
@@ -30,13 +30,14 @@ const SecondSection = () => {
         <Box
             sx={{
                 width: "100%",
-                height: "100vh",
+                // height: "100vh",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
                 backgroundColor: "#850E09",
                 position: "relative", // Set parent as relative for absolute positioning
+                paddingY: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive padding
             }}
         >
             <Box

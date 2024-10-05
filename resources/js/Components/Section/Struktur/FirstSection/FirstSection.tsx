@@ -10,30 +10,15 @@ const ImagePresWapres: CardProfProps[] = [
     {
         direction: "left",
         images: "/images/fungsionaris/Pres_dan_Wapres/Presbem.png",
-        nama: "Aulia Thaariq Akbar",
+        nama: "AULIA THAARIQ AKBAR",
         posisi: "Presiden BEM Kabinet ASA PROGRESIF"
 
     },
     {
         direction: "right",
         images: "/images/fungsionaris/Pres_dan_Wapres/Wapresbem.png",
-        nama:" Ricky Rivaldi",
+        nama:" RICKY RIVALDI",
         posisi: "Wakil Presiden BEM Kabinet ASA PROGRESIF"
-    },
-]
-
-const LogoContent: LogoContentType[] = [
-    {
-        image: "/images/cards/real-pip.png",
-        text: `“Sint pariatur nulla commodo cupidatat non Lorem enim velit ex sit occaecat mollit elit nisi. Voluptate occaecat cillum consequat laboris incididunt dolore est enim ut quis. Aute anim elit nostrud sunt labore. Laborum nulla elit laboris deserunt occaecat eu elit.”`,
-    },
-    {
-        image: "/images/cards/real-pip.png",
-        text: `“Sint pariatur nulla commodo cupidatat non Lorem enim velit ex sit occaecat mollit elit nisi. Voluptate occaecat cillum consequat laboris incididunt dolore est enim ut quis. Aute anim elit nostrud sunt labore. Laborum nulla elit laboris deserunt occaecat eu elit.”`,
-    },
-    {
-        image: "/images/cards/real-pip.png",
-        text: `“Sint pariatur nulla commodo cupidatat non Lorem enim velit ex sit occaecat mollit elit nisi. Voluptate occaecat cillum consequat laboris incididunt dolore est enim ut quis. Aute anim elit nostrud sunt labore. Laborum nulla elit laboris deserunt occaecat eu elit.”`,
     },
 ];
 
