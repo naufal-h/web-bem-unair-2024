@@ -1,10 +1,26 @@
-import CardProf from "@/Components/Card/CardProf";
+import CardProf, { CardProfProps } from "@/Components/Card/CardProf";
 import { Box, Typography } from "@mui/material";
 
 type LogoContentType = {
     image: string;
     text: string;
 };
+
+const ImagePresWapres: CardProfProps[] = [
+    {
+        direction: "left",
+        images: "/images/fungsionaris/Pres_dan_Wapres/Presbem.png",
+        nama: "Aulia Thaariq Akbar",
+        posisi: "Presiden BEM Kabinet ASA PROGRESIF"
+
+    },
+    {
+        direction: "right",
+        images: "/images/fungsionaris/Pres_dan_Wapres/Wapresbem.png",
+        nama:" Ricky Rivaldi",
+        posisi: "Wakil Presiden BEM Kabinet ASA PROGRESIF"
+    },
+]
 
 const LogoContent: LogoContentType[] = [
     {
@@ -90,11 +106,15 @@ const FirstSection = () => {
                     marginX: { xs: "2rem" }, // Responsive margin
                 }}
             >
-                {/* Image on the left, card on the right */}
-                <CardProf direction="left" />
-
-                {/* Image on the right, card on the left */}
-                <CardProf direction="right" />
+                {ImagePresWapres.map((person, index) => (
+                    <CardProf
+                        key={index}
+                        direction={person.direction}
+                        images={person.images}
+                        nama={person.nama}
+                        posisi={person.posisi}
+                    />
+                ))}
             </Box>
         </Box>
     );
