@@ -4,13 +4,15 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
+import Drawer from "@mui/material/Drawer";
+import MenuIcon from "@mui/icons-material/Menu";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemText from "@mui/material/ListItemText";
 import { Link } from "@mui/material";
-// import { Link } from "@inertiajs/react";
+import CloseIcon from '@mui/icons-material/Close';
 
 const pages = [
     { name: "BERANDA", href: "/" },
@@ -23,27 +25,41 @@ const pages = [
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
-    const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-        null
+    const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
+
+    const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
+        if (event.type === 'keydown' && ((event as React.KeyboardEvent).key === 'Tab' || (event as React.KeyboardEvent).key === 'Shift')) {
+            return;
+        }
+        setIsDrawerOpen(open);
+    };
+
+    const drawerList = () => (
+        <Box
+        sx={{ width: 256, padding: '0' }}
+        role="presentation"
+        onKeyDown={toggleDrawer(false)}
+    >
+        {/* Close Button */}
+        <Box sx={{ display: 'flex', justifyContent: 'flex-end', p: 2, height: '56px' }}>
+            <IconButton sx={{ padding: '0' }} onClick={toggleDrawer(false)}>
+                <CloseIcon sx={{padding: '0', color: 'black' }} />
+            </IconButton>
+        </Box>
+        
+        <List>
+            {pages.map((page) => (
+                <ListItem sx={
+                    {
+                        height: '40px',
+                    }
+                } button key={page.name} component="a" href={page.href} onClick={toggleDrawer(false)}>
+                    <ListItemText primary={page.name} />
+                </ListItem>
+            ))}
+        </List>
+    </Box>
     );
-    const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-        null
-    );
-
-    const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
-
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
 
     return (
         <AppBar position="sticky" sx={{ backgroundColor: "white" }}>
@@ -61,7 +77,7 @@ function ResponsiveAppBar() {
                         }}
                     />
 
-                    {/* Burger menu */}
+                    {/* Burger menu (Drawer) */}
                     <Box
                         sx={{
                             flexGrow: 1,
@@ -79,51 +95,18 @@ function ResponsiveAppBar() {
                         />
                         <IconButton
                             size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleOpenNavMenu}
+                            aria-label="open drawer"
+                            onClick={toggleDrawer(true)}
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: "bottom",
-                                horizontal: "left",
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: "top",
-                                horizontal: "left",
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: "block", md: "none" },
-                            }}
+                        <Drawer
+                            anchor="left"
+                            open={isDrawerOpen}
+                            onClose={toggleDrawer(false)}
                         >
-                            {pages.map((page) => (
-                                <MenuItem
-                                    key={page.name}
-                                    onClick={handleCloseNavMenu}
-                                >
-                                    <Typography
-                                        component={Link}
-                                        href={page.href}
-                                        sx={{
-                                            fontFamily: "Open Sans",
-                                            textDecoration: "none",
-                                            color: "inherit",
-                                        }}
-                                        textAlign="center"
-                                    >
-                                        {page.name}
-                                    </Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
+                            {drawerList()}
+                        </Drawer>
                     </Box>
 
                     {/* Normal display */}
@@ -135,53 +118,27 @@ function ResponsiveAppBar() {
                         }}
                     >
                         {pages.map((page) => (
-                            <Link key={page.name} href={page.href} sx={{
-                                        fontWeight: "medium",
-                                        fontSize: "1rem",
-                                        fontFamily: "Open Sans",
-                                        my: 2,
-                                        // mx: 3,
-                                        color: "black",
-                                        display: "block",
-                                        textDecoration: 'none',
-                                        paddingX:"28px",
-                                        transition: "all0.3sease", // Transisiuntukefeksmooth
-                                        '&:hover': {
-                                            opacity:0.8, // Mengubahopacitysaatdihoveroutline: "2pxsolid #000", // Menambahkanoutlinesaatdihover
-                                        },
-                                    }}>
-                                        {page.name}   
+                            <Link
+                                key={page.name}
+                                href={page.href}
+                                sx={{
+                                    fontWeight: "medium",
+                                    fontSize: "1rem",
+                                    fontFamily: "Open Sans",
+                                    my: 2,
+                                    color: "black",
+                                    display: "block",
+                                    textDecoration: 'none',
+                                    paddingX: "28px",
+                                    transition: "all 0.3s ease",
+                                    '&:hover': {
+                                        opacity: 0.8,
+                                    },
+                                }}
+                            >
+                                {page.name}
                             </Link>
                         ))}
-                    </Box>
-                    <Box sx={{ flexGrow: 0 }}>
-                        <Menu
-                            sx={{ mt: "45px" }}
-                            id="menu-appbar"
-                            anchorEl={anchorElUser}
-                            anchorOrigin={{
-                                vertical: "top",
-                                horizontal: "center",
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: "top",
-                                horizontal: "right",
-                            }}
-                            open={Boolean(anchorElUser)}
-                            onClose={handleCloseUserMenu}
-                        >
-                            {settings.map((setting) => (
-                                <MenuItem
-                                    key={setting}
-                                    onClick={handleCloseUserMenu}
-                                >
-                                    <Typography textAlign="center">
-                                        {setting}
-                                    </Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
                     </Box>
                 </Toolbar>
             </Container>
