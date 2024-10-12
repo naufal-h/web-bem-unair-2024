@@ -74,6 +74,7 @@ const FirstSection = ({image, nama, jabatan, kemenkoan,nama_kementrian}: MainKem
                             fontWeight: "bold",
                             fontSize: { xs: "1.75rem", sm: "2.5rem", md: "3rem" }, // Responsive font size
                             fontFamily: "open sans",
+                            color: "#7A2D35",
                         }}
                     >
                         {firstWord}

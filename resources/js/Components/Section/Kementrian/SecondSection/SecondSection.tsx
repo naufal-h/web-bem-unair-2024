@@ -56,7 +56,7 @@ const SecondSection = ({nama,
             >
                 <Box
                     sx={{
-                        width: { xs: "90%", md: "80%" },
+                        width: { xs: "90%", md: "100%" },
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
