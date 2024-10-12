@@ -93,7 +93,7 @@ const ThirdSection = () => {
                             <center>
                                 <img
                                     alt="Presiden BEM"
-                                    src="/images/fungsionaris/Pres dan Wapres/Presbem_aULIA THAARIQ aKBAR.png"
+                                    src="/images/fungsionaris/Pres_dan_Wapres/Presbem.png"
                                     width={150}
                                     height={150}
                                     style={{
