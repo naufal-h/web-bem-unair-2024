@@ -91,10 +91,10 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
         ],
-        nama_kementrian: "KEMENTRIAN KOMINFO",
+        nama_kementrian: "KEMENKOAN KOMINFO",
         text_kementrian:
             "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-        id: "1",
+        id: "kominfo",
     },
     {
         image: "/images/fungsionaris/MENKO/Menko_KMH_VIKRI_BUDI.png",
@@ -138,10 +138,10 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 anggota: [],
             },
         ],
-        nama_kementrian: "KEMENTRIAN PERGERAKAN",
+        nama_kementrian: "KEMENKOAN KEMAHASISWAAN",
         text_kementrian:
             "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-        id: "2",
+        id: "kemahasiswaan",
     },
     {
         image: "/images/fungsionaris/MENKO/Menko_Kemsyarakatan_RAHMAN_HAKIM.png",
@@ -185,10 +185,10 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 anggota: [],
             },
         ],
-        nama_kementrian: "KEMENTRIAN KEMASYARAKATAN",
+        nama_kementrian: "KEMENKOAN KEMASYARAKATAN",
         text_kementrian:
             "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-        id: "3",
+        id: "kemasyarakatan",
     },
     {
         image: "/images/fungsionaris/MENKO/Menko_Pergerakan_M._Arif_Amrullah.png",
@@ -219,9 +219,9 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 anggota: [],
             },
         ],
-        nama_kementrian: "KEMENTRIAN KOMINFO",
+        nama_kementrian: "KEMENKOAN PERGERAKAN",
         text_kementrian: "",
-        id: "4",
+        id: "pergerakan",
     },
     {
         image: "/images/fungsionaris/MENKO/Menko_PPK_NOTUSA_GELAR.png",
@@ -262,9 +262,9 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 anggota: [],
             },
         ],
-        nama_kementrian: "KEMENTRIAN PPK",
+        nama_kementrian: "KEMENKOAN PPK",
         text_kementrian:
             "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-        id: "5",
+        id: "ppk",
     },
 ];
