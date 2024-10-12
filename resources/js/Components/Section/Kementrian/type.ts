@@ -1,24 +1,26 @@
 export interface MainKemenkoanInterface {
+    id: string
+    nama_kementrian: string
+    text_kementrian: string
     image: string
     nama: string
-    kemenkoan: KementrianType[]
+    kemenkoan: DetailKementrianType[]
     jabatan: string
 }
 
-export interface KementrianType  {
-    detail: DetailKementrianType[]
-}
+
 
 export interface DetailKementrianType {
     nama: string
     text_kementrian: string
+    anggota: AnggotaType[]
     proker: ProkerType[]
 }
 
 
 export type AnggotaType = {
     image: string
-    name: string
+    nama: string
     jabatan: string
 }
 

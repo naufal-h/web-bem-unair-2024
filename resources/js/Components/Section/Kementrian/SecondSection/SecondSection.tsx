@@ -1,32 +1,21 @@
 import CardAnggota from "@/Components/Card/CardAnggota";
 import { Box, Typography } from "@mui/material";
+import { DetailKementrianType } from "../type";
 
-type AnggotaContentType = {
-    image: string;
-    title: string;
-    text: string;
-};
 
-const AnggotaContent: AnggotaContentType[] = [
-    {
-        image: "/images/cards/real-pip.png",
-        title: "Lorem Ipsum",
-        text: `Sekretaris Kabinet.`,
-    },
-    {
-        image: "/images/cards/real-pip.png",
-        title: "Lorem Ipsum",
-        text: `Menteri Keuangan.`,
-    },
-    {
-        image: "/images/cards/real-pip.png",
-        title: "Lorem Ipsum",
-        text: `Pemberdayaan Aparatur Kabinet.`,
-    },
-];
 
-const SecondSection = () => {
-    return (
+
+const SecondSection = ({nama,
+    text_kementrian,
+    anggota,
+    proker}:DetailKementrianType) => {
+    console.log('nama', nama);
+    console.log('text_kementrian', text_kementrian);
+    console.log('anggota', anggota);
+    const titleWords = nama.split(' ');
+    const firstWord = titleWords[0];
+    const remainingWords = titleWords.slice(1).join(' ');
+    return ( 
         <Box
             sx={{
                 width: "100%",
@@ -85,7 +74,7 @@ const SecondSection = () => {
                             WebkitTextStrokeWidth: "1px",
                         }}
                     >
-                        KEMENKOAN
+                        {firstWord}
                     </Typography>
                     <Typography
                         sx={{
@@ -95,7 +84,7 @@ const SecondSection = () => {
                             color: "#FFF9F9",
                         }}
                     >
-                        KOMINFO
+                        {remainingWords}
                     </Typography>
                 </Box>
                 <Typography
@@ -107,28 +96,29 @@ const SecondSection = () => {
                         color: "#FFF9F9",
                     }}
                 >
-                    Menjadi pusat informasi BEM UNAIR kepada publik dengan
-                    menyajikan berbagai data dan informasi berbasis digital
-                    serta menjadi wadah pengembangan digitalisasi.
+                    {text_kementrian}
                 </Typography>
-                <Box
-                    sx={{
-                        width: { xs: "90%", md: "70%" }, // Adjust width for mobile
-                    }}
-                    display="flex"
-                    justifyContent="space-around"
-                    flexWrap="wrap"
-                    gap={2}
-                >
-                    {AnggotaContent.map((anggota, index) => (
-                        <CardAnggota
-                            key={index}
-                            image={anggota.image}
-                            title={anggota.title}
-                            text={anggota.text}
-                        />
-                    ))}
-                </Box>
+                
+                    <Box
+                        // key={index}
+                        sx={{
+                            width: { xs: "90%", md: "70%" }, // Adjust width for mobile
+                        }}
+                        display="flex"
+                        justifyContent="space-around"
+                        flexWrap="wrap"
+                        gap={2}
+                    >
+                        {anggota.map((item, idx) => (
+                            <CardAnggota
+                                key={idx}
+                                image={item.image}
+                                title={item.nama}
+                                text={item.jabatan}
+                            />
+                        ))}
+                    </Box>
+                
             </Box>
         </Box>
     );

@@ -11,7 +11,9 @@ class StrukturController extends Controller
         return Inertia::render('Struktur');
     }
 
-    public function kementrian() {
-        return Inertia::render('Kementrian');
+    public function kementrian($id) {
+        return Inertia::render('Kementrian', [
+            'id' => $id
+        ]);
     }
 }
