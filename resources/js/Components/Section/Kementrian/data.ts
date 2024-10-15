@@ -308,8 +308,28 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                     "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "Vox Airlangga Vox Populi",
+                        deskripsi_proker: "BEM Unair hadir terjun ke lapangan untuk melakukan analisis kondisi sosial sehingga mampu menemukan solusi rekomendasi yang diajukan ke pihak otoritas setempat.",
+                    },
+                    {
+                        judul: "BARAK UNAIR",
+                        deskripsi_proker: "Sebuah organ taktis yang membentuk barisan penggerak aksi dan propaganda melalui kelas kastrat dan kelas manajemen aksi.",
+                    },
+                    {
+                        judul: "SIMULAKRA POLITIK",
+                        deskripsi_proker: "Debat dan diskusi publik antar pasangan calon eksekutif",
+                    },
+                    {
+                        judul: "Airlangga Critical Movement 2.0",
+                        deskripsi_proker: "Bekerja sama dengan kastrat seluruh BEM UNAIR untuk membuat sebuah acara seperti seminar, diskusi, bedah buku, pertunjukan politik, dan pembuatan kajian strategis masing-masing rumpun keilmuan.",
+                    },
+                    {
+                        judul: "CANDRADIMUKA SYMPOSIUM",
+                        deskripsi_proker: "Talkshow yang mengundang pembicara kompeten didunia aktivisme, sekaligus memberikan “Candradimuka Award” terhadap aktivis yang sudah berjuang selama ini",
+                    },
+                    {
+                        judul: "KSATRIA ABHIPRAYA",
+                        deskripsi_proker: "kegiatan yang merespon terhadap permasalahan yang ada disekitar kita dan segera perlu di tindak lanjut berupa pembuatan kajian maupun aksi",
                     },
                 ],
                 anggota: [
@@ -335,9 +355,26 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 text_kementrian: "",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "KARISMA (Komitmen Ibu untuk Relevansi, Solidaritas, dan Motivasi Anak)",
+                        deskripsi_proker: "Edukasi berupa materi dasar kepada para Ibu dan calon ibu berupa seminar dan workshop dari stakeholder terkait (tokoh yang berperan dalam bidang kesehatan dan kejiwaan.",
                     },
+                    {
+                        judul: "PONDASI (Podcast dan Kajian Aksi)",
+                        deskripsi_proker: "Program kerja berupa kajian-kajian isu iyang berkaitan dengan kesetaraan gender dan dikemas dalam bentuk podcast. Kegiatan ini memanfaatkan media sosial sebagai tempat publikasi dengan mengundang narasumber berkompeten sesuai dengan topik yang diangkat.",
+                    },
+                    {
+                        judul: "16 HAKTP (Hari Anti Kekerasan terhadap Perempuan)",
+                        deskripsi_proker: "Serangkaian kegiatan dalam memperkenalkan adanya Hari Anti Kekerasan sepanjang 2 minggu, dengan mimbar kesetaraan sebagai pembukaan kemudian dilanjutkan beberapa lomba, seminar dan podcast.",
+                    },
+                    {
+                        judul: "PRISMA (Program Rekonsiliasi dan Integrasi Sosial melalui Aduan)",
+                        deskripsi_proker: "Kegiatan ini melakukan pendampingan berdasarkan kebutuhan dasar dari pola pendampingan yakni, pendampingan psikis, agamis, hukum, serta kesehatan. Selain menyediakan pendampingan, kegiatan ini juga melakukan advokasi terhadap prosedur yang dilakukan SATGAS PPKS guna mengawal jalannya penyelesaian kasus.",
+                    },
+                    {
+                        judul: "Empower (Empowering Women in Professions, Encouraging Resilience)",
+                        deskripsi_proker: "Kegiatan ini berupa pengadaan seminar dan pembinaan terhadap perempuan yang berkaitan dengan profesi. Seminar yang diadakan mengulik pada tema wanita takut menikah dan gerak wanita tidak leluasa setelah menikah dan karir yang harus berhenti ketika sudah menikah.",
+                    },
+                    
                 ],
                 anggota: [
                     {
