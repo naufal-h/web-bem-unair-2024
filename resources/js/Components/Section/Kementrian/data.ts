@@ -202,9 +202,26 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                     "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "Airlangga Berdaya",
+                        deskripsi_proker: "Airlangga Berdaya merupakan kegiatan pemberdayaan masyarakat. Kegiatan ini berfokus padapencegahan permasalahan kesehatan gizi masyarakat, salah satunya ialah stunting. Kegiatan ini dilakukan dalam jangka waktu 2 bulan dan monitoring secara berkala.",
                     },
+                    {
+                        judul: "Sehat With Us",
+                        deskripsi_proker: "Program kerja yang berfokus menurunkan penyakit pembunuh nomor satu di Indonesiia yang berhubungan dengann kardiovaskuler guna meningkatkan derajat kesehatan masyarakat internal dan eksternal kampus.",
+                    },
+                    {
+                        judul: "Bakti Airlangga",
+                        deskripsi_proker: "Suatu program kerja untuk menjangkau masyarakat 3T dengan cara melakukan penyuluhan terkait pola hidup bersih dan sehat, penyuluhan gizi, serta pemberian pelayanan kesehatan gratis kepada masyarakat di wilayah tersebut. Selain itu juga diadakannya kegiatan demonstrasi pengolahan tanaman herbal yang berkhasiat baik untuk Kesehatan",
+                    },
+                    {
+                        judul: "Kita Sama",
+                        deskripsi_proker: "Program kerja sebagai bentuk kepedulian kemenkes kepada anak difabel di surabaya,",
+                    },
+                    {
+                        judul: "HEMCOSA (HEALTH MENTAL CORPORE SANO)",
+                        deskripsi_proker: "Program kerja untuk mewadahi mahasiswa yang mengalami masalah psikologi seperti insecure, depresi, overthinking, putus asa dan masalah sosial seperti bagaimana perilaku individu dalam berinteraksi dengan sesama.",
+                    },
+
                 ],
                 anggota: [
                     {
@@ -264,9 +281,30 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                     "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "Airlangga Environmental Movement",
+                        deskripsi_proker: "Airlangga Environmental Movement merupakan serangkaian kegiatan edukasi dan bentuk aksi serta kampanye peduli lingkungan berupa clean up di suatu daerah yang urgent dalam permasalahan kebersihan lingkungan dengan menggaet seluruh elemen masyarakat untuk berpartisipasi dalam kegiatan tersebut.",
                     },
+                    {
+                        judul: "Jagawana Vol.3",
+                        deskripsi_proker: "Jagawana merupakan serangkaian kegiatan berbasis konservasi lingkungan, pemeliharaan, pengembangan lingkungan daerah terestrial, upaya mitigasi dampak perubahan iklim hingga edukasi serta penyuluhan kepada masyarakat setempat",
+                    },
+                    {
+                        judul: " AIRLANGGA DETERMINED CONTRIBUTION AND SUSTAINEBLE ACTION",
+                        deskripsi_proker: "Seminar skala nasional yang akan mengundang pembicara high profile untuk meningkatkan engangement bem unair secara keseluruhan. Didorong oleh evaluasi acara seminar bem unair terkhususnya pada Kementerian lingkungan hidup dalam periode sebelumnya yang belum maksimal dari segi kuantitas dan antusiasme",
+                    },
+                    {
+                        judul: "Eco Suara Airlangga",
+                        deskripsi_proker: "Rangkaian acara dimulai oleh perwakilan kementrian LH bem unair dengan melakukan audiensi kepada masyarakat yang terdampak dan dilanjuti dengan perumusan masalah. Kemudian dihasilkan output berupa pengadaan seminar dan/atau workshop yang dihadiri oleh pihak yang kompeten untuk mendampingi dan mencerdaskan masyarakat seputar permasalahan yang dirasakan",
+                    },
+                    {
+                        judul: "AIRLANGGA YOUTH ENVIRONMENTAL ACTION",
+                        deskripsi_proker: "Airlangga Youth Environmental Action merupakan serangkaian kegiatan lomba dan Airlangga Environment Forum. Kegiatan lomba berupa lomba poster, kemudian juga terdapat diskusi forum seperti webinar. Diharapkan dapat menjadi sarana dalam meningkatkan kreativitas dan keterampilan serta dapat menambah wawasan dalam menjaga dan merawat lingkungan sumber daya alam yang memberikan efek positif bagi mahasiswa, masyarakat umum, dan lingkungan. ",
+                    },
+                    {
+                        judul: "CAKRAWALA",
+                        deskripsi_proker: "Cakrawala merupakan kegiatan yang bertujuan untuk merancang dan melaksanakan kegiatan dengan fokus pada pelestarian lingkungan, serta pengembangan fasilitas lingkungan, Pertama melalui kegiatan konservasi penyu dan mangrove serta pengembangan fasilitas lingkungan. Kedua penanaman 1000 bibit mangrove",
+                    },
+
                 ],
                 anggota: [
                     {
