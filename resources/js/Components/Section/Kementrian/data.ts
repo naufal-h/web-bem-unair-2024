@@ -179,7 +179,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                         jabatan: "MENTERI ADKESMA",
                     },
                     {
-                        image:"/images/fungsionaris/ADKESMA/Dirjen Kesejahteraan Mahasiswa_RIKY EKA.png",
+                        image: "/images/fungsionaris/ADKESMA/Dirjen Kesejahteraan Mahasiswa_RIKY EKA.png",
                         nama: "RIKY EKA",
                         jabatan: "DIRJEN KESEJAHTERAAN MAHASISWA",
                     }
@@ -208,7 +208,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
                 anggota: [
                     {
-                        image:"/images/fungsionaris/KESEHATAN/Dirjen Pencegahan dan  Pengendalian Penyakit_CHANDRA DWWI.png",
+                        image: "/images/fungsionaris/KESEHATAN/Dirjen Pencegahan dan  Pengendalian Penyakit_CHANDRA DWWI.png",
                         nama: "CHANDRA DWI WIJAYA",
                         jabatan: "DIRJEN PENCEGAHAN DAN PENGENDALIAN PENYAKIT",
                     },
@@ -222,7 +222,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                         nama: "ANISA FARADILA",
                         jabatan: "DIRJEN PSIKOSIA DAN INKLUSIFITAS",
                     }
-                    
+
                 ],
             },
             {
@@ -275,17 +275,17 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                         jabatan: "DIRJEN PPKL",
                     },
                     {
-                        image:"/images/fungsionaris/LH/menteri LH_MUHAMMAD.png",
+                        image: "/images/fungsionaris/LH/menteri LH_MUHAMMAD.png",
                         nama: "MUHAMMAD",
                         jabatan: "MENTERI LH",
                     },
                     {
-                        image:"/images/fungsionaris/LH/Dirjen Advokasi Kajian Strategis lingkungan_JASON ASIRO.png",
+                        image: "/images/fungsionaris/LH/Dirjen Advokasi Kajian Strategis lingkungan_JASON ASIRO.png",
                         nama: "JASON ASIRO",
                         jabatan: "DIRJEN ADVOKASI KAJIAN STRATEGIS LINGKUNGAN",
                     },
                     {
-                        image:"/images/fungsionaris/LH/Dirjen Pengembangan Prservesi SDA_ARCELIA FERINDA.png",
+                        image: "/images/fungsionaris/LH/Dirjen Pengembangan Prservesi SDA_ARCELIA FERINDA.png",
                         nama: "ARCELIA FERINDA",
                         jabatan: "DIRJEN PENGEMBANGAN PRESERVASI SDA",
                     }
@@ -314,17 +314,17 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
                 anggota: [
                     {
-                        image:"/images/fungsionaris/SOSPOL/Dirjen Analisis Isu Strategis_AHMAD HARIST.png",
+                        image: "/images/fungsionaris/SOSPOL/Dirjen Analisis Isu Strategis_AHMAD HARIST.png",
                         nama: "AHMAD HARIST",
                         jabatan: "DIRJEN ANALISIS ISU STRATEGIS",
                     },
                     {
-                        image:"/images/fungsionaris/SOSPOL/Menteri sospol_ERDOGAN THAYYIB.png",
+                        image: "/images/fungsionaris/SOSPOL/Menteri sospol_ERDOGAN THAYYIB.png",
                         nama: "ERDOGAN THAYYIB",
                         jabatan: "MENTERI SOSPOL",
                     },
                     {
-                        image:"/images/fungsionaris/SOSPOL/Dirjen Aksi dan Propaganda_ILHAM HERALIZADI.png",
+                        image: "/images/fungsionaris/SOSPOL/Dirjen Aksi dan Propaganda_ILHAM HERALIZADI.png",
                         nama: "ILHAM HERALIZADI",
                         jabatan: "DIRJEN AKSI DAN PROPAGANDA",
                     }
@@ -341,17 +341,17 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
                 anggota: [
                     {
-                        image:"/images/fungsionaris/KG/Dirjen Pemberdayaan Perempuan Progresif_TSURAYYA KAMILAH.png",
+                        image: "/images/fungsionaris/KG/Dirjen Pemberdayaan Perempuan Progresif_TSURAYYA KAMILAH.png",
                         nama: "TSURAYYA KAMILAH",
                         jabatan: "DIRJEN PEMBERDAYAAN PEREMPUAN PROGRESIF",
                     },
                     {
-                        image:"/images/fungsionaris/KG/Menteri Kesetaraan Gender_DIHAN ASNAFIN.png",
+                        image: "/images/fungsionaris/KG/Menteri Kesetaraan Gender_DIHAN ASNAFIN.png",
                         nama: "DIHAN ASNAFIN",
                         jabatan: "MENTERI KESETARAAN GENDER",
                     },
                     {
-                        image:"/images/fungsionaris/KG/Dirjen Edukasi dan Aksi_AZLIN HUWAIDA.png",
+                        image: "/images/fungsionaris/KG/Dirjen Edukasi dan Aksi_AZLIN HUWAIDA.png",
                         nama: "AZLIN HUWAIDA",
                         jabatan: "DIRJEN EDUKASI DAN AKSI",
                     }
@@ -372,23 +372,51 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 text_kementrian: "",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "Cendekia Airlangga",
+                        deskripsi_proker: "Kegiatan mentoring kepenulisan ilmiah yang akan dilaksanakan secara ruting tiap bulan dengan menghadirkan narasumber yang berkompeten pada bidangnya.",
+                    },
+                    {
+                        judul: "TOEFL and IELTS Program",
+                        deskripsi_proker: "TOEFL and IELTS program yang berkolaborasi dengan stakeholder untuk mengadakan kelas intensif bahasa Inggris dalam mempersiapkan dunia kerja atau masuk ke perguruan tinggi",
+                    },
+                    {
+                        judul: "Up to Date Riskel",
+                        deskripsi_proker: "Merupakan konten yang setiap bulannya diupload di instagram tentang riset dan keilmuan guna memberikan informasi berupa lomba, dan konten edukasi lainnya",
+                    },
+                    {
+                        judul: "Airlangga Convention",
+                        deskripsi_proker: "Airlangga Convention merupakan ajang kompetisi keprestasian di kota Surabaya yang bertujuan untuk mewujudkan misi pengembangan talenta muda di Surabaya dan Indonesia.",
+                    },
+                    {
+                        judul: "INTENSIF PKM LEARNING SESSION",
+                        deskripsi_proker: "Merupakan Intensif Mentoring untuk mempersiapkan mahasiswa dalam mengikuti lomba PKM serta mempersiapkan PIMNAS 2025. Sehingga dari adanya Intensif Mentoring tersebut diharapkan terdapat mahasiswa yang lolos ke PIMNAS 2025",
+                    },
+                    {
+                        judul: "ABIYASA AIRLANGGA",
+                        deskripsi_proker: "Abiyasa Airlangga merupakan program yang bersifat agenda dalam mempersiapkan lomba debat. Program ini juga menyelenggarakan talkshow yang mengundang pemateri kompeten dalam hal debat.",
+                    },
+                    {
+                        judul: "GLOBAL INSIGHT",
+                        deskripsi_proker: "Kompetisi yang melibatkan berbagai negara dalam menulis esai dengan tema yang ditentukan. Lomba ini dirancang untuk berinteraksi dalam memperluas jaringan dan membangun pemahaman. lintas budaya.",
+                    },
+                    {
+                        judul: "ASA PIMNAS AIRLANGGA 2024",
+                        deskripsi_proker: "Merupakan sebuah program untuk mendukung kesuksesan PIMNAS 2024, serta mengundang BEM se-Indonesia untuk bergabung di sarasehan.",
                     },
                 ],
                 anggota: [
                     {
-                        image:"/images/fungsionaris/RISKEL/Dirjen Riset dan Inovasi_BAGAS DIMAS.png",
+                        image: "/images/fungsionaris/RISKEL/Dirjen Riset dan Inovasi_BAGAS DIMAS.png",
                         nama: "BAGAS DIMAS",
                         jabatan: "DIRJEN RISET DAN INOVASI",
                     },
                     {
-                        image:"/images/fungsionaris/RISKEL/Menteri Riset dan Keilmuan_SHINTA ADELLYA.png",
+                        image: "/images/fungsionaris/RISKEL/Menteri Riset dan Keilmuan_SHINTA ADELLYA.png",
                         nama: "SHINTA ADELLYA",
                         jabatan: "MENTERI RISET DAN KEILMUAN",
                     },
                     {
-                        image:"/images/fungsionaris/RISKEL/Dirjen Akademik dan Prestasi_AHMAD RIZQI.png",
+                        image: "/images/fungsionaris/RISKEL/Dirjen Akademik dan Prestasi_AHMAD RIZQI.png",
                         nama: "AHMAD RIZQI",
                         jabatan: "DIRJEN AKADEMIK DAN PRESTASI",
                     }
@@ -399,23 +427,51 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 text_kementrian: "",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "Bumandhala Arta",
+                        deskripsi_proker: "Program ini berupa pengenalan bahan membatik alami dan ramah lingkungan serta pelatihan pembuatan batik dari teknik dasar hingga produk jadi.",
+                    },
+                    {
+                        judul: "Festival Adiwarna",
+                        deskripsi_proker: "Mengadakan kompetisi seni, pameran seni, festival budaya bekerja sama dengan FORKOM UKM,FORMADA, LSM, BEM Fakultas dan Dinas kebudayaan setempat.",
+                    },
+                    {
+                        judul: "Chaya Citra Sankalpana (Art Edition)",
+                        deskripsi_proker: "Mengadakan program pelatihan dan workshop berkala yang mencakup berbagai aspek seni, budaya,dan olahraga",
+                    },
+                    {
+                        judul: "Cinematica",
+                        deskripsi_proker: "Mengadakan kegiatan pemutaran film, pertunjukan teater, diskusi serta bedah film",
+                    },
+                    {
+                        judul: "Raga Harmoni",
+                        deskripsi_proker: "Mengadakan kegiatan jalan sehat dan/atau maraton, seminar serta diskusi edukatif dengan melibatkan narasumber yang berkompeten di bidangnya.",
+                    },
+                    {
+                        judul: "Airlangga Youth Talk",
+                        deskripsi_proker: "Memberikan ruang bagi para pemuda yang berprestasi dalam bidang olahraga untuk membicarakan tentang cara mereka meraih prestasi sehingga dapat menginspirasi tidak hanya ksatria Airlangga tapi kepada seluruh lapisan pemuda Indonesia. Selain itu, akan diberikan penghargaan berupa sertifikat dan insentif finansial tidak hanya kepada pembicara tetapi kepada mahasiswa berprestasi yang sudah berkontribusi bagi bangsa Indonesia.",
+                    },
+                    {
+                        judul: "Chaya Citra Sankalpana (Sport Edition)",
+                        deskripsi_proker: "Mengadakan program pelatihan dan workshop berkala yang mencakup berbagai aspek seni, budaya,dan olahraga",
+                    },
+                    {
+                        judul: "Airlangga Convention",
+                        deskripsi_proker: "Airlangga Convention merupakan ajang kompetisi keolahragaan di kota Surabaya yang bertujuan untuk mewujudkan misi pengembangan talenta muda di Surabaya dan Indonesia.",
                     },
                 ],
                 anggota: [
                     {
-                        image:"/images/fungsionaris/SENIORA/Dirjen Kesehatan Jasmani  dan Prestasi Olahraga_JOHANES RICHARD.png",
+                        image: "/images/fungsionaris/SENIORA/Dirjen Kesehatan Jasmani  dan Prestasi Olahraga_JOHANES RICHARD.png",
                         nama: "JOHANES RICHARD",
                         jabatan: "DIRJEN KESEHATAN JASMIAN DAN PRESTASI OLAHRAGA",
                     },
                     {
-                        image:"/images/fungsionaris/SENIORA/Menteri SENIORA_APTA AMALIA.png",
+                        image: "/images/fungsionaris/SENIORA/Menteri SENIORA_APTA AMALIA.png",
                         nama: "APTA AMALIA",
                         jabatan: "MENTERI SENIORA",
                     },
                     {
-                        image:"/images/fungsionaris/SENIORA/Dirjen Ekspresi, Seni, dan Kebudayaan_DERI BAYU.png",
+                        image: "/images/fungsionaris/SENIORA/Dirjen Ekspresi, Seni, dan Kebudayaan_DERI BAYU.png",
                         nama: "DERI BAYU",
                         jabatan: "DIRJEN EKSPRESI, SENI, DAN KEBUDAYAAN",
                     }
@@ -426,23 +482,39 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 text_kementrian: "",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "EDGY STORE",
+                        deskripsi_proker: "Merupakan Program kerja yang berfokus pada merchandise",
+                    },
+                    {
+                        judul: "Airlangga Pop Up Market",
+                        deskripsi_proker: "Merupakan Program kerja berupa Festival, Bazar dan menghadikan komunitas yang ada di kampus maupun sekitar kampus.",
+                    },
+                    {
+                        judul: "HOUR OF INVENSTEMENT",
+                        deskripsi_proker: "Merupakan program limited talkshow yang mana fokus pembahasan perihal instrumen investasi perihal dunia saham dan juga forex, sekaligus mendukung mahasiswa UNAIR untuk bisa melek dan menjadi investor dengan bekerjasama dengan sekuritas terpercaya.",
+                    },
+                    {
+                        judul: "AIRLANGGA BUSINESS FORUM",
+                        deskripsi_proker: "Merupakan sebuah program kerja yang memiliki tiga rangkaian kegiatan yaitu lomba business plan, national business talk show, dan open festival. produk kreatif.",
+                    },
+                    {
+                        judul: "AIRLANGGA CONVENTION",
+                        deskripsi_proker: "Airlangga Convention merupakan program kerja bersama yang menghadirkan ajang kompetisi business case yang bertujuan untuk mewujudkan Potensi yang dapat memecahkan suatu case perusahaan dan Airlangga Convention juga Hadir untuk memberikan wadah bagi mahasiswa-mahasiswi universitas airlangga dan masyarakat yang memiliki usaha untuk dapat mendaftarkan dirinya menjadi salah satu penjual dalam event Aircon",
                     },
                 ],
                 anggota: [
                     {
-                        image:"/images/fungsionaris/EDIGPRO/Dirjen Investasi dan  Industri Kreatif_ABID OMAR.png",
+                        image: "/images/fungsionaris/EDIGPRO/Dirjen Investasi dan  Industri Kreatif_ABID OMAR.png",
                         nama: "ABID OMAR",
                         jabatan: "DIRJEN INVESTASI DAN INDUSTRI KREATIF",
                     },
                     {
-                        image:"/images/fungsionaris/EDIGPRO/Menteri EDIGPRO_AMIN MADANI.png",
+                        image: "/images/fungsionaris/EDIGPRO/Menteri EDIGPRO_AMIN MADANI.png",
                         nama: "AMIN MADANI",
                         jabatan: "MENTERI EDIGPRO",
                     },
                     {
-                        image:"/images/fungsionaris/EDIGPRO/Dirjen UMKM dan  Kewirausahaan_SHALOM DAVITA.png",
+                        image: "/images/fungsionaris/EDIGPRO/Dirjen UMKM dan  Kewirausahaan_SHALOM DAVITA.png",
                         nama: "SHALOM DAVITA",
                         jabatan: "DIRJEN UMKM DAN KEWIRA BUSINESSES",
                     }
