@@ -52,10 +52,22 @@ const Standar = (pdfUrl: pdfUrlType) => {
                     flexDirection: "column",
                 }}
             >
-                <Card sx={{ minHeight: "65vh" }}>
+                <Card
+                    sx={{
+                        minHeight: "65vh",
+                        width: { xs: "90vw", md: "80vw", lg: "60vw" }, // Responsif width
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
                     <iframe
                         src={pdfUrl.pdfUrl as unknown as string}
-                        style={{ height: "65vh", width: "60vw" }}
+                        style={{
+                            height: "65vh",
+                            width: "100%", // Mengatur lebar iframe agar mengikuti lebar Card
+                            border: "none", // Menghilangkan border default
+                        }}
                     />
                 </Card>
             </Box>
@@ -97,17 +109,26 @@ const Standar = (pdfUrl: pdfUrlType) => {
                     flexDirection: "column",
                 }}
             >
-                <Card sx={{ minHeight: "65vh" }}>
-                   
+                <Card
+                    sx={{
+                        minHeight: "65vh",
+                        width: { xs: "90vw", md: "80vw", lg: "60vw" }, // Responsif width
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
                     <iframe
                         src={pdfUrl.pdfUrl2 as unknown as string}
-                        style={{ height: "65vh", width: "60vw" }}
+                        style={{
+                            height: "65vh",
+                            width: "100%", // Mengatur lebar iframe agar mengikuti lebar Card
+                            border: "none", // Menghilangkan border default
+                        }}
                     />
                 </Card>
             </Box>
         </Box>
-
-        
     );
 };
 
