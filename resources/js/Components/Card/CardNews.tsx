@@ -27,9 +27,9 @@ const CardNews: React.FC<CardNewsProps> = ({ image, title, url, content }) => {
                 backgroundColor: "#FFF9F9",
                 borderRadius: "8px",
                 padding: {
-                    xs: "1rem", // For extra small screens
-                    md: "1.5rem", // For medium screens
-                    lg: "2rem", // For large screens
+                    xs: "1rem",
+                    md: "1.5rem",
+                    lg: "2rem",
                 },
                 display: "flex",
                 flexDirection: "column",
@@ -54,8 +54,8 @@ const CardNews: React.FC<CardNewsProps> = ({ image, title, url, content }) => {
                     padding: "0",
                     display: "flex",
                     flexDirection: {
-                        xs: "column", // Stack title and button on small screens
-                        md: "row", // Align title and button in a row on medium and up
+                        xs: "column",
+                        md: "row",
                     },
                     justifyContent: "space-between",
                     alignItems: "center", // Align items in the center on larger screens
@@ -69,7 +69,7 @@ const CardNews: React.FC<CardNewsProps> = ({ image, title, url, content }) => {
                         fontFamily: "Sansation",
                         fontSize: {
                             xs: "1.5rem", // Smaller font size on extra small screens
-                            md: "2rem",   // Larger font size on medium screens
+                            md: "2rem", // Larger font size on medium screens
                             lg: "2.5rem", // Even larger on large screens
                         },
                         transition: "color 0.3s",
@@ -135,7 +135,7 @@ const CardNews: React.FC<CardNewsProps> = ({ image, title, url, content }) => {
                         fontFamily: "Open Sans",
                         fontSize: {
                             xs: "0.875rem", // Smaller text for extra small screens
-                            md: "1rem",     // Default text size for medium screens
+                            md: "1rem", // Default text size for medium screens
                             lg: "1.125rem", // Larger text for large screens
                         },
                         transition: "color 0.3s",

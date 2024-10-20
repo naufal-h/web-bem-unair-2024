@@ -8,10 +8,6 @@ interface ArticleProps {
 }
 
 const FifthSection: React.FC<ArticleProps> = ({ articles }) => {
-    // // const date = new Date(published_at);
-    // const year = date.getFullYear();
-    // const month = `0${date.getMonth() + 1}`.slice(-2); // Extract and format the month (0-based index)
-    // const day = `0${date.getDate()}`.slice(-2);
     return (
         <>
             <Box
@@ -47,21 +43,19 @@ const FifthSection: React.FC<ArticleProps> = ({ articles }) => {
                         columns={{ xs: 4, sm: 8, md: 12 }}
                     >
                         {articles.map((article) => {
-                            // Parse the published_at date string
                             const dateObj = new Date(article.published_at);
                             const year = dateObj.getFullYear();
                             const month = `0${dateObj.getMonth() + 1}`.slice(
                                 -2
-                            ); // Months are zero-based
+                            );
                             const day = `0${dateObj.getDate()}`.slice(-2);
 
-                            // Generate the URL
                             const url = `/artikel/${year}/${month}/${day}/${article.slug}`;
 
                             return (
                                 <Grid
                                     item
-                                    xs={2}
+                                    xs={4}
                                     sm={4}
                                     md={4}
                                     key={article.slug}
