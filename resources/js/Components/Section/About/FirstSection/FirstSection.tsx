@@ -78,6 +78,7 @@ const FirstSection = () => {
                         alignItems: "center",
                         flexDirection: "column",
                         position: "relative",
+                        marginTop: { xs: "2rem" },
                     }}
                 >
                     <Box
