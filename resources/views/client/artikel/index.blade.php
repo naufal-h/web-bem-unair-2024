@@ -32,9 +32,9 @@
         }
     </script> --}}
 
-    <section class="min-h-screen flex justify-center items-start overflow-hidden px-4">
+    <section class="min-h-screen flex justify-center items-start overflow-hidden px-[64px]">
         <div class="container flex flex-col flex-wrap py-8 pb-16">
-            <div class="text-4xl md:text-8xl font-bold mb-4">Artikel</div>
+            <div class="text-5xl font-bold mb-4">Artikel</div>
             {{-- <a class="w-fit mb-8"
                 href="https://docs.google.com/document/d/19btlAaVNOrRGmpQRNdsVAODPsrnPHKxn/edit?usp=drivesdk&ouid=112812510591510158545&rtpof=true&sd=true"
                 target="__blank">» Lihat SOP Pengajuan Artikel</a> --}}

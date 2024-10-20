@@ -5,7 +5,7 @@ const ThirdSection = () => {
         <>
             <Box
                 sx={{
-                    backgroundColor: "#7A2D35",
+                    backgroundColor: "#850E09",
                     padding: { xs: "2rem", md: "4rem" },
                 }}
             >
@@ -24,7 +24,7 @@ const ThirdSection = () => {
                 </Typography>
                 <Box
                     sx={{
-                        backgroundColor: "#7A2D35",
+                        backgroundColor: "#850E09",
                         padding: { xs: "2rem", md: "4rem" },
                         display: "flex",
                         flexDirection: { xs: "column-reverse", md: "row" },
@@ -94,20 +94,28 @@ const ThirdSection = () => {
                                 <img
                                     alt="Presiden BEM"
                                     src="/images/fungsionaris/Pres_dan_Wapres/Presbem.png"
-                                    width={150}
-                                    height={150}
+                                    width={250}
+                                    height={250}
                                     style={{
                                         marginBottom: "1rem",
                                     }}
                                 />
                             </center>
                             <Typography
-                                variant="h6"
+                                variant="h5"
                                 color="#251A1A"
                                 textAlign="center"
                                 fontWeight="bold"
                             >
                                 Presiden BEM
+                            </Typography>
+                            <Typography
+                                variant="h6"
+                                color="#251A1A"
+                                textAlign="center"
+                                fontWeight="bold"
+                            >
+                                AULIA THAARIQ AKBAR
                             </Typography>
                         </Card>
                     </Box>

@@ -24,7 +24,7 @@ const FifthSection: React.FC<ArticleProps> = ({ articles }) => {
                     flexDirection: "column",
                     paddingBottom: "2rem",
                     marginBottom: "2rem",
-                    backgroundColor: "#7A2D35 !important",
+                    backgroundColor: "#850E09",
                 }}
             >
                 <Typography

@@ -20,7 +20,7 @@ const pages = [
     { name: "ARTIKEL", href: "/artikel" },
     { name: "SOP", href: "/Sop" },
     { name: "STRUKTUR ORGANISASI", href: "/Struktur" },
-    { name: "FORM GENERATOR", href: "/form/create" },
+    { name: "FORM", href: "/form/create" },
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -70,7 +70,7 @@ function ResponsiveAppBar() {
                         component="img"
                         src="/images/logo/logo.png"
                         sx={{
-                            height: "100px",
+                            height: "130px",
                             overflow: "hidden",
                             display: { xs: "none", md: "flex" },
                             marginRight: 2,
