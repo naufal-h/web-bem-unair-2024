@@ -82,6 +82,7 @@ const SecondSection = ({nama,
                             fontSize: { xs: "2.5rem", md: "4rem" }, // Responsive font size
                             fontWeight: "bold",
                             color: "#FFF9F9",
+                            textAlign: {xs: 'center', md: 'left'},
                         }}
                     >
                         {remainingWords}

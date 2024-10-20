@@ -188,7 +188,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         ],
         nama_kementrian: "KEMENKOAN KEMAHASISWAAN",
         text_kementrian:
-            "",
+            "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
         id: "kemahasiswaan",
     },
     {
@@ -332,7 +332,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         ],
         nama_kementrian: "KEMENKOAN KEMASYARAKATAN",
         text_kementrian:
-            "",
+            "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
         id: "kemasyarakatan",
     },
     {
@@ -434,7 +434,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
             },
         ],
         nama_kementrian: "KEMENKOAN PERGERAKAN",
-        text_kementrian: "",
+        text_kementrian: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
         id: "pergerakan",
     },
     {
