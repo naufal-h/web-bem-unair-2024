@@ -1,6 +1,12 @@
 import { Box, Card, Typography } from "@mui/material";
+import { MainKemenkoanInterface } from "../type";
 
-const FirstSection = () => {
+
+const FirstSection = ({image, nama, jabatan, kemenkoan,nama_kementrian}: MainKemenkoanInterface) => {
+    const titleWords = nama_kementrian.split(' ');
+    const firstWord = titleWords[0];
+    const remainingWords = titleWords.slice(1).join(' ');
+
     return (
         <Box
             sx={{
@@ -26,7 +32,7 @@ const FirstSection = () => {
             /> */}
             <Box
                 component="img"
-                src="/images/anggota/pipKetuKem.png"
+                src={image}
                 alt="Logo"
                 sx={{
                     position: "absolute",
@@ -68,9 +74,10 @@ const FirstSection = () => {
                             fontWeight: "bold",
                             fontSize: { xs: "1.75rem", sm: "2.5rem", md: "3rem" }, // Responsive font size
                             fontFamily: "open sans",
+                            color: "#7A2D35",
                         }}
                     >
-                        KEMENKOAN
+                        {firstWord}
                     </Typography>
                     <Typography
                         sx={{
@@ -80,7 +87,7 @@ const FirstSection = () => {
                             color: "#7A2D35",
                         }}
                     >
-                        KOMINFO
+                        {remainingWords}
                     </Typography>
                 </Box>
                 <Box
@@ -117,7 +124,7 @@ const FirstSection = () => {
                                     color: "#7A2D35",
                                 }}
                             >
-                                Nama Lengkap
+                                {nama}
                             </Typography>
                         </Box>
                         <Box
@@ -134,7 +141,7 @@ const FirstSection = () => {
                                     fontFamily: "montserrat",
                                 }}
                             >
-                                Jabatan
+                                {jabatan}
                             </Typography>
                         </Box>
                     </Card>
@@ -154,6 +161,7 @@ const FirstSection = () => {
                             } // Allow items to wrap on smaller screens
                         }}
                     >
+                        {kemenkoan.map((content, index) => (
                         <Card
                             sx={{
                                 paddingY: "0.5rem",
@@ -173,53 +181,10 @@ const FirstSection = () => {
                                     fontSize: { xs: "0.9rem", md: "1rem" }, // Responsive font size
                                 }}
                             >
-                                KEMENTRIAN MEDIA DAN INFORMASI
+                                {content.nama}
                             </Typography>
-                        </Card>
-                        <Card
-                            sx={{
-                                paddingY: "0.5rem",
-                                width: { xs: "100%", sm: "calc(100%/3 - 20px)" }, // Full width on xs
-                                backgroundColor: "rgba(255,249,249,0.8)",
-                                boxShadow: "0px 4px 4px rgba(122, 45, 53, 0.12)",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                            }}
-                        >
-                            <Typography
-                                sx={{
-                                    fontFamily: "montserrat",
-                                    textAlign: "center",
-                                    color: "#7A2D35",
-                                    fontSize: { xs: "0.9rem", md: "1rem" }, // Responsive font size
-                                }}
-                            >
-                                KEMENTRIAN SINERGITAS MAHASISWA
-                            </Typography>
-                        </Card>
-                        <Card
-                            sx={{
-                                paddingY: "0.5rem",
-                                width: { xs: "100%", sm: "calc(100%/3 - 20px)" }, // Full width on xs
-                                backgroundColor: "rgba(255,249,249,0.8)",
-                                boxShadow: "0px 4px 4px rgba(122, 45, 53, 0.12)",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                            }}
-                        >
-                            <Typography
-                                sx={{
-                                    fontFamily: "montserrat",
-                                    textAlign: "center",
-                                    color: "#7A2D35",
-                                    fontSize: { xs: "0.9rem", md: "1rem" }, // Responsive font size
-                                }}
-                            >
-                                KEMENTRIAN HUBUNGAN LUAR
-                            </Typography>
-                        </Card>
+                        </Card>          
+                        ))}
                     </Box>
                 </Box>
             </Box>

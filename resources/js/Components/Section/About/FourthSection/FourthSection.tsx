@@ -137,20 +137,24 @@ const FourthSection = () => {
                         mahasiswa dalam pengadvokasian kesejahteraan mahasiswa.
                     </Misi>
                     <Misi index={2}>
-                        Mewujudkan BEM Unair sebagai transenden representasi
-                        mahasiswa dalam pengadvokasian kesejahteraan mahasiswa.
+                        Memperbanyak ruang pengabdian yang inklusif dengan
+                        berfokus pada keselamatan lingkungan dan pengurangan
+                        kesenjangan.
                     </Misi>
                     <Misi index={3}>
-                        Mewujudkan BEM Unair sebagai transenden representasi
-                        mahasiswa dalam pengadvokasian kesejahteraan mahasiswa.
+                        Menyediakan ruang-ruang partisipatif dan relevan guna
+                        mendorong potensi sumber daya mahasiswa maupun
+                        universitas.
                     </Misi>
                     <Misi index={4}>
-                        Mewujudkan BEM Unair sebagai transenden representasi
-                        mahasiswa dalam pengadvokasian kesejahteraan mahasiswa.
+                        Menyediakan ruang-ruang partisipatif dan relevan guna
+                        mendorong potensi sumber daya mahasiswa maupun
+                        universitas.
                     </Misi>
                     <Misi index={5}>
-                        Mewujudkan BEM Unair sebagai transenden representasi
-                        mahasiswa dalam pengadvokasian kesejahteraan mahasiswa.
+                        Memperluas jejaring sebagai langkah adaptif dalam
+                        meningkatkan peluang kolaborasi yang berdampak nyata
+                        bagi seluruh civitas akademika.
                     </Misi>
                 </Box>
             </Box>

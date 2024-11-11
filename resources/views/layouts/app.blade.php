@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BEM 2024</title>
+    <title>BEM UNAIR 2024</title>
     @vite('resources/css/app.css')
     {{-- <link rel="stylesheet" href="{{ asset('/resources/css/app.css') }}"> --}}
     {{-- <link rel="stylesheet" href="{{ asset('build/assets/app-DazU-V9Y.css') }}"> --}}
@@ -15,8 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/favicon/favicon.ico') }}">
     <link rel="manifest" href="{{ asset('assets/favicon/site.webmanifest') }}">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 

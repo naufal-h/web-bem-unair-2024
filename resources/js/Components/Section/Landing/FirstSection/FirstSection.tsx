@@ -68,6 +68,7 @@ const FirstSection = () => {
                         fontFamily: "Open Sans",
                         color: "#7A2D35",
                         fontWeight: "bold",
+                        textAlign: "center",
                         fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, // responsive font size
                     }}
                 >
@@ -90,7 +91,6 @@ const FirstSection = () => {
                 component="div"
                 sx={{
                     marginTop: "2rem",
-                    // border: "2px solid red",
                     borderRadius: "10px",
                     width: "75%",
                     height: "600px",

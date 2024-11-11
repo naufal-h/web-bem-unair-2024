@@ -1,39 +1,12 @@
 import CardKemenkoan from "@/Components/Card/CardKemenkoan";
 import { Box } from "@mui/material";
+import { MainKemenkoanInterface } from "../../Kementrian/type";
+import { KemenkoanList } from "../../Kementrian/data";
 
-type KementrianContentType = {
-    image: string;
-    title: string;
-    text: string;
-    link: string;
-};
 
-const KementrianContent: KementrianContentType[] = [
-    {
-        image: "/images/logo/Logo-mini.png",
-        title: `Kementrian Lorem Ipsum`,
-        text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-        link: `/Struktur/Kementrian`,
-    },
-    {
-        image: "/images/logo/Logo-mini.png",
-        title: `Kementrian Lorem Ipsum`,
-        text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-        link: `/#`,
-    },
-    {
-        image: "/images/logo/Logo-mini.png",
-        title: `Kementrian Lorem Ipsum`,
-        text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-        link: `/#`,
-    },
-    {
-        image: "/images/logo/Logo-mini.png",
-        title: `Kementrian Lorem Ipsum`,
-        text: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure..",
-        link: `/#`,
-    },
-];
+
+
+
 
 const ThirdSection = () => {
     return (
@@ -72,13 +45,12 @@ const ThirdSection = () => {
                     zIndex: 2,
                 }}
             >
-                {KementrianContent.map((content, index) => (
+                {KemenkoanList.map((content, index) => (
                     <CardKemenkoan
                         key={index}
-                        image={content.image}
-                        title={content.title}
-                        text={content.text}
-                        link={content.link}
+                        title={content.nama_kementrian}
+                        text={content.text_kementrian}
+                        link={`/Struktur/Kementrian/${content.id}`}
                     />
                 ))}
             </Box>

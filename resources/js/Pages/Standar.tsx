@@ -7,14 +7,16 @@ export type pdfUrlType = {
     pdfUrl: {
         pdfUrl: string;
     };
+    pdfUrl2: {
+        pdfUrl2: string;
+    };
 };
 
 const Standar = (pdfUrl: pdfUrlType) => {
     return (
         <>
-            {console.log(pdfUrl.pdfUrl)}
             <ResponsiveAppBar />
-            <MainSection pdfUrl={pdfUrl.pdfUrl} />
+            <MainSection pdfUrl={pdfUrl.pdfUrl} pdfUrl2={pdfUrl.pdfUrl2} />
             <FooterSection />
         </>
     );

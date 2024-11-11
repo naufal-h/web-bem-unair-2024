@@ -5,7 +5,7 @@ const ThirdSection = () => {
         <>
             <Box
                 sx={{
-                    backgroundColor: "#7A2D35",
+                    backgroundColor: "#850E09",
                     padding: { xs: "2rem", md: "4rem" },
                 }}
             >
@@ -24,7 +24,7 @@ const ThirdSection = () => {
                 </Typography>
                 <Box
                     sx={{
-                        backgroundColor: "#7A2D35",
+                        backgroundColor: "#850E09",
                         padding: { xs: "2rem", md: "4rem" },
                         display: "flex",
                         flexDirection: { xs: "column-reverse", md: "row" },
@@ -92,22 +92,30 @@ const ThirdSection = () => {
                         >
                             <center>
                                 <img
-                                    alt="Ketua BEM"
-                                    src="https://gowest.id/wp-content/uploads/2024/02/Wendy_YoungStreet_220601.jpg"
-                                    width={150}
-                                    height={150}
+                                    alt="Presiden BEM"
+                                    src="/images/fungsionaris/Pres_dan_Wapres/Presbem.png"
+                                    width={250}
+                                    height={250}
                                     style={{
                                         marginBottom: "1rem",
                                     }}
                                 />
                             </center>
                             <Typography
+                                variant="h5"
+                                color="#251A1A"
+                                textAlign="center"
+                                fontWeight="bold"
+                            >
+                                Presiden BEM
+                            </Typography>
+                            <Typography
                                 variant="h6"
                                 color="#251A1A"
                                 textAlign="center"
                                 fontWeight="bold"
                             >
-                                Ketua BEM
+                                AULIA THAARIQ AKBAR
                             </Typography>
                         </Card>
                     </Box>

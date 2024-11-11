@@ -2,13 +2,12 @@ import { Box, Card, CardActions, CardContent, IconButton, Link, Typography } fro
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 type CardKemenkoanProps = {
-    image: string;
     title: string;
     text: string;
     link: string;
 };
 
-const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
+const CardKemenkoan = ({ title, text, link }: CardKemenkoanProps) => {
     return (
         <Card
             sx={{
@@ -40,7 +39,7 @@ const CardKemenkoan = ({ image, title, text, link }: CardKemenkoanProps) => {
                         md: "300px",
                         lg: "400px",
                     }
-                 }} component="img" src={image}></Box>
+                 }} component="img" src="/images/logo/Logo-mini.png"></Box>
                 <CardContent
                     sx={{
                         display: "flex",

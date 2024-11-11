@@ -54,11 +54,14 @@
                         Jawa Timur 60115
                     </div>
                     <div class=" mt-4">
-                        narahubung 1: 0822 1234 5678 (name)
+                        Media dan Informasi (Naufal - 62856-0762-2950)
                     </div>
                     <div>
-                        narahubung 2: 0822 1234 5678 (name)
+                        Eksternal Unair (Mufida - 62821-4182-6030)
 
+                    </div>
+                    <div>
+                        Internal Unair (Satrio - 62857-2426-9372)
                     </div>
                 </div>
             </div>

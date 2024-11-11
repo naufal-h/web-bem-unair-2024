@@ -41,9 +41,9 @@ const FirstSection = () => {
                     <Typography
                         sx={{
                             fontSize: {
-                                xs: "1.5rem",
-                                sm: "3.25rem",
-                                md: "4.25rem",
+                                xs: "1.25rem",
+                                sm: "3rem",
+                                md: "4rem",
                             }, // Ukuran teks responsif
                             fontWeight: "bold",
                             color: "#7A2D35",

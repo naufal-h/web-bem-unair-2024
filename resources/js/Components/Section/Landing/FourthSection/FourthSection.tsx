@@ -110,7 +110,7 @@ const FourthSection = () => {
                             textAlign="center"
                             gutterBottom
                         >
-                            FORM GENERATOR
+                            FORM
                         </Typography>
                         <Typography
                             variant="body1"

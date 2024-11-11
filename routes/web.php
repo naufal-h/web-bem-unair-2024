@@ -64,7 +64,7 @@ Route::get('/About', [AboutController::class, 'index'])->name('about.index');
 Route::get('/ArticleTest', [ArticleController::class, 'inertiaPage'])->name('article.index');
 Route::get('/Sop', [SOPController::class, 'index'])->name('sop.index');
 Route::get('/Struktur', [StrukturController::class, 'index'])->name('struktur.index');
-Route::get('/Struktur/Kementrian', [StrukturController::class, 'kementrian'])->name('struktur.kementrian');
+Route::get('/Struktur/Kementrian/{id}', [StrukturController::class, 'kementrian'])->name('struktur.kementrian');
 
 
 
