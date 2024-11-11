@@ -30,7 +30,11 @@ const KementrianPage = () => {
                     anggota={item.anggota}
                     proker={item.proker}
                 />
-                <ThirdSection/>
+                <ThirdSection key={index}
+                    nama={item.nama}
+                    text_kementrian={item.text_kementrian}
+                    anggota={item.anggota}
+                    proker={item.proker}/>
                 </>
                 
             )

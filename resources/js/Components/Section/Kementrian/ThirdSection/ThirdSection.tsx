@@ -1,6 +1,10 @@
 import { Box, Card, Typography } from "@mui/material";
+import { DetailKementrianType } from "../type";
 
-const ThirdSection = () => {
+const ThirdSection = ({nama,
+    text_kementrian,
+    anggota,
+    proker}:DetailKementrianType) => {
     return (
         <Box
             sx={{
@@ -82,7 +86,7 @@ const ThirdSection = () => {
                         marginTop: "1rem",
                     }}
                 >
-                    {Array.from({ length: 9 }).map((_, index) => (
+                    {proker.map((item, index) => (
                         <Card
                             key={index}
                             sx={{
@@ -105,7 +109,7 @@ const ThirdSection = () => {
                                     fontSize: { xs: "1rem", md: "1.25rem" }, // Responsive font size
                                 }}
                             >
-                                {`${index + 1}. Judul Proker`}
+                                {item.judul}
                             </Typography>
                             <Typography
                                 sx={{
@@ -114,7 +118,7 @@ const ThirdSection = () => {
                                     fontSize: { xs: "0.875rem", md: "1rem" }, // Responsive font size
                                 }}
                             >
-                                Wadah untuk mahasiswa dalam melatih skill Desain, Video, Copywriting, dan beberapa skill lainnya yang berhubungan dengan media dan publikasi.
+                                {item.deskripsi_proker}
                             </Typography>
                         </Card>
                     ))}
