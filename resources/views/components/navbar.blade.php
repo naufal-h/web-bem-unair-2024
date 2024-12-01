@@ -1,4 +1,4 @@
-<nav class="bg-white w-full shadow">
+<nav class="bg-white w-full shadow-lg">
     <div class="container flex items-center justify-between px-[24px] w-full h-full sm:flex-row sm:justify-between ">
         <div class="flex items-center">
             <a href="#">
@@ -11,7 +11,7 @@
             <a href="{{ route('landing') }}" class="text-gray-800 hover:text-gray-600 font-semibold px-[28px]">BERANDA</a>
             <a href="{{ route('about.index') }}" class="text-gray-800 hover:text-gray-600 font-semibold px-[28px]">TENTANG KAMI</a>
             <a href="{{ route('article.client.index') }}" class="text-gray-800 hover:text-gray-600 font-semibold px-[28px]">ARTIKEL</a>
-            <a href="{{route('sop.index')}}" class="text-gray-800 hover:text-gray-600 font-semibold px-[28px]">SOP</a>
+            <a href="{{route('sop.index')}}" class="text-gray-800 hover:text-gray-600 font-semibold px-[28px]">PARTNERSHIP</a>
             <a href="{{ route('struktur.index') }}" class="text-gray-800 hover:text-gray-600 font-semibold px-[28px]">STRUKTUR ORGANISASI</a>
             <a href="{{ route('form.index') }}" class="text-gray-800 hover:text-gray-600 font-semibold px-[28px]">FORM</a>
         </div>
@@ -36,7 +36,7 @@
         <a href="{{ route('landing') }}" class="block text-gray-800 hover:text-gray-600 px-5 py-2">BERANDA</a>
         <a href="{{ route('about.index') }}" class="block text-gray-800 hover:text-gray-600 px-5 py-2">TENTANG KAMI</a>
         <a href="{{ route('article.client.index') }}" class="block text-gray-800 hover:text-gray-600 px-5 py-2">ARTIKEL</a>
-        <a href="{{route('sop.index')}}" class="block text-gray-800 hover:text-gray-600 px-5 py-2">SOP</a>
+        <a href="{{route('sop.index')}}" class="block text-gray-800 hover:text-gray-600 px-5 py-2">PARTNERSHIP</a>
         <a href="{{ route('struktur.index') }}" class="block text-gray-800 hover:text-gray-600 px-5 py-2">STRUKTUR ORGANISASI</a>
         <a href="{{ route('form.index') }}" class="block text-gray-800 hover:text-gray-600 px-5 py-2">FORM</a>
     </div>

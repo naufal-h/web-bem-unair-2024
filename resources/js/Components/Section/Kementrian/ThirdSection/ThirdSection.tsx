@@ -1,10 +1,8 @@
 import { Box, Card, Typography } from "@mui/material";
 import { DetailKementrianType } from "../type";
+import CardSlider from "@/Components/CardSlider/CardSlider";
 
-const ThirdSection = ({nama,
-    text_kementrian,
-    anggota,
-    proker}:DetailKementrianType) => {
+const ThirdSection = ({proker}:DetailKementrianType) => {
     return (
         <Box
             sx={{
@@ -86,42 +84,9 @@ const ThirdSection = ({nama,
                         marginTop: "1rem",
                     }}
                 >
-                    {proker.map((item, index) => (
-                        <Card
-                            key={index}
-                            sx={{
-                                paddingY: "0.5rem",
-                                paddingX: "1rem",
-                                backgroundColor: "rgba(255,249,249,0.8)",
-                                boxShadow: "0px 4px 4px rgba(122, 45, 53, 0.12)",
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "start",
-                                flexDirection: "column",
-                                textAlign: "center", // Ensure text stays centered on mobile
-                            }}
-                        >
-                            <Typography
-                                sx={{
-                                    fontFamily: "open sans",
-                                    fontWeight: "bold",
-                                    color: "#7A2D35",
-                                    fontSize: { xs: "1rem", md: "1.25rem" }, // Responsive font size
-                                }}
-                            >
-                                {item.judul}
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    fontFamily: "open sans",
-                                    color: "#251A1A",
-                                    fontSize: { xs: "0.875rem", md: "1rem" }, // Responsive font size
-                                }}
-                            >
-                                {item.deskripsi_proker}
-                            </Typography>
-                        </Card>
-                    ))}
+                    
+                        <CardSlider content={proker} />
+                    
                 </Box>
             </Box>
         </Box>

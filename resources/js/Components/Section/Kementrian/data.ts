@@ -7,15 +7,35 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         jabatan: "Menteri Koordinator",
         kemenkoan: [
             {
-                nama: "KEMENTRIAN MEDIA DAN INFORMASI",
+                nama: "KEMENTERIAN MEDIA DAN INFORMASI",
                 text_kementrian:
                     "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-                proker: [
-                    {
-                        judul: "",
-                        deskripsi_proker: "",
-                    },
-                ],
+                    proker: [
+                        {
+                            judul: "Optimalisasi Media",
+                            deskripsi_proker: "Pembuatan konten kreatif dan menarik untuk branding BEM UNAIR 2024 di semua media informasi BEM UNAIR 2024",
+                        },
+                        {
+                            judul: "Airlangga Creative Fest",
+                            deskripsi_proker: "Program pelatihan soft skill dan kompetisi untuk pelajar. Melibatkan serangkaian kegiatan interaktif, program ini dirancang untuk meningkatkan keterampilan interpersonal, kepemimpinan, dan kreativitas.",
+                        },
+                        {
+                            judul: "Member Portrait Project",
+                            deskripsi_proker: "Dokumentasi dan Publikasi fungsionaris BEM Unair pada media sosial Instagram sebagai bagian dari kegiatan untuk arsip kabinet.",
+                        },
+                        {
+                            judul: "Website Development",
+                            deskripsi_proker: "Develop dan maintenance website BEM UNAIR 2024",
+                        },
+                        {
+                            judul: "Airlangga Collaboration",
+                            deskripsi_proker: "Sebuah forum untuk menyatukan seluruh divisi media dan informasi pada lingkup organisasi mahasiswa Universitas Airlangga dan sebagai sarana sosialisasi SOP kerjasama dengan BEM UNAIR",
+                        },
+                        {
+                            judul: "ICA (Insight Incite Airlangga)",
+                            deskripsi_proker: "Podcast edukatif mengenai isu terkini dengan narasumber sesuai bidangnya.",
+                        },
+                    ],
                 anggota: [
                     {
                         image: "/images/fungsionaris/MEDINFO/Dirjen_Visual_Kreatif_Avifa_Akhila.png",
@@ -35,15 +55,27 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
             {
-                nama: "KEMENTRIAN HUBUNGAN LUAR",
+                nama: "KEMENTERIAN HUBUNGAN LUAR",
                 text_kementrian:
                     "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
-                proker: [
-                    {
-                        judul: "",
-                        deskripsi_proker: "",
-                    },
-                ],
+                    proker: [
+                        {
+                            judul: "AIRLANGGA PARTNERSHIP AND NATIONAL VISIT",
+                            deskripsi_proker: "Untuk menjalin Hubungan dan Kerjasama maupun Kunjungan nasional baik tehadap GO maupun NGO dan menjaga hubungan baik antar Universitas yang ada di Indonesia.",
+                        },
+                        {
+                            judul: "GET TO KNOW AIRLANGGA",
+                            deskripsi_proker: "Memperkenalkan UNAIR kepada siswa-siswa SMA terkait lingkungan perkuliahan serta bekerja sama dengan partnership platform bidang akademik.",
+                        },
+                        {
+                            judul: "AIRLANGGA PARTNERSHIP AND INTERNATIONAL VISIT",
+                            deskripsi_proker: "Untuk menjalin Hubungan dan Kerjasama maupun Kunjungan Internasional baik tehadap GO maupun NGO dan menjaga hubungan baik antar Universitas yang ada di Asia.",
+                        },
+                        {
+                            judul: "AIRLANGGA INTERNATIONAL CONFERENCE",
+                            deskripsi_proker: "Memperkenal Universitas Airlangga dan budaya Indonesia di Kancah Internasional khususnya ASEAN dengan mengajak mahasiswa-mahasiswa luar negeri baik yang berkuliah di Universitas Airlangga maupun mahasiswa Universitas di ASEAN.",
+                        },
+                    ],
                 anggota: [
                     {
                         image: "/images/fungsionaris/HUBLU/Dirjen_Mitra_Internasional_KHOLIFATUL_IBRA.png",
@@ -63,13 +95,33 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
             {
-                nama: "KEMENTRIAN SINERGITAS MAHASISWA",
+                nama: "KEMENTERIAN SINERGITAS MAHASISWA",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    'Kementerian yang bertanggungjawab dalam menciptakan iklim sinergis antar organisasi, komunitas, maupun lembaga di Universitas Airlangga sekaligus menjadi pintu kolaborasi internal yang relevan dengan prospektus organisasi',
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "MAHASISWA SINERGI NASIONAL",
+                        deskripsi_proker: "Talkshow Mahasiswa Sinergi Nasional adalah sebuah acara interaktif. Kegiatan ini dilakukan dalam bentuk talkshow yang menghadirkan pembicara. Kegiatan ini terbuka untuk umum, dan peserta diundang untuk berinteraksi dengan para pembicara melalui sesi tanya jawab setelah talkshow",
+                    },
+                    {
+                        judul: "SIMFONI MBKM",
+                        deskripsi_proker: "Simfoni MBKM merupakan program kerja yang digagas oleh Kementerian Sinergitas Mahasiswa BEM Universitas Airlangga (UNAIR) untuk membangun sinergi dan inklusivitas dalam implementasi Merdeka Belajar Kampus Merdeka (MBKM), khususnya bagi mahasiswa luar UNAIR yang melakukan pertukaran pelajar MBKM ke UNAIR",
+                    },
+                    {
+                        judul: "SAFARI AKSI (SAKSI)",
+                        deskripsi_proker: "Sinergi Aksi (SAKSI), program kerja Kementerian Sinergitas Mahasiswa BEM Universitas Airlangga (UNAIR), hadir untuk menjembatani komunikasi dan membangun sinergi antara BEM UNAIR dengan Organisasi Mahasiswa Fakultas (ORMAWA). Melalui program ini, BEM UNAIR akan melakukan safari ke Kampus A, B, C, Gresik, lamongan, dan FIKIA UNAIR.",
+                    },
+                    {
+                        judul: "AIRLANGGA STUDENT FORUM",
+                        deskripsi_proker: "Dalam pelaksanaannya akan dibagi kedalam topik bahasan isu-isu terencana dan isu-isu yang terjadi secara insidental. Di Dalam ASF nantinya akan dilakukan diskusi, konsolidasi, dan jaring aspirasi guna terciptanya sinergitas dalam lingkup internal Universitas Airlangga. Oleh karena itu, penyelenggaraan ASF sendiri akan melibatkan peran aktif dari seluruh lembaga yang ada di Universitas Airlangga dan Kementrian di BEM UNAIR 2023. peserta yang mengikuti kegiatan ini adalah perwakilan dari setiap BEM Fakultas, perwakilan forsida, BO/BOP, FORKOM dan kementerian adkesma serta mahasiswa umum di Universitas Airlangga.",
+                    },
+                    {
+                        judul: "SEDULUR ALMAMATER",
+                        deskripsi_proker: "Sedulur Almamater adalah program kerja yang digagas oleh Badan Eksekutif Mahasiswa (BEM) Universitas Airlangga (UNAIR) untuk mendorong sinergi, kolaborasi, dan saling mendukung antar Organisasi Mahasiswa (ORMAWA) di UNAIR. Program ini memilikivpendekatan yang menyeluruh, meliputi pembentukan forum khusus, pemetaan kebutuhan dan potensi secara menyeluruh, serta penerapan strategi yang tepat untuk mencapai tujuannya.",
+                    },
+                    {
+                        judul: "FESTIVAL NASIONAL BHINNEKA",
+                        deskripsi_proker: "Festival Nasional Bhinneka, digagas oleh Universitas Airlangga (UNAIR), menjelma menjadi sebuah simfoni budaya yang meriah dan inspiratif di bumi UNAIR. Festival ini melampaui batas perayaan budaya dan persatuan bangsa, mengantarkan para mahasiswa dan masyarakat umum pada sebuah perjalanan penuh warna, rasa, dan makna. Lebih dari sekadar pertunjukan seni.",
                     },
                 ],
                 anggota: [
@@ -102,13 +154,37 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         jabatan: "Menteri Koordinator",
         kemenkoan: [
             {
-                nama: "KEMENTRIAN PENGEMBANGAN PROFESI",
+                nama: "KEMENTERIAN PENGEMBANGAN PROFESI",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementerian yang berperan memberikan ruang-ruang pengembangan untuk menunjang karir mahasiswa pasca kampus, pemberian pendampingan atau sertifikasi agar dapat mempersiapkan skill keprofesian dalam dunia kerja dan menjalin kerjasama dengan stakeholder terkait untuk relasi pasca kampus.",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "Airlangga Mastermind",
+                        deskripsi_proker: "Airlangga Mastermind merupakan program untuk menunjang persiapan pasca kampus Mahasiswa Universitas Airlangga ataupun yang ingin mengikuti program magang merdeka. Dalam proker ini ada 2 rangkaian acara diantaranya yaitu Airlangga Career Path Preparation dan MSIB Mentoring.",
+                    },
+                    {
+                        judul: "AIRLANGGA CAREER SOLUTION",
+                        deskripsi_proker: "ACS (Airlangga Career Solution) merupakan program kerja dari Kementerian Pengembangan Profesi berupa pelatihan mentoring pembuatan CV dan Inteview recruitment secara langsung oleh narasumber ahli guna menunjang dan membantu para mahasiswa dalam perjalanan persiapan karir mereka.",
+                    },
+                    {
+                        judul: "UNLOCKING YOUR VOICE",
+                        deskripsi_proker: "Sebuah workshop yang dirancang untuk membahas pentingnya public speaking dalam membangun personal branding. Dalam acara ini, peserta akan diberikan pemahaman mendalam tentang bagaimana kemampuan berbicara di depan umum dapat memberikan dampak signifikan dalam memperkuat citra diri dan membangun karir seseorang.",
+                    },
+                    {
+                        judul: "EXCEL BOOTCAMP",
+                        deskripsi_proker: "Excel Bootcamp merupakan sebuah program intensif yang dirancang khusus untuk membantu mahasiswa dan peserta umum menguasai Microsoft Excel secara mendalam guna menunjang kehidupan pasca kampus.",
+                    },
+                    {
+                        judul: "UPGRADING WITH ALUMNI",
+                        deskripsi_proker: "BEM UNAIR mengundang Alumni Inspiratif untuk membagikan ceritanya kepada seluruh Mahasiswa agar termotivasi dan membuat poster seputar Alumni Inspiratif yang akan di upload di media sosial.",
+                    },
+                    {
+                        judul: "PENGPROF INTERNSHIP",
+                        deskripsi_proker: "BEM UNAIR memberikan pengalaman kepada mahasiswa untuk magang bersama alumni tapi tidak menutup kemungkinan kolaborasi dengan perusahaan diluar alumni. Magang ini dapat diikuti oleh Mahasiswa minimal semester 5",
+                    },
+                    {
+                        judul: "CORPORATE VISIT",
+                        deskripsi_proker: "BEM UNAIR membuka kesempatan kepada seluruh Mahasiswa dengan memberikan pengalaman untuk mengunjungi Perusahaan dalam rangka menambah wawasan dalam dunia kerja.",
                     },
                 ],
                 anggota: [
@@ -132,13 +208,41 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
             {
-                nama: "KEMENTRIAN PSDM",
+                nama: "KEMENTERIAN PSDM",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementerian yang bertanggung jawab untuk meningkatkan kualitas kaderisasi anggota maupun mahasiswa Universitas Airlangga, dan kementerian yang menciptakan iklim organisasi yang produktif dan resiliensi pada setiap anggotanya.",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "AMERTA",
+                        deskripsi_proker: "Program kerja ini berupa suatu kegiatan penyambutan dan pengenalan mahasiswa baru kepada lingkungan kampus. Dengan kegiatan yang akan dilaksanakan selama 10 hari di lingkungan Universitas Airlangga.",
+                    },
+                    {
+                        judul: "Forbes PSDM",
+                        deskripsi_proker: "Forum Bersama PSDM (FORBES PSDM) merupakan kegiatan dalam lingkup internal kampus guna untuk menyelaraskan visi antar kementerian PSDM di setiap Fakultas.",
+                    },
+                    {
+                        judul: "Abiwara Veda",
+                        deskripsi_proker: "fokusnya akan menjadi notulensi, ringkasan kegiatan, atau dokumentasi untuk program kerja FORBES yang ada di tiap fakultas di Universitas Airlangga. Konten dari “Abiwara Veda” berupa pengenalan Universitas Airlangga dan alur kaderisasi di Universitas Airlangga serta tiap - tiap fakultas Universitas Airlangga",
+                    },
+                    {
+                        judul: "KSATRIA MUDA AIRLANGGA",
+                        deskripsi_proker: "Ksatria Muda merupakan sebuah kegiatan yang melibatkan mahasiswa baru angkatan 2024 sebagai staff magang di setiap kementerian di kepengurusan kabinet Asa Progresif. Ksatria muda memiliki tujuan untuk menjadi wadah dalam memperkenalkan kinerja dan program kerja yang dimiliki oleh setiap kementerian sehingga terwujudlah kesempatan untuk berkontribusi nyata bagi staff magang.",
+                    },
+                    {
+                        judul: "AIRLANGGA PROGRESIF PROJECT",
+                        deskripsi_proker: "Program pelatihan dan sertifikasi untuk anggota BEM Unair 2024",
+                    },
+                    {
+                        judul: "SEKOLAH LEADERSHIP",
+                        deskripsi_proker: "Kegiatan seminar guna meningkatkan jiwa kepemimpinan serta peningkatan kemampuan berorganisasi bagi Ksatria Airlangga",
+                    },
+                    {
+                        judul: "AIRLANGGA TRAINING CAMP",
+                        deskripsi_proker: "Salah satu kegiatan yang wajib diikuti oleh seluruh anggota BEM UNAIR Kabinet Asa Progresif. Rangkaian kegiatan ATC sendiri yaitu Bonding Internal Organisasi yang akan dilaksanakan selama 2 Hari 1 Malam di luar kota Surabaya.",
+                    },
+                    {
+                        judul: "MEDIA PSDM",
+                        deskripsi_proker: "Sebagai wadah penyaluran aspirasi anggota PSDM BEM UNAIR berupa media kreatif dan konten (Instagram dan Tiktok)",
                     },
                 ],
                 anggota: [
@@ -158,13 +262,37 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                     },],
             },
             {
-                nama: "KEMENTRIAN ADKESMA",
+                nama: "KEMENTERIAN ADKESMA",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementerian yang berperan memberikan pendampingan terhadap kesejahteraan mahasiswa. Memberikan layanan informasi-informasi seputar administrasi mahasiswa, sekaligus pengawalan aspirasi mahasiswa Universitas Airlangga berkaitan dengan kebutuhan dasar mahasiswa seperti fasilitas, finansial, akademis,dsb.",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "ASPARAGA (Aspirasi Mahasiswa Airlangga)",
+                        deskripsi_proker: "Sebuah wadah aspirasi mahasiswa Universitas Airlangga yang disediakan secara online dimana hasil dari aspirasi mahasiswa ini akan dipublikasikan dan dilakukan advokasi ke pihak terkait",
+                    },
+                    {
+                        judul: "FASTOUR (Faculty Aspiration Tour)",
+                        deskripsi_proker: "Sebuah forum yang diwakili oleh adkesma masing-masing BEM fakultas yang bertujuan untuk menyampaikan aspirasi setiap fakultas.",
+                    },
+                    {
+                        judul: "Sekolah Advokasi",
+                        deskripsi_proker: "Program kerja yang mewadahi seluruh Departemen Advokasi di seluruh BEM Universitas Airlangga untuk memperdalam keilmuannya di bidang Advokasi.",
+                    },
+                    {
+                        judul: "Duduk Bareng Rektor",
+                        deskripsi_proker: "Program kerja unggulan berupa forum penyampaian aspirasi mahasiswa Universitas Airlangga kepada pihak rektor secara langsung.",
+                    },
+                    {
+                        judul: "Educational Information Service",
+                        deskripsi_proker: "Sebuah layanan untuk mewadahi kesejahteraan mahasiswa dengan meliputi proses pengaduan permasalahan yang ada ataupun penyampaian kebijakan dari universitas.",
+                    },
+                    {
+                        judul: "Mentoring Beasiswa",
+                        deskripsi_proker: "Program kerja untuk memberikan wadah bagi calon penerima beasiswa dengan memberikan konsultasi secara intensif atau langsung dengan lembaga penyedia beasiswa. Program ini dilakukan secara luring ataupun daring.",
+                    },
+                    {
+                        judul: "Seminar dan Expo Beasiswa (SEMPOA)",
+                        deskripsi_proker: "Program ini memberikan akses yang lebih luas kepada mahasiswa Universitas Airlangga dalam meraih peluang beasiswa. Dengan model pengadaan seminar yang memperbincangkan seputar peluang beasiswa dan penyelenggaraan expo beasiswa.",
                     },
                 ],
                 anggota: [
@@ -197,9 +325,9 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         jabatan: "Menteri Koordinator",
         kemenkoan: [
             {
-                nama: "KEMENTRIAN KESEHATAN",
+                nama: "KEMENTERIAN KESEHATAN",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementerian yang berfokus pada ranah isu kesehatan guna menciptakan kampus yang nyaman dan aman sebagai salah bentuk perwujudan kesejahteraan mahasiswa. Selain itu, Kementerian Kesehatan juga berfokus pada penyuluhan mengenai isu-isu kesehatan yang terjadi di masyarakat.",
                 proker: [
                     {
                         judul: "Airlangga Berdaya",
@@ -243,13 +371,33 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
             {
-                nama: "KEMENTRIAN PENGABDIAN MASYARAKAT",
+                nama: "KEMENTERIAN PENGABDIAN MASYARAKAT",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementerian yang lahir untuk mewujudkan Tri Dharma Perguruan Tinggi poin ke-3 yakni pengabdian masyarakat. Kementerian ini berperan pada ranah sosial dan masyarakat guna melaksanakan pembangunan dan mengatasi permasalahan yang terjadi di masyarakat baik di pedesaan maupun perkotaan",
                 proker: [
                     {
-                        judul: "",
-                        deskripsi_proker: "",
+                        judul: "PASAR MURAH AIRLANGGA",
+                        deskripsi_proker: "Untuk membantu berbagai masalah mengenai kebutuhan pokok maka, Kementerian Pengabdian Masyarakat, BEM Universitas Airlangga 2023, membuat program kerja pasar rakyat airlangga dengan target sasaran masyarakat yang mengalami keterbatasan dalam mengkonsumsi pangan. Bantuan pasar rakyat ini akan dialokasikan ke masyarakat yang ada di desa binaan Kementrian Pengabdian Masyarakat dengan harga jual 50% dari harga asli arau dengan kata lain dijual setengah harga. Hasil perolehan uang pasar rakyat ini akan dilanjutkan dari satu desa ke desa mitra lainnya. Hal ini juga diharapkan dapat membentuk hubungan Kerjasama berkelanjutan antara BEM Universitas Airlangga dengan masyarakat melalui kegiatan Pasar Rakyat Airlangga.",
+                    },
+                    {
+                        judul: "AIRLANGGA DEKAT MASYARAKAT SURABAYA",
+                        deskripsi_proker: "Program kerja AKSARA oleh Kementerian Pengabdian Masyarakat Badan Eksekutif Mahasiswa Universitas Airlangga memiliki visi dan misi untuk turut membantu masyarakat suatu wilayah Surabaya mewujudkan meningkatnya keunggulan sumber daya pada masyarakat.",
+                    },
+                    {
+                        judul: "Gerakan Bangun Desa (GERDES) Jilid IX",
+                        deskripsi_proker: "GERDES IX, Merupakan Program kerja yang berfokus pada pengembangan desa mitra, guna menjadi desa yang mandiri, berdikari, dan sejahtera.",
+                    },
+                    {
+                        judul: "BAKTI (Bersama Airlangga Kolaborasi Terampil Internasional ",
+                        deskripsi_proker: "Bentuk kolaborasi antara pengabdian BEM unair dan kelompok pengabdian dari luar negeri khususnya dirana mahasiswa, untuk melakukan abdi sosial kemasyarakat menebar kebermanfaatan bersama, guna menambah jejaring dan pengetahuan inovasi dalam hal pengabdian.",
+                    },
+                    {
+                        judul: "ABDI ( AKULTURASI BUDAYA DESA INSPIRATIF )",
+                        deskripsi_proker: "Program ini adalah bentuk pengembangan sektor pelestarian budaya indonesia, pengembanggan UMKM dan hiburan bagi masyrakat",
+                    },
+                    {
+                        judul: "SAHABAT PENGMAS",
+                        deskripsi_proker: "Sahabat Pengmas adalah program bentuk pengabdian ke masyarakat secara langsung dan berinovasi membuat buku pembelajaran untuk anak anak yang tidak dapat kesembatan belajar di sekolah dasar.",
                     },
                 ],
                 anggota: [
@@ -276,9 +424,9 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
             {
-                nama: "KEMENTRIAN LINGKUNGAN HIDUP",
+                nama: "KEMENTERIAN LINGKUNGAN HIDUP",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementrian yang berfokus pada konservasi dan advokasi mengenai kelestarian lingkungan, sekaligus menjadi garda terdepan dalam aksi pencerdasan krisis iklim, kerusakan ekologi, dingga pengawalan konflik-konflik agraria.",
                 proker: [
                     {
                         judul: "Airlangga Environmental Movement",
@@ -341,9 +489,9 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         jabatan: "Menteri Koordinator",
         kemenkoan: [
             {
-                nama: "KEMENTRIAN SOSIAL DAN POLITIK",
+                nama: "KEMENTERIAN SOSIAL DAN POLITIK",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementerian Sosial dan Politik BEM Universitas Airlangga adalah bagian dari Badan Eksekutif Mahasiswa Universitas Airlangga yang memiliki fokus pada isu-isu sosial dan politik di lingkungan kampus maupun masyarakat umum.",
                 proker: [
                     {
                         judul: "Vox Airlangga Vox Populi",
@@ -389,8 +537,8 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
             {
-                nama: "KEMENTRIAN KESETARAAN GENDER",
-                text_kementrian: "",
+                nama: "KEMENTERIAN KESETARAAN GENDER",
+                text_kementrian: "Kementerian yang berperan dalam mewujudkan ruang aman dan setara di Universitas Airlangga, khususnya yang berkaitan dengan gender.",
                 proker: [
                     {
                         judul: "KARISMA (Komitmen Ibu untuk Relevansi, Solidaritas, dan Motivasi Anak)",
@@ -443,8 +591,8 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         jabatan: "Menteri Koordinator",
         kemenkoan: [
             {
-                nama: "KEMENTRIAN RISET DAN KEILMUAN",
-                text_kementrian: "",
+                nama: "KEMENTERIAN RISET DAN KEILMUAN",
+                text_kementrian: "Kementerian yang berperan dalam menunjang prestasi akademik Universitas dan mendorong potensi Mahasiswa di bidang riset dan penelitian.",
                 proker: [
                     {
                         judul: "Cendekia Airlangga",
@@ -498,8 +646,8 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
             {
-                nama: "KEMENTRIAN SENI DAN OLAHRAGA",
-                text_kementrian: "",
+                nama: "KEMENTERIAN SENI DAN OLAHRAGA",
+                text_kementrian: "Kementerian yang bergerak di bidang pengembangan minat dan bakat Mahasiswa dalam lingkup aktualisasi seni, pelestarian tradisi, dan implementasi kompetensi olahraga.",
                 proker: [
                     {
                         judul: "Bumandhala Arta",
@@ -553,8 +701,8 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
             {
-                nama: "KEMENTRIAN EDIGPRO",
-                text_kementrian: "",
+                nama: "KEMENTERIAN EDIGPRO",
+                text_kementrian: "Kementerian Ekonomi Digital dan Produk Kreatif merupakan kementerian yang memberikan wadah pengembangan potensi ekonomi kreatif di ranah mahasiswa dan masyarakat.",
                 proker: [
                     {
                         judul: "EDGY STORE",

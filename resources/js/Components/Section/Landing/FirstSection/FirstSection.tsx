@@ -72,9 +72,21 @@ const FirstSection = () => {
                         fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, // responsive font size
                     }}
                 >
-                    KABINET ASA PROGRESIF
+                    BEM Universitas Airlanga
                 </Typography>
                 <Typography
+                    variant="h2"
+                    sx={{
+                        fontFamily: "Open Sans",
+                        color: "#7A2D35",
+                        fontWeight: "bold",
+                        textAlign: "center",
+                        fontSize: { xs: "1rem", sm: "1.5rem", md: "2rem" }, // responsive font size
+                    }}
+                >
+                    KABINET ASA PROGRESIF
+                </Typography>
+                {/* <Typography
                     variant="body1"
                     sx={{
                         textAlign: "center",
@@ -82,9 +94,8 @@ const FirstSection = () => {
                         fontSize: { xs: "0.875rem", sm: "1rem", md: "1.25rem" }, // responsive font size
                     }}
                 >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Culpa ipsa est sapiente beatae, illum sit saepe.
-                </Typography>
+                    Badan E
+                </Typography> */}
             </Box>
 
             <Box

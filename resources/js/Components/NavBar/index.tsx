@@ -18,7 +18,7 @@ const pages = [
     { name: "BERANDA", href: "/" },
     { name: "TENTANG KAMI", href: "/About" },
     { name: "ARTIKEL", href: "/artikel" },
-    { name: "SOP", href: "/Sop" },
+    { name: "PARTNERSHIP", href: "/Partnership" },
     { name: "STRUKTUR ORGANISASI", href: "/Struktur" },
     { name: "FORM", href: "/form/create" },
 ];

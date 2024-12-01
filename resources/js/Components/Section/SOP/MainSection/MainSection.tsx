@@ -30,7 +30,7 @@ const Standar = (pdfUrl: pdfUrlType) => {
                     variant="h1"
                     sx={{ fontWeight: "500", fontSize: "2.5rem" }}
                 >
-                    SOP Eksternal UNAIR
+                    Partneship Eksternal UNAIR
                 </Typography>
                 <Typography
                     variant="subtitle1"
@@ -87,7 +87,7 @@ const Standar = (pdfUrl: pdfUrlType) => {
                     variant="h1"
                     sx={{ fontWeight: "500", fontSize: "2.5rem" }}
                 >
-                    SOP Internal UNAIR
+                    Partnership Internal UNAIR
                 </Typography>
                 <Typography
                     variant="subtitle1"

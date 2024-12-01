@@ -27,6 +27,11 @@
     "dependencies": {
         "@emotion/react": "^11.13.0",
         "@emotion/styled": "^11.13.0",
+        "@fortawesome/fontawesome-svg-core": "^6.7.1",
+        "@fortawesome/free-brands-svg-icons": "^6.7.1",
+        "@fortawesome/free-regular-svg-icons": "^6.7.1",
+        "@fortawesome/free-solid-svg-icons": "^6.7.1",
+        "@fortawesome/react-fontawesome": "^0.2.2",
         "@iconify/icons-mdi": "^1.2.48",
         "@mui/icons-material": "^5.15.20",
         "@mui/material": "^5.16.7",
@@ -36,9 +41,11 @@
         "daisyui": "^2.24.0",
         "keen-slider": "^6.8.6",
         "react-feather": "^2.0.10",
+        "react-ionicons": "^4.2.1",
         "react-pdf": "^9.1.0",
         "react-router-dom": "6.1",
         "react-spring": "^9.7.4",
-        "styled-components": "^6.1.11"
+        "styled-components": "^6.1.11",
+        "swiper": "^11.1.15"
     }
 }

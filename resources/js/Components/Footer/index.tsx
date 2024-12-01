@@ -1,7 +1,10 @@
 import { Link } from "@mui/material";
 import Box from "@mui/material/Box";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { LogoTiktok } from "react-ionicons";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import XIcon from '@mui/icons-material/X';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const FooterSection = () => {
     return (
@@ -121,6 +124,7 @@ const FooterSection = () => {
                                 sx={{
                                     display: "flex",
                                     flexDirection: "row",
+                                    alignItems: "center",
                                     mt: "8px", // Jarak di atas ikon
                                     gap: "10px", // Jarak antar ikon
                                     justifyContent: {
@@ -129,27 +133,22 @@ const FooterSection = () => {
                                     }, // Center pada layar kecil, left pada layar besar
                                 }}
                             >
-                                <Link href="#" sx={{ color: "white" }}>
+                                <Link href="https://www.instagram.com/bem_unair/" sx={{ color: "white" }}>
                                     <InstagramIcon
                                         sx={{
                                             fontSize: {
                                                 xs: "28px",
-                                                md: "32px",
+                                                md: "30px",
                                                 lg: "36px",
                                             },
                                         }}
                                     />
                                 </Link>
-                                <Link href="#" sx={{ color: "white" }}>
-                                    <LinkedInIcon
-                                        sx={{
-                                            fontSize: {
-                                                xs: "28px",
-                                                md: "32px",
-                                                lg: "36px",
-                                            },
-                                        }}
-                                    />
+                                <Link href="https://www.tiktok.com/@bem_unair" sx={{ color: "white" }}>
+                                <LogoTiktok color='white'/>
+                                </Link>
+                                <Link href="https://x.com/BEMUNAIR_ID" sx={{ color: "white" }}>
+                                    <XIcon/>
                                 </Link>
                             </Box>
                         </Box>

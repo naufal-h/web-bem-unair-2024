@@ -1,11 +1,6 @@
 import CardKemenkoan from "@/Components/Card/CardKemenkoan";
 import { Box } from "@mui/material";
-import { MainKemenkoanInterface } from "../../Kementrian/type";
 import { KemenkoanList } from "../../Kementrian/data";
-
-
-
-
 
 
 const ThirdSection = () => {

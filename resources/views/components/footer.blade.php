@@ -24,16 +24,17 @@
                         Kenali Kami Lebih Dalam!
                     </div>
 
-                    <div class="flex mt-2 space-x-2 justify-center md:justify-start">
-                        <a href="#" class="text-white">
-                            <div class="h-7 w-7 md:h-8 md:w-8 lg:h-9 lg:w-9">
+                    <div class="flex mt-2 space-x-2 justify-center md:justify-start"style="gap: 10px;">
+                        <a href="https://www.instagram.com/bem_unair/" style="color: white; text-decoration: none;">
+                            <i class="fa-brands fa-instagram" style="font-size: 28px;"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@bem_unair" style="color: white; text-decoration: none;">
+                            <i class="fa-brands fa-tiktok" style="font-size: 28px;"></i>
+                        </a>
+                        <a href="https://x.com/BEMUNAIR_ID" style="color: white; text-decoration: none;">
+                            <i class="fa-brands fa-x-twitter" style="font-size: 28px;"></i>
+                        </a>
 
-                                <i class="fa-brands fa-instagram "></i>
-                            </div>
-                        </a>
-                        <a href="#" class="text-white">
-                            <i class="fa-brands fa-linkedin h-7 w-7 md:h-8 md:w-8 lg:h-9 lg:w-9"></i>
-                        </a>
                     </div>
 
                 </div>
@@ -70,6 +71,6 @@
         <div class=" text-white text-[10px] lg:text-[16px] font-open-sans text-center w-full">
             Copyright 2024 Badan Eksekutif Mahasiswa Universitas Airlangga
         </div>
-        
+
     </div>
 </div>

@@ -46,7 +46,7 @@ const FirstSection = ({image, nama, jabatan, kemenkoan,nama_kementrian}: MainKem
                     zIndex: 3,
                     top: "17.5%",
                     transform:{
-                        xs: "translateY(-40%)",
+                        xs: "translateY(-20%)",
                         sm: "none",
                         md: "none",
                     },
@@ -72,7 +72,7 @@ const FirstSection = ({image, nama, jabatan, kemenkoan,nama_kementrian}: MainKem
                     <Typography
                         sx={{
                             fontWeight: "bold",
-                            fontSize: { xs: "1.75rem", sm: "2.5rem", md: "3rem" }, // Responsive font size
+                            fontSize: { xs: "1.5rem", sm: "2.5rem", md: "3rem" }, // Responsive font size
                             fontFamily: "open sans",
                             color: "#7A2D35",
                         }}
@@ -82,7 +82,7 @@ const FirstSection = ({image, nama, jabatan, kemenkoan,nama_kementrian}: MainKem
                     <Typography
                         sx={{
                             fontWeight: "bold",
-                            fontSize: { xs: "1.75rem", sm: "2.5rem", md: "3rem" },
+                            fontSize: { xs: "1.5rem", sm: "2.5rem", md: "3rem" },
                             fontFamily: "open sans",
                             color: "#7A2D35",
                         }}
