@@ -69,7 +69,11 @@ const SwiperControls = ({ direction }: { direction: Direction }) => {
                         borderRadius: "10px",
                     }}
                 >
-                    <Box ref={sliderRef} className="keen-slider">
+                    <Box
+                        ref={sliderRef}
+                        className="keen-slider"
+                        sx={{ maxWidth: "1980px", maxHeight: "660px" }}
+                    >
                         <Box className="keen-slider__slide">
                             <img
                                 src="/images/swiper/banner-1.jpg"
