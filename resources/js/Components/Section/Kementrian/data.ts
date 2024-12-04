@@ -9,7 +9,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
             {
                 nama: "KEMENTERIAN MEDIA DAN INFORMASI",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementerian yang berperan sebagai penyalur informasi BEM terhadap publik melalui berbagai model publikasi kreatif yang relevan dengan perkembangan tren dan industri teknologi.",
                     proker: [
                         {
                             judul: "Optimalisasi Media",
@@ -57,7 +57,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
             {
                 nama: "KEMENTERIAN HUBUNGAN LUAR",
                 text_kementrian:
-                    "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+                    "Kementerian yang memiliki peran untuk menjaga citra positif dan kolaboratif BEM UNAIR 2024 terhadap berbagai mitra strategis melalui stakeholder pentahelix mapping baik di lingkup Nasional dan Internasional sehingga dapat menghasilkan sebuah keberdampakan yang nyata.",
                     proker: [
                         {
                             judul: "AIRLANGGA PARTNERSHIP AND NATIONAL VISIT",
@@ -83,21 +83,21 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                         jabatan: "DIRJEN MITRA INTERNASIONAL",
                     },
                     {
-                        image: "/images/fungsionaris/HUBLU/Dirjen_Multi_Nasional_RISKISYAH.png",
-                        nama: "RISKISYAH",
-                        jabatan: "DIRJEN MULTI NASIONAL",
-                    },
-                    {
                         image: "/images/fungsionaris/HUBLU/Menteri_HUBLU_MUFIDA_KUTFIYAH.png",
                         nama: "MUFIDA KUTFIYAH",
                         jabatan: "MENTERI HUBUNGAN LUAR",
+                    },
+                    {
+                        image: "/images/fungsionaris/HUBLU/Dirjen_Multi_Nasional_RISKISYAH.png",
+                        nama: "RISKISYAH",
+                        jabatan: "DIRJEN MULTI NASIONAL",
                     },
                 ],
             },
             {
                 nama: "KEMENTERIAN SINERGITAS MAHASISWA",
                 text_kementrian:
-                    'Kementerian yang bertanggungjawab dalam menciptakan iklim sinergis antar organisasi, komunitas, maupun lembaga di Universitas Airlangga sekaligus menjadi pintu kolaborasi internal yang relevan dengan prospektus organisasi',
+                    'Kementerian yang bertanggungjawab dalam menciptakan iklim sinergis antar organisasi, komunitas, maupun lembaga di Universitas Airlangga sekaligus menjadi pintu kolaborasi internal yang relevan dengan prospektus organisasi.',
                 proker: [
                     {
                         judul: "MAHASISWA SINERGI NASIONAL",
@@ -131,21 +131,21 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                         jabatan: "DIRJEN BINA ORGANISASI",
                     },
                     {
-                        image: "/images/fungsionaris/SINEMA/Dirjen_Kolaborasi_Mahasiswa_IVAN_BAYU.png",
-                        nama: "IVAN BAYU",
-                        jabatan: "DIRJEN KOLABORASI MAHASISWA",
-                    },
-                    {
                         image: "/images/fungsionaris/SINEMA/Menteri_Sinema_Satrio_Sulistriyatno.png",
                         nama: "SATRIO SULISTRIYATNO",
                         jabatan: "MENTERI SINERGITAS MAHASISWA",
                     },
+                    {
+                        image: "/images/fungsionaris/SINEMA/Dirjen_Kolaborasi_Mahasiswa_IVAN_BAYU.png",
+                        nama: "IVAN BAYU",
+                        jabatan: "DIRJEN KOLABORASI MAHASISWA",
+                    },
                 ],
             },
         ],
-        nama_kementrian: "KEMENKOAN KOMINFO",
+        nama_kementrian: "KEMENKOAN KOMUNIKASI DAN INFORMASI",
         text_kementrian:
-            "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+            "Kemenkoan Komunikasi dan Informasi merupakan Kemenkoan yang berperan menjadi penghubung jejaring maupun relasi dalam penyampaian informasi yang berkaitandengan program kerja tiap-tiap kementerian.",
         id: "kominfo",
     },
     {
@@ -316,7 +316,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         ],
         nama_kementrian: "KEMENKOAN KEMAHASISWAAN",
         text_kementrian:
-            "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+            "Kemenkoan Kemahasiswaan merupakan Kemenkoan yang memiliki tanggung jawab dalam mengawal proses kaderisasi, peningkatan kualitas, dan persiapan duniapasca-kampus bagi mahasiswa Universitas Airlangga.",
         id: "kemahasiswaan",
     },
     {
@@ -480,7 +480,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
         ],
         nama_kementrian: "KEMENKOAN KEMASYARAKATAN",
         text_kementrian:
-            "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+            "Kemenkoan Kemasyarakatan adalah Kemenkoan yang bertanggung jawab dalam mengadvokasikan isu-isu sosial, lingkungan, hingga kesehatan yang terjadi dimahasiswa maupun masyarakat.",
         id: "kemasyarakatan",
     },
     {
@@ -582,7 +582,7 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
             },
         ],
         nama_kementrian: "KEMENKOAN PERGERAKAN",
-        text_kementrian: "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+        text_kementrian: "Kemenkoan Pergerakan adalah Kemenkoan yang berfokus pada garda terdepan dalam mengawal dan merespon isu-isu mengenai sosial politik dankesetaraan gender yang ada di lingkungan kampus maupun masyarakat.",
         id: "pergerakan",
     },
     {
@@ -744,9 +744,9 @@ export const KemenkoanList: MainKemenkoanInterface[] = [
                 ],
             },
         ],
-        nama_kementrian: "KEMENKOAN PPK",
+        nama_kementrian: "KEMENKOAN PEMBERDAYAAN POTENSI DAN KARYA",
         text_kementrian:
-            "Cillum amet sint cupidatat ut ad dolore ipsum deserunt pariatur. Incididunt adipisicing amet aute nulla officia magna deserunt ut qui reprehenderit enim irure.",
+            "Kemenkoan Pemberdayaan Potensi dan Karya merupakan instrumen yang memegang tanggung jawab utama untuk memaksimalkan potensi mahasiswa Universitas Airlangga di bidang riset, keilmuan, kesenian, olahraga, hingga ekonomi kreatif",
         id: "ppk",
     },
 ];

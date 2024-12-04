@@ -147,9 +147,9 @@ const FourthSection = () => {
                         universitas.
                     </Misi>
                     <Misi index={4}>
-                        Menyediakan ruang-ruang partisipatif dan relevan guna
-                        mendorong potensi sumber daya mahasiswa maupun
-                        universitas.
+                        Menjadi garda terdepan dalam mengawal isu dan kebijakan
+                        di level kampus hingga nasional secara aktif, efektif,
+                        dan masif.
                     </Misi>
                     <Misi index={5}>
                         Memperluas jejaring sebagai langkah adaptif dalam

@@ -24,7 +24,7 @@ const CardLogo = ({ image, text }: CardLogoProps) => {
                 flexDirection: "column",
                 transition: "background-color 0.3s, transform 0.3s",
                 "&:hover": {
-                    backgroundColor: "#850E09",
+                    backgroundColor: "#80413e",
                     transform: "scale(1.02)",
                     "& .headline-text": {
                         color: "#FFF9F9",

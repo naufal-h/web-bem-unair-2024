@@ -21,7 +21,7 @@ const Standar = (pdfUrl: pdfUrlType) => {
                     justifyContent: "start",
                     alignItems: "start",
                     width: "100%",
-                    marginY: "4rem",
+                    // marginY: "4rem",
                     flexDirection: "column",
                     gap: "1rem",
                 }}
@@ -36,8 +36,7 @@ const Standar = (pdfUrl: pdfUrlType) => {
                     variant="subtitle1"
                     sx={{ fontWeight: "500", fontSize: "1rem" }}
                 >
-                    Lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum
-                    lorem ipsum lorem ipsum lorem ipsum.
+                    BEM Universitas Airlangga menjalin hubungan strategis dengan berbagai pihak eksternal untuk memperkuat program kerja dan memberikan manfaat nyata bagi mahasiswa. Melalui kolaborasi ini, BEM UNAIR berupaya menghadirkan dukungan, peluang pengembangan diri, dan solusi kreatif untuk menjawab tantangan di dunia mahasiswa dan masyarakat.
                 </Typography>
             </Box>
 
@@ -78,7 +77,7 @@ const Standar = (pdfUrl: pdfUrlType) => {
                     justifyContent: "start",
                     alignItems: "start",
                     width: "100%",
-                    marginY: "4rem",
+                    marginTop: "4rem",
                     flexDirection: "column",
                     gap: "1rem",
                 }}
@@ -93,8 +92,7 @@ const Standar = (pdfUrl: pdfUrlType) => {
                     variant="subtitle1"
                     sx={{ fontWeight: "500", fontSize: "1rem" }}
                 >
-                    Lorem ipsum lorem ipsum lorem ipsum lorem ipsum Lorem ipsum
-                    lorem ipsum lorem ipsum lorem ipsum.
+                    BEM Universitas Airlangga membangun sinergi dengan organisasi mahasiswa, fakultas, dan unit kegiatan di lingkungan UNAIR untuk menciptakan kolaborasi yang berdampak positif. Melalui kerja sama ini, BEM UNAIR mendukung pengembangan program kerja, pertukaran ide, serta inovasi demi kemajuan mahasiswa UNAIR secara holistik.
                 </Typography>
             </Box>
 
