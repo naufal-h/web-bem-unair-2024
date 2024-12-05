@@ -23,11 +23,12 @@ const FirstSection = () => {
             component="section"
             sx={{
                 width: "100%",
-                height: "100vh",
+                // height: "100vh",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
+                marginBottom: "7rem",
             }}
         >
             <Box
@@ -86,16 +87,6 @@ const FirstSection = () => {
                 >
                     KABINET ASA PROGRESIF
                 </Typography>
-                {/* <Typography
-                    variant="body1"
-                    sx={{
-                        textAlign: "center",
-                        fontFamily: "Open Sans",
-                        fontSize: { xs: "0.875rem", sm: "1rem", md: "1.25rem" }, // responsive font size
-                    }}
-                >
-                    Badan E
-                </Typography> */}
             </Box>
 
             <Box
@@ -104,7 +95,7 @@ const FirstSection = () => {
                     marginTop: "2rem",
                     borderRadius: "10px",
                     width: "75%",
-                    height: "600px",
+                    height: "100%",
                 }}
             >
                 <KeenSliderWrapper>
@@ -112,12 +103,12 @@ const FirstSection = () => {
                 </KeenSliderWrapper>
             </Box>
 
-            <S.FirstSectionStyled>
+            {/* <S.FirstSectionStyled>
                 <div className="gradient-color">
                     <div className="bg-shape1 opacity-50 bg-blur"></div>
                     <div className="bg-shape3 opacity-50 bg-blur"></div>
                 </div>
-            </S.FirstSectionStyled>
+            </S.FirstSectionStyled> */}
         </Box>
     );
 };
